@@ -154,7 +154,12 @@ textarea:active, textarea:focus {
     margin: 60px;
     border-radius: 5px;
 }
-
+.flex { display: flex; }
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 footer {
     display: inline-block;
 }
