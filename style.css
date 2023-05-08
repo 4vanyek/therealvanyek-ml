@@ -92,7 +92,7 @@ button {
 }
 
 input, textarea {
-    width: 90%;
+    width: 160px;
     font-size: 18px;
     padding: 8px 10px;
     border: none;
@@ -245,6 +245,7 @@ footer {
 		align-items: left;
         justify-content: left;
 		}
+    }
 /* @media screen and (max-width: 700px) {
     .modal, .inputfield, form, .inputbtn {
         max-width: 99%;
