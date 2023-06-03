@@ -1,5 +1,8 @@
 body {
-  background: #000;
+  background-image: url('bg_tvhome.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: #fff;
 }
 
@@ -7,27 +10,28 @@ body {
   text-align: center;
 }
 .container {
-  background: #111;
+  background: #ffffff90;
   border-radius: 6px;
   width: 49%;
   margin: 5px auto;
 }
 .container a, button {
-  background: #000;
-  color: #fff;
-  padding: 1em;
+  background: #ffffff70;
+  color: #222;
+  font-weight: bold;
+  padding: 1em 2em;
   border-radius: 6px;
   text-decoration: none;
   border: 1px solid transparent;
   transition-duration: 0.1s;
 }
 .container a:hover, button:hover {
-  background: #333;
+  background: #fff;
   transition-duration: 0.1s;
   border-color: #fff;
 }
 .container a:active, .container a:focus, button:active {
-  background: #222;
+  background: #ffffff;
 }
 .small-header {
   font-size: 24px;
@@ -50,4 +54,7 @@ body {
 }
 .left {
   float: left;
+}
+h1, h3, p, button {
+  color: #444;
 }
