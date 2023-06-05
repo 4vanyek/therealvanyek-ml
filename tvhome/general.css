@@ -1,34 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+
 body {
   background-image: url('bg_tvhome.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
+  font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
 }
-
 .textcenter {
   text-align: center;
+}
+.nav {
+  justify-content: center;
+}
+.centered {
+  display: flex;
+  align-items: center;
+}
+.full {
+  width: 100% !important;
+}
+.nav-icon {
+  transition-duration: 0.2s;
+}
+.nav-icon:hover {
+  scale: 0.95;
+  transition-duration: 0.2s;
+}
+.nav-icon:active {
+  scale: 0.85;
+  transition-duration: 0.2s;
 }
 .container {
   background: #ffffff90;
   border-radius: 6px;
-  width: 49%;
-  margin: 5px auto;
+  width: 50%;
+  margin-bottom: 10px;
 }
-.container a, button {
+.first {
+  border-top-right-radius: 0;
+}
+.second {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.container button {
   background: #ffffff70;
   color: #222;
-  font-weight: bold;
   padding: 1em 2em;
+  font-weight: 600;
   border-radius: 6px;
-  text-decoration: none;
-  border: 1px solid transparent;
+  border: none;
+  font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
   transition-duration: 0.1s;
+  cursor: pointer;
 }
 .container a:hover, button:hover {
   background: #fff;
   transition-duration: 0.1s;
-  border-color: #fff;
 }
 .container a:active, .container a:focus, button:active {
   background: #ffffff;
@@ -40,11 +70,7 @@ body {
   margin-left: 0;
 }
 .container-content {
-  margin: 0;
   padding: 2em;
-  max-width: 100%;
-  max-height: 95%;
-  color: #fff;
 }
 .container-content h1 {
   margin-top: 0;
@@ -55,6 +81,6 @@ body {
 .left {
   float: left;
 }
-h1, h3, p, button {
+h1, h2, p, button {
   color: #444;
 }
