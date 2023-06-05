@@ -5,8 +5,31 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: #fff;
   font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
+}
+.gsc-control-cse, .gsc-control-wrapper-cse, .gsc-input-box, .gsc-search-button-v2 {
+  border-radius: 6px !important;
+}
+.gsc-control-cse {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 1em 0 1em !important;
+}
+.gsc-input-box, .gsc-search-button-v2 {
+  border: none !important;
+  padding: 10px;
+}
+#gsc-i-id1 {
+  background: transparent !important;
+}
+.gsc-input-box {
+  background-color: #ffffff90 !important  ;
+}
+.gsc-search-button-v2 {
+  padding: 18px 36px !important;
+}
+form.gsc-search-box {
+  margin-bottom: 0;
 }
 .textcenter {
   text-align: center;
