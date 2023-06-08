@@ -10,6 +10,10 @@
 body {
     background-color: var(--bg);
 }
+.gh-comments {
+    width: 50%;
+    margin: auto;
+}
 h1 {
     font-family: 'Manrope', sans-serif;
     line-height: 4rem;
