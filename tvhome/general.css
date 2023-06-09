@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
 
 body {
-  background-image: url('bg_tvhome.png');
+  background-image: url('img/bg_tvhome.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
