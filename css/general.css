@@ -54,9 +54,6 @@ h2 {
     padding: 1em;
     justify-content: center;
 }
-.nav a {
-    margin: 5px;
-}
 .nav a:hover {
     background: #444;
 }
@@ -74,7 +71,7 @@ h2 {
 #tcent {
     text-align: center;
 }
-.logo {
+.logo, .logo img {
     background: none;
     margin: 0;
     padding: 0;
