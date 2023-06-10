@@ -3,10 +3,16 @@ ol {
     margin: 0;
     padding: 0;
   }
+  .nav .social-icon:hover {
+    color: #ccc;
+    background:transparent;
+  }
+  .nav .social-icons a:hover {
+    background: none;
+  }
   .social-icons li {
     vertical-align: top;
     display: inline;
-    font-size: 36px;
     margin: 0;
   }
   .social-icons a {
@@ -31,7 +37,6 @@ ol {
     margin: 5px;
   }
   .social-icon:hover {
-    display: inline;
     color: #333;
     transition-duration: 0.2s;
   }

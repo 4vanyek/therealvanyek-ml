@@ -1,3 +1,4 @@
+/* подключение шрифтов Manrope и Wix Madefor Display */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -8,7 +9,6 @@
 }
 
 body {
-    background-color: var(--bg);
     margin: 0;
 }
 .left {
@@ -19,7 +19,7 @@ body {
 }
 .gh-comments {
     width: 50%;
-    margin: auto;
+    margin: auto; /* выравнивание по центру */
 }
 h1, h2, h3, h4, h5, h6, p {
     color: #333;
@@ -37,7 +37,7 @@ h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
-    letter-spacing: -.025em;
+    letter-spacing: -.025em; /* чуть плотнее буквы */
 }
 .flex { display: flex; }
 .center {
@@ -46,14 +46,22 @@ h2 {
     justify-content: right;
     align-items: center;
 }
+/* навбар */
 .nav {
     display: flex;
-    background: #eee;
+    background: #333;
     align-items: center;
+    padding: 1em;
     justify-content: center;
 }
 .nav a {
     margin: 5px;
+}
+.nav a:hover {
+    background: #444;
+}
+.nav-mobile {
+    display: none;
 }
 .jleft {
     justify-content: left !important;
@@ -62,22 +70,40 @@ h2 {
 .jright {
     justify-content: right !important;
 }
+/* центрирование текста с id tcent */
 #tcent {
     text-align: center;
 }
+.logo {
+    background: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logo::after {
+    content: '';
+}
 a {
     text-decoration: none;
-    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-    border: 2px solid transparent;
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     border-radius: 6px;
+    padding: 3px;
 }
+a::after {
+    font-family: "Font Awesome 6 Free";
+    content: ' \f08e';
+    font-weight: 900;
+}
+
 a:visited, a {
     color: #2b79ff;
 }
 a:hover {
     /*border-color: #ddd;*/
     background: #ddd;
-    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
 a:active {
     scale: 0.97;
@@ -90,7 +116,7 @@ button {
     border-radius: 6px;
     margin: 5px;
     background: #eee;
-    transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     cursor: pointer;
 }
 button:hover {
@@ -99,7 +125,6 @@ button:hover {
 button:active {
     scale: 0.95;
 }
-
 footer {
     display: flex;
     align-items: center;

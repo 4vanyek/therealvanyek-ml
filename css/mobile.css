@@ -3,3 +3,14 @@
         width: 90%;
     }
 }
+@media screen and (max-width: 650px) {
+    .nav {
+        display: none;
+    }
+    .nav-mobile {
+        display: flex;
+    }
+    .nav-mobile-menu-content {
+        display: none;
+    }
+}
