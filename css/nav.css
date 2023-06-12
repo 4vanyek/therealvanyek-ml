@@ -13,6 +13,9 @@
   .logo:hover {
       background: none;
   }
+  .link-active {
+    background: #444;
+  }
   /* NAVBAR STYLING STARTS */
   .navbar {
     display: flex;
@@ -24,7 +27,7 @@
   }
   
   .internal_link::after {
-    content: '';
+    content: ''; /* не показывать иконку для внутренних ссылок */
   }
   /* LOGO */
   .logo {
@@ -41,6 +44,7 @@
   .menu a {
     margin-left: 5px;
     margin-right: 5px;
+    padding: 0.5em;
   }
   
   .menu li a:hover {
@@ -108,6 +112,9 @@
       left: 0;
       text-align: center;
       padding: 1em;
+    }
+    .menu a {
+      margin: 5px;
     }
     .mlogo {
       width: 50%;
