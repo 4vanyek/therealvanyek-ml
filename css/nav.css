@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     /*gap: 1em;*/
-    font-size: 16px;
+    font-size: 14px;
   }
   .menu a {
     margin-left: 5px;
@@ -114,6 +114,7 @@
       align-items: normal;
       text-align: center;
       padding: 1em;
+      font-size: 18px;
     }
     .menu a {
       margin: 5px;

@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
 
 body {
-  background-image: url('img/bg_tvhome.png');
+  /*background-image: url('img/bg_tvhome.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover;*/
+  background: #333;
   font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
+}
+a:hover, a:active {
+  background: none !important;
 }
 .gsc-control-cse, .gsc-control-wrapper-cse, .gsc-input-box, .gsc-search-button-v2 {
   border-radius: 6px !important;
@@ -21,9 +25,11 @@ body {
 }
 #gsc-i-id1 {
   background: transparent !important;
+  color: #eee !important;
 }
 .gsc-input-box {
-  background-color: #ffffff90 !important  ;
+  background-color: #222 !important;
+  color: #eee !important;
 }
 .gsc-search-button-v2 {
   padding: 18px 36px !important;
@@ -56,7 +62,7 @@ form.gsc-search-box {
   transition-duration: 0.2s;
 }
 .container {
-  background: #ffffff90;
+  background: #444;
   border-radius: 6px;
   width: 50%;
   margin-bottom: 10px;
@@ -69,8 +75,8 @@ form.gsc-search-box {
   border-bottom-left-radius: 0;
 }
 .container button {
-  background: #ffffff70;
-  color: #222;
+  background: #333;
+  color: #eee;
   padding: 1em 2em;
   font-weight: 600;
   border-radius: 6px;
@@ -80,17 +86,23 @@ form.gsc-search-box {
   cursor: pointer;
 }
 .container a:hover, button:hover {
-  background: #fff;
+  background: #3d3d3d !important;
   transition-duration: 0.1s;
 }
 .container a:active, .container a:focus, button:active {
-  background: #ffffff;
+  background: #222;
 }
 .small-header {
   font-size: 24px;
   font-weight: 700;
   margin: 15px;
   margin-left: 0;
+}
+.menu li {
+  padding: 0.5em !important;
+}
+.gsst_a::after {
+  content: '';
 }
 .container-content {
   padding: 2em;
@@ -105,5 +117,14 @@ form.gsc-search-box {
   float: left;
 }
 h1, h2, p, button {
-  color: #444;
+  color: #eee !important;
+}
+h2 {
+  font-size: 1.5rem !important;
+}
+h1, h2 {
+  font-weight: 600 !important;
+}
+.m10 {
+  margin: 10px !important;
 }
