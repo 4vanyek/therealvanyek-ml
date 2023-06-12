@@ -7,6 +7,12 @@
     .nav {
         display: none;
     }
+    .logo {
+        display: none;
+    }
+    .mlogo {
+        display: flex;
+    }
     .nav-mobile {
         display: block;
     }

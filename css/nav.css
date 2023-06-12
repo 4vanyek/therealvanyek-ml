@@ -110,6 +110,8 @@
       background-color:#333;
       right: 0;
       left: 0;
+      top: 70px;
+      align-items: normal;
       text-align: center;
       padding: 1em;
     }
@@ -117,7 +119,7 @@
       margin: 5px;
     }
     .mlogo {
-      width: 50%;
+      width: 10%;
     }
   
     .menu li + li {

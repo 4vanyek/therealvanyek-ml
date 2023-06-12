@@ -82,6 +82,9 @@ h2 {
 .logo::after {
     content: '';
 }
+.mlogo {
+    display: none;
+}
 a {
     text-decoration: none;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
