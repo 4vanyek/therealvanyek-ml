@@ -8,9 +8,15 @@
         display: none;
     }
     .nav-mobile {
+        display: block;
+    }
+    .menu-content {
+        /*display: none;*/
         display: flex;
+        flex-direction: column;
     }
-    .nav-mobile-menu-content {
-        display: none;
-    }
+}
+.open-menu {
+    color: #fff;
+    font-size: 36px;
 }

@@ -34,9 +34,9 @@ ol {
   .social-icon {
     font-size: 28px;
     transition-duration: 0.2s;
-    margin: 5px;
+    padding: 5px;
   }
   .social-icon:hover {
-    color: #333;
+    color: #444;
     transition-duration: 0.2s;
   }

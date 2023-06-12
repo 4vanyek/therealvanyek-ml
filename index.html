@@ -9,6 +9,7 @@
     <link href="css/general.css" rel="stylesheet"> <!-- подключение основных стилей -->
 	<link href="css/mobile.css" rel="stylesheet"> <!-- подключение стилей для мобильных устройств -->
 	<link href="css/socialicons.css" rel="stylesheet"> <!-- подключение стилей для иконок соцсетей -->
+    <link href="css/nav.css" rel="stylesheet">
     <link 
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов Manrope и Wix Madefor Display -->
@@ -16,11 +17,29 @@
     <title>Under Reconstruction</title>
 </head>
 <body>
-    <div class="nav"> <!-- навбар -->
-        <a href="index.html" class="logo"> <!-- лого -->
-            <img src="TRV_NEW_LOGO.png" width="256px" height="25px">
+    <div style="display: none;"><a rel="me" href="https://mas.to/@realvanyek">Mastodon</a></div>
+    <nav class="navbar">
+        <!-- лого -->
+           <img class="logo mlogo" src="../../TRV_NEW_LOGO.png" width="30%"></img>
+   
+       <!-- NAVIGATION MENU -->
+       <ul class="nav-links">
+   
+         <!-- USING CHECKBOX HACK -->
+         <input type="checkbox" id="checkbox_toggle" />
+         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+   
+         <!-- NAVIGATION MENUS -->
+         <div class="menu">
+           <a href="https://github.com/4vanyek/trvml">GitHub репозиторий</a>
+         </div>
+       </ul>
+     </nav>
+    <!--div class="nav"> <!-- навбар -
+        <a href="index.html" class="logo"> <!-- лого -
+            <img src="TRV_NEW_LOGO.png" width="384px" height="36.5px">
         </a>
-        <div class="social-icons-container right" style="margin: 5px;"> <!-- иконки соцсетей -->
+        <div class="social-icons-container right" style="margin: 5px;"> <!-- иконки соцсетей -
             <ol class="social-icons">
                 <li><a href="https://forum.therealvanyek.ml"><i class="fa-solid fa-star-and-crescent social-icon"></i></a></li>
                 <li><a href="https://telegram.dog/trv_official1"><i class="fa-brands fa-telegram social-icon"></i></a></li>
@@ -32,10 +51,12 @@
         <a href="https://github.com/4vanyek/trvml" style="margin: 0;" target="_blank">GitHub репозиторий</a>
     </div>
     <div class="nav nav-mobile">
-        <a href="index.html"><img src="TRV_NEW_LOGO.png"></a>
-        <div class="nav-mobile-menu-icon">&times;</div>
-        <div class="nav-mobile-menu-content">
-            <div class="social-icons-container right"> <!-- иконки соцсетей -->
+        <div class="logo">
+        <img src="TRV_NEW_LOGO.png" width="90%" height="9%">
+        <i class="fa-solid fa-bars open-menu right"></i>
+        </div>
+        <div class="menu-content">
+            <div class="social-icons-container right"> <!-- иконки соцсетей -
                 <ol class="social-icons">
                     <li><a href="https://forum.therealvanyek.ml"><i class="fa-solid fa-star-and-crescent social-icon"></i></a></li>
                     <li><a href="https://telegram.dog/trv_official1"><i class="fa-brands fa-telegram social-icon"></i></a></li>
@@ -44,9 +65,9 @@
                     <li><a href="https://youtube.com/@therealvanyek8175"><i class="fa-brands fa-youtube social-icon"></i></a></li>
                 </ol>
             </div>
-            <a href="https://github.com/4vanyek/trvml" style="margin: 0;" target="_blank">GitHub репозиторий&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/4vanyek/trvml" style="margin: auto;" target="_blank">GitHub репозиторий</a>
         </div>
-    </div>
+    </div-->
     <h2 id="tcent">Комментарии:</h2>
     <div class="gh-comments">
         <!-- скрипт для подключения giscus (системы комментариев (не этих xD)) -->
