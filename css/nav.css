@@ -134,7 +134,9 @@
     .hamburger {
       display: block;
     }
-  
+    .hamburger:checked {
+      background: #333;
+    }
     .dropdown {
       left: 50%;
       top: 30px;
