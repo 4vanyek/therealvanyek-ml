@@ -23,7 +23,9 @@
     color: #fff;
   }
   
-  
+  .internal_link::after {
+    content: '';
+  }
   /* LOGO */
   .logo {
     font-size: 32px;
@@ -32,8 +34,13 @@
   /* NAVBAR MENU */
   .menu {
     display: flex;
+    align-items: center;
     /*gap: 1em;*/
     font-size: 18px;
+  }
+  .menu a {
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
   .menu li a:hover {
@@ -42,7 +49,7 @@
   }
   
   .menu li {
-    padding: 0.5em;
+    padding: 0.2em;
     margin: 0;
   }
   
@@ -105,18 +112,14 @@
     .mlogo {
       width: 50%;
     }
-    .menu li:hover {
-      display: inline-block;
-      background-color:#444;
-      transition: 0.3s ease;
-    }
   
     .menu li + li {
       margin-top: 12px;
     }
   
     input[type=checkbox]:checked ~ .menu {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
   
     .hamburger {
