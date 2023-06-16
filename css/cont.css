@@ -1,0 +1,52 @@
+.main-container {
+    padding: 70px;
+    background: linear-gradient(37deg, rgba(255,255,255,1) 0%, rgba(144,53,255,1) 100%);
+}
+.main-cc {
+    padding: 0;
+}
+.main-cc button {
+    padding: 1em 2em;
+    font-size: 18px;
+    background: #ffffff50;
+}
+.main-cc-a {
+    padding: 1em 2em;
+    font-size: 18px;
+    background: #9035ff;
+    color: #fff !important;
+    text-shadow: none;
+}
+.main-cc-a:hover {
+    background: #8330e9;
+}
+.main-cc-a:active {
+    background: #7129c8;
+}
+.main-cc button:hover {
+    background: #ffffff90;
+}
+.grad-text-1 {
+    background: radial-gradient(circle farthest-side at top left, #000000 0%, #9035FF 15%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.image {
+    height: 400px;
+    background-size: cover;
+    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.29) 100%), url(https://tinypic.host/images/2023/06/15/forum-therealvanyek-ml-1280x540desktop-766236.png);
+    /*background-image: linear-gradient(0deg, #fff 0%, rgba(255,255,255,0) 100%), url(https://tinypic.host/images/2023/06/15/forum-therealvanyek-ml-1280x540desktop-766236.png);*/
+}
+.rvf-img {
+    height: 400px;
+    background-size: cover;
+    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.29) 100%), url(https://tinypic.host/images/2023/06/16/rv-helioho-st-1280x360desktop-d2acab.png);
+}
+.img-cont {
+    padding: 100px 100px 100px 70px;
+    text-shadow: 0px 0px 6px rgba(0, 0, 255, 0.5);
+}
+.img-cont h1, .img-cont p {
+    color: #fff;
+}

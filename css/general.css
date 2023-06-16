@@ -68,7 +68,7 @@ h2 {
     justify-content: right !important;
 }
 /* центрирование текста с id tcent */
-#tcent {
+.tcent {
     text-align: center;
 }
 .logo, .logo img {
@@ -129,5 +129,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin: 20px;
+}
+footer a:hover {
+    text-decoration: underline;
+    background: none;
 }

@@ -9,6 +9,7 @@
     <link href="css/general.css" rel="stylesheet"> <!-- подключение основных стилей -->
 	<link href="css/mobile.css" rel="stylesheet"> <!-- подключение стилей для мобильных устройств -->
 	<link href="css/socialicons.css" rel="stylesheet"> <!-- подключение стилей для иконок соцсетей -->
+    <link href="css/cont.css" rel="stylesheet"> <!-- стили для контейнеров -->
     <link href="css/nav.css" rel="stylesheet">
     <link 
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" 
@@ -34,7 +35,7 @@
          <div class="menu flex">
             <a href="/" class="internal_link link-active">Главная</a>
             <a href="tvhome/" class="internal_link">TVHome</a>
-            <a href="privacy" class="internal_link">Privacy Policy</a>
+            <a href="../t" class="internal_link">Тесты</a>
             <a href="https://forum.therealvanyek.ml" target="_blank">Форум</a>
            <a href="https://github.com/4vanyek/trvml" target="_blank">GitHub репозиторий</a>
            <div class="social-icons-container right"> <!-- иконки соцсетей -->
@@ -48,10 +49,36 @@
          </div>
        </ul>
      </nav>
-     <div id="tcent">
-        <h2>therealvanyek</h2>
+     <div class="tcent" style="margin: 20px;">
+        <h2>Добро пожаловать на мой сайт!</h2>
+        <p>Он до сих пор находится в разработке <s style="color: #ddd;">(боже therealvanyek, почему так долго)</s>, но я надеюсь завершить его к концу лета.</p>
      </div>
-    <h2 id="tcent">Комментарии:</h2>
+     <div class="main-container">
+        <div class="main-cc">
+            <h2>Мои проекты:</h2>
+            <button onclick="location.href='#RVTECH'">RVTECH</button>
+            <button onclick="location.href='#RVFILES'">RVFILES</button>
+        </div>
+     </div>
+     <div class="projects">
+        <div class="image" id="RVTECH">
+            <div class="img-cont">
+                <h1>RVTECH</h1>
+                <p>dev форум</p>
+                <br><br><br><br>
+                <a class="main-cc-a" target="_blank" href="https://forum.therealvanyek.ml">Перейти</a>
+            </div>
+        </div>
+        <div class="rvf-img" id="RVFILES">
+            <div class="img-cont">
+                <h1>RVFILES</h1>
+                <p>тестовый полигон, в будущем хостинг файлов</p>
+                <br><br><br><br>
+                <a class="main-cc-a" href="#">Перейти (скоро)</a>
+            </div>
+        </div>
+     </div>
+    <h2 class="tcent">Комментарии:</h2>
     <div class="gh-comments">
         <!-- скрипт для подключения giscus (системы комментариев (не этих xD)) -->
         <script  src="https://giscus.app/client.js"
@@ -71,8 +98,12 @@
             async>
         </script>
     </div>
-    <footer> <!-- нижняя навигация -->
-        <p><a href="https://github.com/4vanyek">therealvanyek</a> | 2023</p>
+    <footer class="tcent">
+        <div style="white-space: nowrap;">
+            <a href="https://github.com/4vanyek" target="_blank">therealvanyek 2023</a>
+            <p style="display: inline-block;">/&nbsp;ревизия от 15.06.23</p>
+        </div>
+        <a href="privacy" class="internal_link">Privacy Policy</a>
     </footer>
 </body>
 </html>
