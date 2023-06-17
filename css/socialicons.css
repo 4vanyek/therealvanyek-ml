@@ -17,7 +17,7 @@ ol {
   }
   .social-icons a {
     background: none;
-    color: #555;
+    color: #555 !important;
     border: none;
     padding: 0 !important;
     margin: 0;

@@ -5,7 +5,7 @@
     box-sizing: border-box;
   }
   .navbar a:hover {
-      background: #444;   
+      background: #444 !important;   
   }
   li {
     list-style: none;
@@ -15,6 +15,7 @@
   }
   .link-active {
     background: #444;
+    color: #fff !important;
   }
   /* NAVBAR STYLING STARTS */
   .navbar {
@@ -24,6 +25,8 @@
     padding: 1em;
     background-color: #333;
     color: #fff;
+    position: sticky;
+    top: 0;
   }
   
   .internal_link::after {
@@ -45,6 +48,9 @@
     margin-left: 5px;
     margin-right: 5px;
     padding: 0.5em;
+  }
+  .menu a, .menu a:visited {
+    color: #ccc;
   }
   
   .menu li a:hover {
