@@ -8,7 +8,7 @@ ol {
     background:transparent;
   }
   .navbar .social-icons a:hover {
-    background: none;
+    background: none !important;
   }
   .social-icons li {
     vertical-align: top;
