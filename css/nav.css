@@ -1,166 +1,167 @@
 /* UTILITIES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar a:hover {
-      background: #444 !important;   
-  }
-  li {
-    list-style: none;
-  }
-  .logo:hover {
-      background: none;
-  }
-  .link-active {
-    background: #444;
-    color: #fff !important;
-  }
-  /* NAVBAR STYLING STARTS */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
-    position: sticky;
-    top: 0;
-  }
-  
-  .internal_link::after {
-    content: ''; /* не показывать иконку для внутренних ссылок */
-  }
-  /* LOGO */
-  .logo {
-    font-size: 32px;
-  }
-  
-  /* NAVBAR MENU */
-  .menu {
-    display: flex;
-    align-items: center;
-    /*gap: 1em;*/
-    font-size: 14px;
-  }
-  .menu a {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 0.5em;
-  }
-  .menu a, .menu a:visited {
-    color: #ccc;
-  }
-  
-  .menu li a:hover {
-    color: #9035FF;
-    transition: 0.3s ease;
-  }
-  
-  .menu li {
-    padding: 0.2em;
-    margin: 0;
-  }
-  
-  /* DROPDOWN MENU */
-  .services {
-    position: relative; 
-  }
-  
-  .dropdown {
-    background-color: #9035FF;
-    /*padding: 1em 0;*/
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 40px;
-    left: 0;
-  }
-  
-  /*.dropdown li + li {
-    margin-top: 10px;
-  }*/
-  
-  .dropdown li {
-    padding: 1em;
-  }
-  
-  .dropdown li:hover {
-    background-color: #4c9e9e;
-  }
-  
-  .services:hover .dropdown {
-    display: block;
-  }
-  /* RESPONSIVE NAVBAR MENU STARTS */
-  
-  /* CHECKBOX HACK */
-  
-  input[type=checkbox] {
-    display: none;
-  } 
-  
-  /* HAMBURGER MENU */
-  .hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-  }
-  
-  /* APPLYING MEDIA QUERIES */
-  @media (max-width: 600px) {
-   .menu {
-      display:none;
-      position: absolute;
-      background-color:#333;
-      right: 0;
-      left: 0;
-      /*top: 70px;*/
-      align-items: normal;
-      text-align: center;
-      padding: 1em;
-      font-size: 18px;
-    }
-    .menu a {
-      margin: 5px;
-    }
-    .mlogo {
-      width: 10%;
-    }
-  
-    .menu li + li {
-      margin-top: 12px;
-    }
-  
-    input[type=checkbox]:checked ~ .menu {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-    .dropdown {
-      left: 50%;
-      top: 30px;
-      transform: translateX(35%);
-    }
-  
-    .dropdown li:hover {
-      background-color: #4c9e9e;
-    }
-  }
-  @media (max-width: 440px) and (max-height: 800px) {
-    .menu {
-       display:none;
-       position: absolute;
-       background-color:#333;
-       right: 0;
-       left: 0;
-       top: 100%;
-       align-items: normal;
-       text-align: center;
-       padding: 1em;
-     }
-  }
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.navbar a:hover {
+	background: #444 !important;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+.logo:hover {
+	background: none;
+}
+.link-active {
+	background: #444;
+	color: #fff !important;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+	background-color: #333;
+	color: #fff;
+	position: sticky;
+	top: 0;
+}
+
+.internal_link::after {
+	content: ''; /* не показывать иконку для внутренних ссылок */
+}
+/* LOGO */
+.logo {
+	font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+	display: flex;
+	align-items: center;
+	/*gap: 1em;*/
+	font-size: 14px;
+}
+.menu a {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0.8em;
+}
+.menu a, .menu a:visited {
+	color: #ccc;
+}
+
+.menu li a:hover {
+	color: #9035FF;
+	transition: 0.3s ease;
+}
+
+.menu li {
+	padding: 0.2em;
+	margin: 0;
+}
+
+/* DROPDOWN MENU */
+.services {
+	position: relative; 
+}
+
+.dropdown {
+	background-color: #9035FF;
+	/*padding: 1em 0;*/
+	position: absolute; /*WITH RESPECT TO PARENT*/
+	display: none;
+	border-radius: 8px;
+	top: 40px;
+	left: 0;
+}
+
+/*.dropdown li + li {
+	margin-top: 10px;
+}*/
+
+.dropdown li {
+	padding: 1em;
+}
+
+.dropdown li:hover {
+	background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+	display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+	display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+	display: none;
+	font-size: 24px;
+	user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 600px) {
+	.menu {
+		display:none;
+		position: absolute;
+		background-color:#333;
+		right: 0;
+		left: 0;
+		/*top: 70px;*/
+		align-items: normal;
+		text-align: center;
+		padding: 1em;
+		font-size: 18px;
+	}
+	.menu a {
+		margin: 5px;
+	}
+	.mlogo {
+		width: 10%;
+	}
+
+	.menu li + li {
+		margin-top: 12px;
+	}
+
+	input[type=checkbox]:checked ~ .menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hamburger {
+		display: block;
+	}
+	.dropdown {
+		left: 50%;
+		top: 30px;
+		transform: translateX(35%);
+	}
+
+	.dropdown li:hover {
+		background-color: #4c9e9e;
+	}
+}
+@media (max-width: 440px) and (max-height: 800px) {
+	.menu {
+		 display:none;
+		 position: absolute;
+		 background-color:#333;
+		 right: 0;
+		 left: 0;
+		 top: 100%;
+		 align-items: normal;
+		 text-align: center;
+		 padding: 1em;
+	}
+}

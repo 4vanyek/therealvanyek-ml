@@ -31,6 +31,7 @@ h1 {
     font-weight: 700;
     margin: 0;
     letter-spacing: -.025em;
+    line-break: anywhere;
 }
 h2 {
     font-family: 'Manrope', sans-serif;
@@ -102,7 +103,7 @@ a:visited, a {
 }
 a:hover {
     /*border-color: #ddd;*/
-    background: #ddd;
+    text-decoration: underline;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
 a:active {

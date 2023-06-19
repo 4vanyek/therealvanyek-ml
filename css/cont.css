@@ -19,6 +19,7 @@
 }
 .main-cc-a:hover {
     background: #8330e9;
+    text-decoration: none;
 }
 .main-cc-a:active {
     background: #7129c8;
