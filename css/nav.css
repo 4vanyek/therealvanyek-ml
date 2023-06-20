@@ -23,7 +23,7 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1em;
+	padding: 0.8em;
 	background-color: #333;
 	color: #fff;
 	position: sticky;

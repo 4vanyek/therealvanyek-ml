@@ -38,6 +38,9 @@
         display: flex;
         flex-direction: column;
     }
+    .social-icon {
+        font-size: 34px !important;
+    }
 }
 .open-menu {
     color: #fff;
