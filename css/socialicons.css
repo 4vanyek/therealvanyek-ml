@@ -20,7 +20,7 @@ ol {
     color: #555 !important;
     border: none;
     padding: 0 !important;
-    margin: 0;
+    margin: 0 5px 0 5px;
   }
   .social-icons a::after {
     content: none;

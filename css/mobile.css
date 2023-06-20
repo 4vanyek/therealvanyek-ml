@@ -32,6 +32,12 @@
     .img-cont {
         padding: 60px 60px 60px 40px !important;
     }
+    .pill {
+        border: 0 !important;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .open-menu {
     color: #fff;

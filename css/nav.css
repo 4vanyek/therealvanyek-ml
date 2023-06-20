@@ -46,8 +46,6 @@ li {
 	font-size: 14px;
 }
 .menu a {
-	margin-left: 5px;
-	margin-right: 5px;
 	padding: 0.8em;
 }
 .menu a, .menu a:visited {
@@ -108,7 +106,11 @@ input[type=checkbox] {
 	font-size: 24px;
 	user-select: none;
 }
-
+.pill {
+	border: 1px solid #555;
+	border-radius: 35px;
+	padding: 0.8em 0;
+}
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 600px) {
 	.menu {
@@ -117,7 +119,7 @@ input[type=checkbox] {
 		background-color:#333;
 		right: 0;
 		left: 0;
-		/*top: 70px;*/
+		top: 100%;
 		align-items: normal;
 		text-align: center;
 		padding: 1em;
@@ -125,6 +127,7 @@ input[type=checkbox] {
 	}
 	.menu a {
 		margin: 5px;
+		border-radius: 35px;
 	}
 	.mlogo {
 		width: 10%;

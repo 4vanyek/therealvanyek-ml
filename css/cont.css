@@ -1,14 +1,16 @@
 .main-container {
     padding: 70px;
-    background: linear-gradient(37deg, rgba(255,255,255,1) 0%, rgba(144,53,255,1) 100%);
+    background: linear-gradient(37deg, rgba(255,255,255,1) 10%, rgb(184, 125, 255) 100%);
 }
 .main-cc {
     padding: 0;
 }
 .main-cc button {
-    padding: 1em 2em;
     font-size: 18px;
-    background: #ffffff50;
+    background: #9035ff;
+    color: #fff;
+    box-shadow: 0px 0px 10px #00000020;
+    margin: 0;
 }
 .main-cc-a {
     padding: 1em 2em;
@@ -16,6 +18,7 @@
     background: #9035ff;
     color: #fff !important;
     text-shadow: none;
+    border-radius: 35px;
 }
 .main-cc-a:hover {
     background: #8330e9;
@@ -25,7 +28,11 @@
     background: #7129c8;
 }
 .main-cc button:hover {
-    background: #ffffff90;
+    background: #8330e9;
+    box-shadow: 0px 0px 20px #00000030;
+}
+.main-cc button:active {
+    background: #7129c8;
 }
 .grad-text-1 {
     background: radial-gradient(circle farthest-side at top left, #000000 0%, #9035FF 15%);
