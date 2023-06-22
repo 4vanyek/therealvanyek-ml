@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тесты</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">             <!-- подключение гугл -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- шрифтов          -->
     <link href="../css/general.css" rel="stylesheet"> <!-- подключение основных стилей -->
 	<link href="../css/mobile.css" rel="stylesheet"> <!-- подключение стилей для мобильных устройств -->
 	<link href="../css/socialicons.css" rel="stylesheet"> <!-- подключение стилей для иконок соцсетей -->
+    <link href="../css/cont.css" rel="stylesheet"> <!-- стили для контейнеров -->
     <link href="../css/nav.css" rel="stylesheet">
     <link 
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов Manrope и Wix Madefor Display -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
+    <title>Список DevLog'ов</title>
 </head>
 <body>
     <nav class="navbar">
@@ -33,20 +34,26 @@
          <!-- NAVIGATION MENUS -->
          <div class="menu flex">
             <a href="/" class="internal_link"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
-            <a href="../devlogs/" class="internal_link"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;DevLog'и</a>
+            <a href="../devlogs/" class="internal_link link-active"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;DevLog'и</a>
             <a href="../tvhome/" class="internal_link"><i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome</a>
-            <a href="../t" class="internal_link link-active"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
+            <a href="../t" class="internal_link"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
             <a href="https://forum.therealvanyek.ml" target="_blank"><i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;Форум</a>
            <a href="https://github.com/4vanyek/trvml" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a>
          </div>
        </ul>
      </nav>
-     <div class="tcent">
-        <h2>Доступные тесты:</h2>
-        <button onclick="location.href='./nav'">nav</button>
-        <button onclick="location.href='./nav2'">nav2</button>
-		<button onclick="location.href='./footer'">footer test</button>
+     <div style="margin: 30px">
+        <h2>Список DevLog'ов:</h2>
+        <br>
+        <div style="display: flex;" class="last-devlog">
+            <h3>Последний DevLog:</h3>
+            <a class="devlogs-link" target="_blank" href="https://trv.bearblog.dev/devlog2">DevLog #2 [22.06.2023]</a>
+        </div>
+        <div style="display: flex;" class="older-devlogs">
+            <h3>Прошлые DevLog'и:</h3>
+            <a class="devlogs-link" target="_blank" href="https://trv.bearblog.dev/devlog1">DevLog #1 [22.06.2023]</a>
+        </div>
      </div>
-	 <script id="footer" src="../../scripts/footer.js"></script>
+     <script id="footer" src="/scripts/footer.js"></script>
 </body>
 </html>

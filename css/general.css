@@ -135,3 +135,29 @@ footer a:hover {
     text-decoration: underline;
     background: none;
 }
+.devlogs-link {
+    padding: 0.5em;
+    margin-left: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    width: max-content;
+}
+.devlogs-link:hover {
+    background: #eee;
+    text-decoration: none;
+}
+.last-devlog h3, .older-devlogs h3 {
+    font-size: 1.5rem;
+}
+.last-devlog, .older-devlogs {
+    display: flex;
+    align-items: center;
+}
+.devlog-notification {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    background: #eee;
+}

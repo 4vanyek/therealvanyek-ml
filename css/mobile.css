@@ -35,14 +35,15 @@
     .img-cont {
         padding: 60px 60px 60px 40px !important;
     }
-    .pill {
-        border: 0 !important;
-        padding: 0 !important;
-        display: flex;
-        flex-direction: column;
-    }
     .social-icon {
         font-size: 34px !important;
+    }
+    .last-devlog, .older-devlogs {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .last-devlog h3, .older-devlogs h3 {
+        font-size: 2rem;
     }
 }
 .open-menu {
