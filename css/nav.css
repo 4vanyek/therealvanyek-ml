@@ -23,7 +23,7 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.8em;
+	padding: 0.4em;
 	background-color: #333;
 	color: #fff;
 	position: sticky;
@@ -45,8 +45,13 @@ li {
 	/*gap: 1em;*/
 	font-size: 14px;
 }
-.menu a {
+.menu a, .last-link-menu {
 	padding: 0.8em;
+	border-radius: 6px;
+	margin: 5px;
+}
+.last-link-menu {
+	display: flex;
 }
 .menu a, .menu a:visited {
 	color: #ccc;
@@ -106,11 +111,6 @@ input[type=checkbox] {
 	font-size: 24px;
 	user-select: none;
 }
-.pill {
-	border: 1px solid #555;
-	border-radius: 35px;
-	padding: 0.8em 0;
-}
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 600px) {
 	.menu {
@@ -127,7 +127,7 @@ input[type=checkbox] {
 	}
 	.menu a {
 		margin: 5px;
-		border-radius: 35px;
+		border-radius: 6px;
 	}
 	.mlogo {
 		width: 10%;

@@ -7,10 +7,11 @@
 }
 .main-cc button {
     font-size: 18px;
-    background: #9035ff;
-    color: #fff;
+    background: #fff;
+    /*background: #9035ff;
+    color: #fff;*/
     box-shadow: 0px 0px 10px #00000020;
-    margin: 0;
+    /*margin: 0;*/
 }
 .main-cc-a {
     padding: 1em 2em;
@@ -18,7 +19,7 @@
     background: #9035ff;
     color: #fff !important;
     text-shadow: none;
-    border-radius: 35px;
+    border-radius: 6px;
 }
 .main-cc-a:hover {
     background: #8330e9;
@@ -28,11 +29,9 @@
     background: #7129c8;
 }
 .main-cc button:hover {
-    background: #8330e9;
-    box-shadow: 0px 0px 20px #00000030;
-}
-.main-cc button:active {
-    background: #7129c8;
+    /*background: #8330e9;
+    box-shadow: 0px 0px 20px #00000030;*/
+    background: #efefef;
 }
 .grad-text-1 {
     background: radial-gradient(circle farthest-side at top left, #000000 0%, #9035FF 15%);

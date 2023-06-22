@@ -7,6 +7,9 @@
     .nav {
         display: none;
     }
+    .navbar {
+        padding: 1em !important;
+    }
     .logo {
         display: none;
     }
