@@ -1,0 +1,32 @@
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.links-container h2 {
+    color: #fff;
+    margin: 20px;
+}
+.links-cont {
+    border: 1px solid #fff;
+    padding: 1em 10em 1em 1em;
+    border-radius: 8px;
+    color: #fff;
+}
+.link, .link a {
+    color: #fff !important;
+}
+.link, .link a:hover {
+    text-decoration: none !important;
+}
+.links-cont:hover {
+    background: #222;
+}
+.link::after, .link a::after {
+    content: '' !important;
+}
+.links-cont p {
+    color: #bbb;
+}
