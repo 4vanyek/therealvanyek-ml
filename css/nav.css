@@ -5,8 +5,9 @@
 	box-sizing: border-box;
 }
 .navbar a:hover {
-	background: #444 !important;
+	background: #d3aeff;
 	text-decoration: none;
+	color: #6524b5 !important;
 }
 li {
 	list-style: none;
@@ -14,20 +15,17 @@ li {
 .logo:hover {
 	background: none;
 }
-.link-active {
-	background: #444;
-	color: #fff !important;
-}
 /* NAVBAR STYLING STARTS */
 .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0.4em;
-	background-color: #333;
-	color: #fff;
+	padding: 0.8em;
+	background-color: #e1c7ff;
+	color: #444;
 	position: sticky;
 	top: 0;
+	z-index: 99;
 }
 
 .internal_link::after {
@@ -36,6 +34,15 @@ li {
 /* LOGO */
 .logo {
 	font-size: 32px;
+}
+.logo-link {
+	border-radius: 6px;
+}
+.logo-link:hover {
+	background: none !important;
+}
+.logo-link::after {
+	content: '';
 }
 
 /* NAVBAR MENU */
@@ -46,15 +53,16 @@ li {
 	font-size: 14px;
 }
 .menu a, .last-link-menu {
-	padding: 0.8em;
+	padding: 0.65em;
 	border-radius: 6px;
-	margin: 5px;
+	margin-left: 5px;
+	font-weight: 500;
 }
 .last-link-menu {
 	display: flex;
 }
 .menu a, .menu a:visited {
-	color: #ccc;
+	color: #8330e9;
 }
 
 .menu li a:hover {
@@ -116,7 +124,7 @@ input[type=checkbox] {
 	.menu {
 		display:none;
 		position: absolute;
-		background-color:#333;
+		background-color:#e1c7ff;
 		right: 0;
 		left: 0;
 		top: 100%;
@@ -126,7 +134,7 @@ input[type=checkbox] {
 		font-size: 18px;
 	}
 	.menu a {
-		margin: 5px;
+		margin: 5px !important;
 		border-radius: 6px;
 	}
 	.mlogo {

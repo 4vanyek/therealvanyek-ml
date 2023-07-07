@@ -7,45 +7,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">             <!-- подключение гугл -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- шрифтов          -->
   <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="../css/general.css">
+  <!--link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="../css/mobile.css">
   <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/socialicons.css">
+  <link rel="stylesheet" href="../css/socialicons.css"-->
   <link 
-  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" 
-  rel="stylesheet"> <!-- подключение шрифтов Manrope и Wix Madefor Display -->
+  href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+  rel="stylesheet"> <!-- подключение шрифтов -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
   <title>TVHome</title>
 </head>
 <body>
-  <nav class="navbar">
-    <!-- лого -->
-        <!--img class="logo" src="TRV_NEW_LOGO.png" width="20%"-->
-        <img class="logo" src="../TRV_favicon.png" width="3%">
-        <img class="mlogo" src="../TRV_favicon.png" width="50%" style="z-index: 999;">
-
-   <!-- NAVIGATION MENU -->
-   <ul class="nav-links">
-
-     <!-- USING CHECKBOX HACK -->
-     <input type="checkbox" id="checkbox_toggle" />
-     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-     <!-- NAVIGATION MENUS -->
-     <div class="menu flex">
-        <a href="/" class="internal_link"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
-        <a href="https://therealvanyek.ml/blog" class="internal_link"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;Блог (бета)</a>
-        <a href="../devlogs/" class="internal_link"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;DevLog'и</a>
-        <a href="../tvhome/" class="internal_link link-active"><i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome</a>
-        <a href="../t" class="internal_link"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
-        <a href="https://forum.therealvanyek.ml" target="_blank"><i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;Форум</a>
-       <a href="https://github.com/4vanyek/trvml" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a>
-     </div>
-   </ul>
- </nav>
+  <a class="notif" href="/">Вернуться на главную</a>
   <div style="margin: 10px;">
   <h1 class="textcenter" style="margin: 0">TVHome</h1>
-  <div class="centered nav">
+  <div class="centered nav" id="navigation">
     <a href="http://app.ss-iptv.com/" class="nav-icon internal_link"><img src="img/ssiptv_logo.jpg" width="50px" height="50px"></a>
     <a href="http://widget.ottplayer.tv/" class="nav-icon internal_link"><img src="img/ottplayer_logo.png" width="50px" height="50px"></a>
     <a href="http://browser.appinfo.su/" class="nav-icon internal_link"><img src="img/forkplayer_logo.png" width="50px" height="50px"></a>
@@ -58,34 +34,36 @@
   </div>
   <div class="container first left">
     <div class="container-content">
-      <h1>Download Center</h1>
-      <p class="m10"><i>Important: to download the apps, you may need to login on these websites:</i></p>
-      <button onclick="location.href='https://4pda.to/forum/index.php?act=auth&return=https://4pda.to/?logout-site=1&'">4PDA Login</button>
-      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=login'">RVTECH Login</button>
+      <h1>Центр Загрузок</h1>
+      <p class="mb10 mt10"><i>Важно: для загрузки приложений вам может потребоваться авторизация на этих сайтах:</i></p>
+      <button onclick="location.href='https://4pda.to/forum/index.php?act=auth&return=https://4pda.to/?logout-site=1&'">Войти на 4PDA</button>
+      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=login'">Войти на RVTECH</button>
       <h2>Via Browser:</h2>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/28175212/Via_v.4.7.0_ru_en.apk'">[Mod] Download</button>
-      <h2>Total Commander</h2> <button onclick="location.href='https://4pda.to/forum/dl/post/27408429/tcandroid341d-armeabi-v7a.apk'">Download</button>
-      <h2>EShare</h2>&nbsp;<button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=dlattach;attach=28'">Client</button>
-      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=dlattach;attach=29'">Server</button>
+      <button onclick="location.href='https://4pda.to/forum/dl/post/28175212/Via_v.4.7.0_ru_en.apk'">[Mod] Скачать</button>
+      <h2>Total Commander</h2> <button onclick="location.href='https://4pda.to/forum/dl/post/27408429/tcandroid341d-armeabi-v7a.apk'">Скачать</button>
+      <h2>EShare</h2>
+      <p class="mt10 mb10"><i>Важно: клиент нужно ставить на телефон, сервер на ТВ.</i></p>
+      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=dlattach;attach=28'">Клиент</button>
+      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=dlattach;attach=29'">Сервер</button>
       <h2>SmartTubeNext</h2>
-      <button onclick="location.href='https://github.com/yuliskov/SmartTubeNext/releases/download/latest/smarttube_stable.apk'">Download</button>
-      <button onclick="location.href='https://4pda.to/forum/index.php?showtopic=1031453'">4PDA Topic</button>
-      <h2>Emotn</h2> <p>UI:</p>&nbsp;<button onclick="location.href='https://4pda.to/forum/dl/post/27797802/Emotn UI v1.0.9.0 5094 (uk-ru.noad.noss.nolog) byOstaff.apk'">[Mod] Download</button>
-      <p>Store:</p>&nbsp;<button onclick="location.href='https://4pda.to/forum/dl/post/27400617/com.overseas.store.appstore_1.0.40_a973.apk'">Download</button>
+      <button onclick="location.href='https://github.com/yuliskov/SmartTubeNext/releases/Скачать/latest/smarttube_stable.apk'">Скачать</button>
+      <button onclick="location.href='https://4pda.to/forum/index.php?showtopic=1031453'">Тема на 4PDA</button>
+      <h2>Emotn</h2> <p>UI:</p>&nbsp;<button onclick="location.href='https://4pda.to/forum/dl/post/27797802/Emotn UI v1.0.9.0 5094 (uk-ru.noad.noss.nolog) byOstaff.apk'">[Mod] Скачать</button>
+      <p>Store:</p>&nbsp;<button onclick="location.href='https://4pda.to/forum/dl/post/27400617/com.overseas.store.appstore_1.0.40_a973.apk'">Скачать</button>
       <h2>Hibernator</h2>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/27652355/Hibernator_v2.28.5(4898)_slim.apk'">[Mod] Download</button>
+      <button onclick="location.href='https://4pda.to/forum/dl/post/27652355/Hibernator_v2.28.5(4898)_slim.apk'">[Mod] Скачать</button>
     </div>
   </div>
   <div class="container second right">
     <div class="container-content">
-      <h1>Web Apps:</h1>
+      <h1>Веб-приложения:</h1>
       <h2>XSMART</h2>
-      <button onclick="location.href='https://app.xsmart.tv'">Website</button>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/10724304/install_app.apk'">Web App</button>
-      <button onclick="location.href='https://login.xsmart.tv'">Login Page</button>
-      <p class="m10"><i>Important: website and web app are the same, except web app only works on Android TV 4.4+</i></p>
+      <button onclick="location.href='https://app.xsmart.tv'">Перейти</button>
+      <button onclick="location.href='https://4pda.to/forum/dl/post/10724304/install_app.apk'">Моб. приложение</button>
+      <button onclick="location.href='https://login.xsmart.tv'">Войти в аккаунт</button>
+      <p class="mb10 mt10"><i>Важно: веб-приложение и мобильное приложение одинаковы, за исключением того, что мобильное  работает только на Android TV 4.4+.</i></p>
       <h2>YouTube TV</h2>
-      <button onclick="location.href='https://www.youtube.com/tv'">Website</button>
+      <button onclick="location.href='https://www.youtube.com/tv'">Перейти</button>
     </div>
   </div>
 </body>

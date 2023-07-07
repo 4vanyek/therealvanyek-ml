@@ -1,8 +1,8 @@
 /* подключение шрифтов Manrope и Wix Madefor Display */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');*/
 
 * {
-    font-family: 'Wix Madefor Display', 'Manrope', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', 'Manrope', Arial, Helvetica, sans-serif;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -74,7 +74,7 @@ h2 {
 }
 .logo, .logo img {
     background: none;
-    margin: 10px;
+    margin: 0 5px 0 5px;
     padding: 0;
     align-items: center;
     justify-content: center;
@@ -109,27 +109,46 @@ a:active {
 }
 button {
     padding: 1em 2em;
-    font-size: 16px;
     border: none;
-    font-family: 'Manrope', sans-serif;
-    border-radius: 6px;
     margin: 5px;
-    background: #eee;
-    transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    background: #f5ecff;
+    transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
+    color: #9035ff;
+}
+.main-button {
+    font-size: 18px;
+    /* margin: 5px; */
+    background: #9035ff;
+    padding: 1em 2em;
+    color: #fff !important;
+    border-radius: 6px;
+    text-shadow: none;
+}
+.main-button:hover {
+    background: #8330e9;
+    text-decoration: none;
+}
+.main-button:active {
+    background: #7129c8;
 }
 button:hover {
-    background-color: #ddd;
+    background-color: #ead9ff;
 }
 button:active {
-    scale: 0.95;
+    background: #e2caff;
 }
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px;
+    padding: 20px;
+    background: #f5ecff;
+    margin-top: 20px;
 }
 footer a:hover {
     text-decoration: underline;
@@ -137,19 +156,20 @@ footer a:hover {
 }
 .devlogs-link {
     padding: 0.5em;
-    margin-left: 10px;
+    margin: 5px;
     border-radius: 6px;
     font-size: 18px;
     width: max-content;
+    background: #eee;
 }
 .devlogs-link:hover {
-    background: #eee;
     text-decoration: none;
+    background: #ddd;
 }
-.last-devlog h3, .older-devlogs h3 {
+.devlog p {
     font-size: 1.5rem;
 }
-.last-devlog, .older-devlogs {
+.devlog {
     display: flex;
     align-items: center;
 }
@@ -159,5 +179,9 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    background: #eee;
+    background: #ead9ff;
+}
+.devlog-notification:hover {
+    text-decoration: none;
+    background: #dacaee;
 }

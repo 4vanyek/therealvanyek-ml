@@ -1,37 +1,9 @@
 .main-container {
     padding: 70px;
-    background: linear-gradient(37deg, rgba(255,255,255,1) 10%, rgb(184, 125, 255) 100%);
+    /*background: linear-gradient(37deg, rgb(255, 255, 255) 10%, rgb(213, 177, 255) 100%);*/
 }
 .main-cc {
     padding: 0;
-}
-.main-cc button {
-    font-size: 18px;
-    background: #fff;
-    /*background: #9035ff;
-    color: #fff;*/
-    box-shadow: 0px 0px 10px #00000020;
-    /*margin: 0;*/
-}
-.main-cc-a {
-    padding: 1em 2em;
-    font-size: 18px;
-    background: #9035ff;
-    color: #fff !important;
-    text-shadow: none;
-    border-radius: 6px;
-}
-.main-cc-a:hover {
-    background: #8330e9;
-    text-decoration: none;
-}
-.main-cc-a:active {
-    background: #7129c8;
-}
-.main-cc button:hover {
-    /*background: #8330e9;
-    box-shadow: 0px 0px 20px #00000030;*/
-    background: #efefef;
 }
 .grad-text-1 {
     background: radial-gradient(circle farthest-side at top left, #000000 0%, #9035FF 15%);
@@ -40,20 +12,17 @@
     -webkit-text-fill-color: transparent;
 }
 .image {
+    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.66) 100%), url(https://tinypic.host/images/2023/06/19/forum-therealvanyek-ml-1280x540desktop-766236.png);
+}
+.image, .rvf-img, .tvhome-img {
     height: 400px;
     background-size: cover;
-    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.29) 100%), url(https://tinypic.host/images/2023/06/19/forum-therealvanyek-ml-1280x540desktop-766236.png);
-    /*background-image: linear-gradient(0deg, #fff 0%, rgba(255,255,255,0) 100%), url(https://tinypic.host/images/2023/06/15/forum-therealvanyek-ml-1280x540desktop-766236.png);*/
 }
 .rvf-img {
-    height: 400px;
-    background-size: cover;
-    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.29) 100%), url(https://tinypic.host/images/2023/06/19/rv-helioho-st-1280x360desktop-d2acab.png);
+    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.66) 100%), url(https://tinypic.host/images/2023/06/19/rv-helioho-st-1280x360desktop-d2acab.png);
 }
 .tvhome-img {
-    height: 400px;
-    background-size: cover;
-    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.29) 100%), url(https://tinypic.host/images/2023/06/24/therealvanyek-ml-1280x540desktop-ab0bd9.png);
+    background-image: linear-gradient(0deg, #9035ff80 0%, rgba(0, 0, 0, 0.66) 100%), url(https://tinypic.host/images/2023/06/24/therealvanyek-ml-1280x540desktop-ab0bd9.png);
 }
 .img-cont {
     padding: 100px 100px 100px 70px;

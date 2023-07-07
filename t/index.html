@@ -12,36 +12,12 @@
 	<link href="../css/socialicons.css" rel="stylesheet"> <!-- подключение стилей для иконок соцсетей -->
     <link href="../css/nav.css" rel="stylesheet">
     <link 
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" 
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов Manrope и Wix Madefor Display -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
 </head>
 <body>
-    <nav class="navbar">
-        <!-- лого -->
-            <!--img class="logo" src="TRV_NEW_LOGO.png" width="20%"-->
-            <img class="logo" src="../TRV_favicon.png" width="3%">
-            <img class="mlogo" src="../TRV_favicon.png" width="50%" style="z-index: 999;">
-   
-       <!-- NAVIGATION MENU -->
-       <ul class="nav-links">
-   
-         <!-- USING CHECKBOX HACK -->
-         <input type="checkbox" id="checkbox_toggle" />
-         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-   
-         <!-- NAVIGATION MENUS -->
-         <div class="menu flex">
-            <a href="/" class="internal_link"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
-            <a href="https://therealvanyek.ml/blog" class="internal_link"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;Блог (бета)</a>
-            <a href="../devlogs/" class="internal_link"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;DevLog'и</a>
-            <a href="../tvhome/" class="internal_link"><i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome</a>
-            <a href="../t" class="internal_link link-active"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
-            <a href="https://forum.therealvanyek.ml" target="_blank"><i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;Форум</a>
-           <a href="https://github.com/4vanyek/trvml" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a>
-         </div>
-       </ul>
-     </nav>
+    <script defer id="nav" src="/scripts/nav.js"></script>
      <div class="tcent">
         <h2>Доступные тесты:</h2>
         <button onclick="location.href='./nav'">nav</button>

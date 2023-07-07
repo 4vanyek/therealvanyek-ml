@@ -1,0 +1,6 @@
+@import "./cont.css"; /* стили для контейнеров */
+@import "./general.css"; /* основные стили */
+@import "./links.css";
+@import "./mobile.css"; /* стили для мобильных устройств */
+@import "./nav.css";
+@import "./socialicons.css"; /* стили для иконок соцсетей */
