@@ -3,7 +3,7 @@
         width: 90%;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .nav {
         display: none;
     }
@@ -47,6 +47,9 @@
     }
     .devlog p {
         font-size: 2rem;
+    }
+    .links-cont {
+        width: 85%;
     }
 }
 .open-menu {

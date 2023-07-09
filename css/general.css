@@ -1,13 +1,9 @@
-/* подключение шрифтов Manrope и Wix Madefor Display */
-/*@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');*/
-
 * {
     font-family: 'Inter', 'Manrope', Arial, Helvetica, sans-serif;
 }
 *, ::after, ::before {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
 }
@@ -97,7 +93,7 @@ a::after {
 }
 
 a:visited, a {
-    color: #2b79ff;
+    color: #8330e9;
 }
 a:hover {
     /*border-color: #ddd;*/
