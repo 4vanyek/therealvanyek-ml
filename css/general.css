@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inter', 'Manrope', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -21,18 +21,18 @@ h1, h2, h3, h4, h5, h6, p {
     color: #333;
 }
 h1 {
-    font-family: 'Manrope', sans-serif;
-    line-height: 4rem;
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 5rem;
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     letter-spacing: -.025em;
     line-break: anywhere;
 }
 h2 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
     letter-spacing: -.025em; /* чуть плотнее буквы */
 }
@@ -110,7 +110,7 @@ button {
     cursor: pointer;
     border-radius: 6px;
     font-size: 18px;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
     background: #f5ecff;
     transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     color: #9035ff;
@@ -176,6 +176,7 @@ footer a:hover {
     align-items: center;
     padding: 0.5em;
     background: #ead9ff;
+    text-align: center;
 }
 .devlog-notification:hover {
     text-decoration: none;

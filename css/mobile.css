@@ -7,6 +7,10 @@
     .nav {
         display: none;
     }
+    .warning-mobile {
+        display: block;
+        text-align: center;
+    }
     .navbar {
         padding: 1em !important;
     }

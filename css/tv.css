@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
   background: #333;
-  font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   margin: 0;
 }
 a:hover, a:active {
@@ -78,10 +78,10 @@ form.gsc-search-box {
   margin: 0;
   color: #eee;
   padding: 1em 2em;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 6px;
   border: none;
-  font-family: 'Wix Madefor Display', Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   transition-duration: 0.1s;
   cursor: pointer;
 }
@@ -94,7 +94,7 @@ form.gsc-search-box {
 }
 .small-header {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 15px;
   margin-left: 0;
 }
@@ -126,8 +126,9 @@ h2 {
   font-size: 1.5rem !important;
 }
 h1, h2 {
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   margin: 10px 0 !important;
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
 }
 .m10 {
   margin: 10px !important;
@@ -158,4 +159,7 @@ h1, h2 {
 .notif:hover {
   text-decoration: none;
   background: #111 !important;
+}
+.warning-mobile {
+  display: none;
 }
