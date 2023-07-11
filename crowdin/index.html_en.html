@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://fonts.googleapis.com">             <!-- подключение гугл -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- шрифтов          -->
-  <link rel="stylesheet" href="../css/tv.css">
-  <link rel="stylesheet" href="../css/mobile.css">
-  <link 
-  href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
-  rel="stylesheet"> <!-- подключение шрифтов -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
-  <title>TVHome</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/styles.css" rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet"> <!-- подключение шрифтов -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
+    <title>Under Reconstruction</title>
 </head>
-<body>
-  <a class="notif" href="/">Вернуться на главную</a>
-  <p class="warning-mobile">Внимание! Эта страница предназначена <strong>только</strong> для Smart TV!</p>
-  <div style="margin: 10px;">
-  <h1 class="textcenter" style="margin: 0">TVHome</h1>
-  <div class="centered nav" id="navigation">
-    <a href="http://app.ss-iptv.com/" class="nav-icon internal_link"><img src="img/ssiptv_logo.jpg" width="50px" height="50px"></a>
-    <a href="http://widget.ottplayer.tv/" class="nav-icon internal_link"><img src="img/ottplayer_logo.png" width="50px" height="50px"></a>
-    <a href="http://browser.appinfo.su/" class="nav-icon internal_link"><img src="img/forkplayer_logo.png" width="50px" height="50px"></a>
-    <a href="https://app.xsmart.tv" class="nav-icon internal_link"><img src="https://xsmart.tv/img/xsmart_logo.svg" width="50px" height="50px"></a>
-    <a href="https://www.youtube.com/tv" class="nav-icon internal_link"><img src="img/youtube.png" width="50px" height="50px"></a>
-    <script async src="https://cse.google.com/cse.js?cx=24b74fabc96a144c4">
-    </script>
-    <div class="gcse-search"></div>
-  </div>
-  </div>
-  <div class="container first left">
-    <div class="container-content">
-      <h1>Центр Загрузок</h1>
-      <p class="mb10 mt10"><i>Важно: для загрузки приложений вам может потребоваться авторизация на этих сайтах:</i></p>
-      <button onclick="location.href='https://4pda.to/forum/index.php?act=auth&return=https://4pda.to/?logout-site=1&'">Войти на 4PDA</button>
-      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=login'">Войти на RVTECH</button>
-      <h2>Via Browser (v4.7.0):</h2>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/28175212/Via_v.4.7.0_ru_en.apk'">[Mod] Скачать</button>
-      <h2>MiXplorer (v6.63.1-Silver)</h2>
-      <button onclick="location.href='https://4pda.to/forum/index.php?act=attach&id=28085447&dlsess=d69f6f33356eafd4120361a1558abda0'">Скачать</button>
-      <h2>Total Commander (v3.42d)</h2>
-      <button onclick="location.href='https://4pda.to/forum/index.php?act=attach&id=28344216&dlsess=19f4002d67750f9d0e2a5c7608de3815'">Скачать</button>
-      <h2>EShare</h2>
-      <p class="mt10 mb10"><i>Важно: клиент нужно ставить на телефон, сервер на ТВ.</i></p>
-      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=dlattach;attach=34'">Клиент</button>
-      <button onclick="location.href='https://forum.therealvanyek.ml/index.php?action=dlattach;attach=33'">Сервер (EShareTV)</button>
-      <h2>SmartTubeNext (latest)</h2>
-      <button onclick="location.href='https://kutt.it/stn_stable'">Stable</button>
-      <button onclick="location.href='https://kutt.it/stn_beta'">Beta</button>
-      <h2>Emotn</h2>
-      <p>UI (v1.0.9.0):</p>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/27797802/Emotn UI v1.0.9.0 5094 (uk-ru.noad.noss.nolog) byOstaff.apk'">[Mod] Скачать</button>
-      <p>Store (v1.0.40):</p>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/27400617/com.overseas.store.appstore_1.0.40_a973.apk'">Скачать</button>
-      <h2>Hibernator (v2.28.5)</h2>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/27652355/Hibernator_v2.28.5(4898)_slim.apk'">[Mod] Скачать</button>
+<body style="margin-top: 4em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
+    <div style="display: none;"><a rel="me" href="https://mas.to/@realvanyek">Mastodon</a></div> <!-- верификация домена на Mastodon -->
+    <script defer id="nav" src="/scripts/nav.js"></script>
+    <a class="devlog-notification internal_link" href="https://trv.bearblog.dev/devlog5" target="_blank">
+        <p>Read what happened, while you were off: DevLog #5</p>
+    </a>
+    <div class="tcent" style="padding: 20px; background: #f5ecff;">
+        <h2>Welcome to my site!</h2>
+        <p>It's still in development, but I hope to finish it at the end of summer.</p>
     </div>
-  </div>
-  <div class="container second right">
-    <div class="container-content">
-      <h1>Веб-приложения:</h1>
-      <h2>XSMART</h2>
-      <button onclick="location.href='https://app.xsmart.tv'">Перейти</button>
-      <button onclick="location.href='https://4pda.to/forum/dl/post/10724304/install_app.apk'">Моб. приложение</button>
-      <button onclick="location.href='https://login.xsmart.tv'">Войти в аккаунт</button>
-      <p class="mb10 mt10"><i>Важно: веб-приложение и мобильное приложение одинаковы, за исключением того, что мобильное  работает только на Android TV 4.4+.</i></p>
-      <h2>ForkPlayer</h2>
-      <button onclick="location.href='http://browser.appinfo.su/'">Перейти</button>
-      <h2>GetsTV</h2>
-      <button onclick="location.href='http://getstv.ru/app/webos/index.html'">Перейти</button>
-      <h2>YouTube TV</h2>
-      <button onclick="location.href='https://www.youtube.com/tv'">Перейти</button>
+    <div class="main-container">
+        <div class="main-cc">
+            <h2>About me:</h2>
+            <p>
+                Меня зовут Иван, я 14-летний разработчик родом из <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80" target="_blank">Сыктывкара</a>
+                , в основном занимаюсь разработкой сайтов.
+				 Люблю слушать музыку, кодить (очевидно же), прошивать девайсы.
+				 <br>
+				 Любимый трек: <a href="https://music.youtube.com/watch?v=YXYYCFaUUHQ&feature=share" target="_blank">Noisestorm - Heist</a>
+				 <br>
+				 Основной девайс: <a href="https://4pda.to/devdb/xiaomi_redmi_6a" target="_blank">Xiaomi Redmi 6A</a>
+                 <br>
+                 Ссылки на соцсети есть на отдельной странице: <a href="/links/" class="internal_link">Ссылки</a>
+            </p>
+			<h2>Мои проекты:</h2>
+            <button onclick="location.href='#RVTECH'">RVTECH</button>
+            <button onclick="location.href='#TVHome'">TVHome</button>
+            <!--button onclick="location.href='#RVFILES'">RVFILES</button-->
+        </div>
     </div>
-  </div>
-  <script src="/scripts/link.js"></script>
+    <div class="projects">
+        <div class="image" id="RVTECH">
+            <div class="img-cont">
+                <h1>RVTECH</h1>
+                <p>dev форум</p>
+                <br><br><br><br>
+                <a class="main-button" target="_blank" href="https://forum.therealvanyek.ml">Перейти</a>
+            </div>
+        </div>
+        <div class="tvhome-img" id="TVHome">
+            <div class="img-cont">
+                <h1>TVHome</h1>
+                <p>стартовая страница для Smart TV</p>
+                <br><br><br><br>
+                <a class="main-button internal_link" href="./tvhome/">Перейти</a>
+            </div>
+        </div>
+        <!--div class="rvf-img" id="RVFILES">
+            <div class="img-cont">
+                <h1>RVFILES</h1>
+                <p>тестовый полигон, в будущем хостинг файлов</p>
+                <br><br><br><br>
+                <a class="main-button" href="#">Перейти (скоро)</a>
+            </div>
+        </div-->
+    </div>
+    <h2 class="tcent">Комментарии:</h2>
+    <div class="gh-comments">
+        <!-- скрипт для подключения giscus (системы комментариев) -->
+        <script  src="https://giscus.app/client.js"
+            data-repo="4vanyek/comments"
+            data-repo-id="R_kgDOJs5phw"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOJs5ph84CXDxu"
+            data-mapping="title"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="ru"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </div>
+    <br>
+    <script id="footer" src="/scripts/footer.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyB_0OMLjJqU_guBOEauJOqJsfyvzDlbFe4",
+          authDomain: "trv-db.firebaseapp.com",
+          projectId: "trv-db",
+          storageBucket: "trv-db.appspot.com",
+          messagingSenderId: "128512399205",
+          appId: "1:128512399205:web:afa58f191475ff3d77338c",
+          measurementId: "G-4E55DPHXGS"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <script src="scripts/link.js"></script>
 </body>
 </html>
