@@ -4,116 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">             <!-- подключение гугл шрифтов -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <!-- подключение гугл шрифтов -->
+    <link href="../../css/styles.css" rel="stylesheet">
     <link 
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
-    <title>Under Reconstruction</title>
+    <title>Ссылки</title>
 </head>
-<body style="margin-top: 4em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
-    <div style="display: none;"><a rel="me" href="https://mas.to/@realvanyek">Mastodon</a></div> <!-- верификация домена на Mastodon -->
-    <script defer id="nav" src="/scripts/nav.js"></script>
-    <a class="devlog-notification internal_link" href="https://trv.bearblog.dev/devlog5" target="_blank">
-        <p>Read what happened, while you were off: DevLog #5</p>
-    </a>
-    <div class="tcent" style="padding: 20px; background: #f5ecff;">
-        <h2>Welcome to my site!</h2>
-        <p>It's still in development, but I hope to finish it at the end of summer.</p>
-    </div>
-    <div class="main-container">
-        <div class="main-cc">
-            <h2>About me:</h2>
-            <p>
-                Меня зовут Иван, я 14-летний разработчик родом из <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80" target="_blank">Сыктывкара</a>
-                , в основном занимаюсь разработкой сайтов.
-				 Люблю слушать музыку, кодить (очевидно же), прошивать девайсы.
-				 <br>
-				 Любимый трек: <a href="https://music.youtube.com/watch?v=YXYYCFaUUHQ&feature=share" target="_blank">Noisestorm - Heist</a>
-				 <br>
-				 Основной девайс: <a href="https://4pda.to/devdb/xiaomi_redmi_6a" target="_blank">Xiaomi Redmi 6A</a>
-                 <br>
-                 Ссылки на соцсети есть на отдельной странице: <a href="/links/" class="internal_link">Ссылки</a>
-            </p>
-			<h2>Мои проекты:</h2>
-            <button onclick="location.href='#RVTECH'">RVTECH</button>
-            <button onclick="location.href='#TVHome'">TVHome</button>
-            <!--button onclick="location.href='#RVFILES'">RVFILES</button-->
-        </div>
-    </div>
-    <div class="projects">
-        <div class="image" id="RVTECH">
-            <div class="img-cont">
-                <h1>RVTECH</h1>
-                <p>dev форум</p>
-                <br><br><br><br>
-                <a class="main-button" target="_blank" href="https://forum.therealvanyek.ml">Перейти</a>
+<body>
+    <a class="notif internal_link" href="/">Вернуться на главную</a>
+    <div class="links-container">
+        <h2>Ссылки</h2>
+        <a class="links-cont link" href="https://github.com/4vanyek" target="_blank">
+            <div class="col-default">
+                <i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub
+                <p>4vanyek</p>
             </div>
-        </div>
-        <div class="tvhome-img" id="TVHome">
-            <div class="img-cont">
-                <h1>TVHome</h1>
-                <p>стартовая страница для Smart TV</p>
-                <br><br><br><br>
-                <a class="main-button internal_link" href="./tvhome/">Перейти</a>
+        </a>
+        <a class="links-cont link" href="https://t.me/trv_official1" target="_blank">
+            <div class="col-default">
+                <i class="fa-brands fa-telegram"></i>&nbsp;&nbsp;Telegram
+                <p>therealvanyek</p>
             </div>
-        </div>
-        <!--div class="rvf-img" id="RVFILES">
-            <div class="img-cont">
-                <h1>RVFILES</h1>
-                <p>тестовый полигон, в будущем хостинг файлов</p>
-                <br><br><br><br>
-                <a class="main-button" href="#">Перейти (скоро)</a>
+        </a>
+        <a class="links-cont link" href="https://4pda.to/forum/index.php?showuser=10840063" target="_blank">
+            <div class="col-default">
+                <i class="fa-brands fa-4"></i>&nbsp;&nbsp;4PDA
+                <p>UnnaMd</p>
             </div>
-        </div-->
+        </a>
+        <a class="links-cont link" href="https://www.youtube.com/@therealvanyek" target="_blank">
+            <div class="col-default">
+                <i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;YouTube
+                <p>TheRealVanyek</p>
+            </div>
+        </a>
+        <a class="links-cont link" href="https://discord.com/users/658287767490527243" target="_blank">
+            <div class="col-default">
+                <i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Discord
+                <p>realtrv#3420</p>
+            </div>
+        </a>
     </div>
-    <h2 class="tcent">Комментарии:</h2>
-    <div class="gh-comments">
-        <!-- скрипт для подключения giscus (системы комментариев) -->
-        <script  src="https://giscus.app/client.js"
-            data-repo="4vanyek/comments"
-            data-repo-id="R_kgDOJs5phw"
-            data-category="Announcements"
-            data-category-id="DIC_kwDOJs5ph84CXDxu"
-            data-mapping="title"
-            data-strict="1"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="top"
-            data-theme="light"
-            data-lang="ru"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-        </script>
-    </div>
-    <br>
     <script id="footer" src="/scripts/footer.js"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyB_0OMLjJqU_guBOEauJOqJsfyvzDlbFe4",
-          authDomain: "trv-db.firebaseapp.com",
-          projectId: "trv-db",
-          storageBucket: "trv-db.appspot.com",
-          messagingSenderId: "128512399205",
-          appId: "1:128512399205:web:afa58f191475ff3d77338c",
-          measurementId: "G-4E55DPHXGS"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
-      <script src="scripts/link.js"></script>
 </body>
 </html>
