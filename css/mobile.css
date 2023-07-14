@@ -7,6 +7,9 @@
     .nav {
         display: none;
     }
+    .mobile {
+        display: block !important;
+    }
     .warning-mobile {
         display: block;
         text-align: center;
@@ -55,8 +58,17 @@
     .links-cont {
         width: 85%;
     }
-}
+    .dropdown-content {
+        position: relative !important;
+    }
+    .dropdown-content a {
+        padding: 0.5em 1em;
+    }
+    .dropdown .dropbtn {
+        font-size: 18px !important;
+    }
 .open-menu {
     color: #fff;
     font-size: 36px;
+}
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoritsuki</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet"> <!-- подключение шрифтов -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
+</head>
+<body style="background: #111;">
+    <a class="notif internal_link" href="/">Вернуться на главную</a>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        pre {
+            font-family: 'Source Code Pro';
+            background: #000;
+            width: fit-content;
+            padding: 5px;
+            border-radius: 6px;
+        }
+        p {
+            color: #fff;
+        }
+        .notif {
+            background: #111;
+            color: #fff !important;
+        }
+        .notif:hover {
+            background: #370012 !important;
+        }
+      </style>
+    <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 2em;">
+        <div style="display: flex; align-items: center;">
+            <h1 style="color: #fff">Qoritsuki</h1>&nbsp;&nbsp;
+            <img src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="92">
+        </div>
+        <br>
+        <div style="flex-direction: column;">
+            <br>
+            <p style="color: #fff">многоцелевой Discord бот</p>
+            <br><br>
+            <a class="qor-button" target="_blank" href="https://discord.com/oauth2/authorize?client_id=1123565377742442528&permissions=8&scope=bot">
+                Пригласить на сервер
+            </a>
+        </div>
+    </div>
+    <br>
+    <h2 class="tcent" style="color: #fff">Команды:</h2>
+    <br>
+    <div class="commands-grid">
+        <div>
+            <pre>/weather</pre>
+            <p>Показывает текущую погоду. Параметры:</p>
+            <br>
+            <pre>city</pre>
+            <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
+        </div>
+        <div>
+            <pre>/video</pre>
+            <p>Ищет видео из YouTube по запросу. Параметры:</p>
+            <br>
+            <pre>query</pre>
+            <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
+        </div>
+        <div>
+            <pre>/translate</pre>
+            <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
+            <br>
+            <pre>query</pre>
+            <p>Обязательный параметр. Позволяет указать фразу для перевода.</p>
+            <br>
+            <pre>lang</pre>
+            <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
+        </div>
+        <div>
+            <pre>/ping</pre>
+            <p>Позволяет узнать задержку бота в миллисекундах. Параметров нет.</p>
+        </div>
+    </div>
+</body>
+</html>

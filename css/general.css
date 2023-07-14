@@ -40,7 +40,7 @@ h2 {
 .center {
     text-align: center;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 /* навбар */
@@ -103,7 +103,7 @@ a:hover {
 a:active {
     scale: 0.97;
 }
-button {
+button, .button {
     padding: 1em 2em;
     border: none;
     margin: 5px;
@@ -114,8 +114,12 @@ button {
     background: #f5ecff;
     transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     color: #9035ff;
+    text-shadow: none;
 }
-.main-button {
+.mobile {
+    display: none;
+}
+.main-button, .qor-button {
     font-size: 18px;
     /* margin: 5px; */
     background: #9035ff;
@@ -124,17 +128,31 @@ button {
     border-radius: 6px;
     text-shadow: none;
 }
+.qor-button {
+    background: #111;
+    color: #fff;
+}
+.qor-button:hover {
+    background: #80002b;
+    transition-duration: 0.1s;
+}
+.qor-button:active {
+    background: #54001c;
+}
+.main-button:hover, .qor-button:hover {
+    text-decoration: none;
+}
 .main-button:hover {
     background: #8330e9;
-    text-decoration: none;
 }
 .main-button:active {
     background: #7129c8;
 }
-button:hover {
+button:hover, .button:hover {
     background-color: #ead9ff;
+    text-decoration: none;
 }
-button:active {
+button:active, .button:active {
     background: #e2caff;
 }
 footer {
@@ -181,4 +199,18 @@ footer a:hover {
 .devlog-notification:hover {
     text-decoration: none;
     background: #dacaee;
+}
+.commands-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px; 
+}
+.commands-grid div {
+    background: linear-gradient(172deg, rgba(2,0,36,1) 35%, rgb(204, 34, 59) 100%);;
+    padding: 1em;
+    color: #fff;
+    margin: 5px 2.5px;
+    border-radius: 6px;
 }

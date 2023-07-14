@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="/scripts/link.js"></script>
     <link 
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
     <title>Under Reconstruction</title>
 </head>
-<body style="margin-top: 4em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
+<body style="margin-top: 3.65em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
     <div style="display: none;"><a rel="me" href="https://mas.to/@realvanyek">Mastodon</a></div> <!-- верификация домена на Mastodon -->
-    <script defer id="nav" src="/scripts/nav.js"></script>
-    <a class="devlog-notification internal_link" href="https://trv.bearblog.dev/devlog5" target="_blank">
-        <p>Прочитайте, что изменилось, пока вас не было: DevLog #5</p>
+    <script id="nav" src="/scripts/nav.js"></script>
+    <a class="devlog-notification internal_link" href="https://trv.bearblog.dev/devlog6" target="_blank">
+        <p>Прочитайте, что изменилось, пока вас не было: DevLog #6</p>
     </a>
     <div class="tcent" style="padding: 20px; background: #f5ecff;">
         <h2>Добро пожаловать на мой сайт!</h2>
@@ -38,12 +39,25 @@
                  Ссылки на соцсети есть на отдельной странице: <a href="/links/" class="internal_link">Ссылки</a>
             </p>
 			<h2>Мои проекты:</h2>
+            <button onclick="location.href='#Qoritsuki'">Qoritsuki</button>
             <button onclick="location.href='#RVTECH'">RVTECH</button>
             <button onclick="location.href='#TVHome'">TVHome</button>
             <!--button onclick="location.href='#RVFILES'">RVFILES</button-->
         </div>
     </div>
     <div class="projects">
+        <div class="qor-img" id="Qoritsuki">
+            <div class="img-cont">
+                <h1>Qoritsuki</h1>
+                <p>"совершенно оригинальный" Discord бот</p>
+                <br><br><br><br>
+                <a class="main-button internal_link" href="./qoritsuki/">Перейти</a>
+                <div class="mobile">
+                    <br><br>
+                </div>
+                <a class="button" style="margin-left: 0" target="_blank" href="https://discord.com/oauth2/authorize?client_id=1123565377742442528&permissions=8&scope=bot">Пригласить</a>
+            </div>
+        </div>
         <div class="image" id="RVTECH">
             <div class="img-cont">
                 <h1>RVTECH</h1>
@@ -114,6 +128,6 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
-      <script src="scripts/link.js"></script>
+      <script src="/scripts/dropdown.js"></script>
 </body>
 </html>

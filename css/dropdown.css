@@ -1,0 +1,39 @@
+
+  
+  .dropdown .dropbtn {
+    font-size: inherit;  
+    border: none;
+    outline: none;
+    padding: 0.65em;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000000;
+    border-radius: 8px;
+    padding: 0.3em;
+  }
+  
+  .dropdown-content a {
+    padding: 1em 2em;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f5ecff;
+  }
+  
+  /*.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+    display: block;
+  }*/
+  .show {
+    display: block;
+  }
