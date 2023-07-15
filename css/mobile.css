@@ -4,7 +4,7 @@
     }
 }
 @media screen and (max-width: 1000px) {
-    .nav {
+    .non-mobile {
         display: none;
     }
     .mobile {
@@ -67,6 +67,9 @@
     .dropdown .dropbtn {
         font-size: 18px !important;
         width: 100% !important;
+    }
+    footer .main {
+        flex-direction: column !important;
     }
 .open-menu {
     color: #fff;
