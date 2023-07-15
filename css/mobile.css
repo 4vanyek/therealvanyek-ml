@@ -66,6 +66,7 @@
     }
     .dropdown .dropbtn {
         font-size: 18px !important;
+        width: 100% !important;
     }
 .open-menu {
     color: #fff;
