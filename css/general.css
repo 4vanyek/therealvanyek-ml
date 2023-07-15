@@ -119,7 +119,7 @@ button, .button {
 .mobile {
     display: none;
 }
-.main-button, .qor-button {
+.main-button, .qor-main-button, .qor-button {
     font-size: 18px;
     /* margin: 5px; */
     background: #9035ff;
@@ -128,18 +128,25 @@ button, .button {
     border-radius: 6px;
     text-shadow: none;
 }
-.qor-button {
-    background: #111;
+.qor-main-button {
+    background: #370012;
     color: #fff;
 }
-.qor-button:hover {
+.qor-main-button:hover {
     background: #80002b;
     transition-duration: 0.1s;
 }
-.qor-button:active {
+.qor-main-button:active {
     background: #54001c;
 }
-.main-button:hover, .qor-button:hover {
+.qor-button {
+    background: #111;
+}
+.qor-button:hover {
+    background: #610020;
+    transition-duration: 0.1s;
+}
+.main-button:hover, .qor-main-button:hover, .qor-button:hover {
     text-decoration: none;
 }
 .main-button:hover {
