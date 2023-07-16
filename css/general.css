@@ -129,11 +129,11 @@ button, .button {
     text-shadow: none;
 }
 .qor-main-button {
-    background: #370012;
+    background: #750026;
     color: #fff;
 }
 .qor-main-button:hover {
-    background: #80002b;
+    background: #c04;
     transition-duration: 0.1s;
 }
 .qor-main-button:active {
