@@ -24,12 +24,28 @@
         p {
             color: #fff;
         }
+        a {
+            color: #c04 !important;
+        }
         .notif {
-            background: #111;
+            background: rgb(2, 0, 36);
             color: #fff !important;
         }
         .notif:hover {
             background: #370012 !important;
+        }
+        footer {
+            background: rgb(2, 0, 36) !important;
+        }
+        .social-icon {
+            color: #fff !important;
+        }
+        .social-icon:hover {
+            color: #c04 !important;
+        }
+        .rev {
+            color: #888;
+            padding: 5px;
         }
       </style>
     <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 2em;">
@@ -41,6 +57,8 @@
         <div style="flex-direction: column;">
             <br>
             <p style="color: #fff">многоцелевой Discord бот</p>
+            <br>
+            <p>Powered by <a href="https://github.com/devcat86" target="_blank" style="color: #fff !important;">m1cro_cat's</a> cloud</p>
             <br><br>
             <a class="qor-main-button" target="_blank" href="https://dsc.gg/qoritsuki">
                 Пригласить на сервер
@@ -60,18 +78,38 @@
     <br>
     <div class="commands-grid">
         <div>
-            <pre>/weather</pre>
-            <p>Показывает текущую погоду. Параметры:</p>
-            <br>
-            <pre>city</pre>
-            <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
+            <pre>/changelog</pre>
+            <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
         </div>
         <div>
-            <pre>/video</pre>
-            <p>Ищет видео из YouTube по запросу. Параметры:</p>
+            <pre>/delete</pre>
+            <p>Удаляет выбранное количество последних сообщений. Параметры:</p>
+            <br>
+            <pre>amount</pre>
+            <p>Обязательный параметр. Позволяет указать количество сообщений, которые нужно удалить.</p>
+        </div>
+        <div>
+            <pre>/dog</pre>
+            <p>Гав! :)</p>
+        </div>
+        <div>
+            <pre>/help</pre>
+            <p>Показывает помощь по командам. Параметров нет.</p>
+        </div>
+        <div>
+            <pre>/image</pre>
+            <p>Ищет изображение из Google Images по запросу. Параметры:</p>
             <br>
             <pre>query</pre>
-            <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
+            <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
+        </div>
+        <div>
+            <pre>/ping</pre>
+            <p>Позволяет узнать задержку бота в миллисекундах. Параметров нет.</p>
+        </div>
+        <div>
+            <pre>/status</pre>
+            <p>Показывает статус бота (ОЗУ, CPU и др.). Параметров нет.</p>
         </div>
         <div>
             <pre>/translate</pre>
@@ -84,28 +122,20 @@
             <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
         </div>
         <div>
-            <pre>/ping</pre>
-            <p>Позволяет узнать задержку бота в миллисекундах. Параметров нет.</p>
-        </div>
-        <div>
-            <pre>/changelog</pre>
-            <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
-        </div>
-        <div>
-            <pre>/image</pre>
-            <p>Ищет изображение из Google Images по запросу. Параметры:</p>
+            <pre>/video</pre>
+            <p>Ищет видео из YouTube по запросу. Параметры:</p>
             <br>
             <pre>query</pre>
-            <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
+            <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
         </div>
         <div>
-            <pre>/dog</pre>
-            <p>Гав! :)</p>
-        </div>
-        <div>
-            <pre>/help</pre>
-            <p>Показывает помощь по командам. Параметров нет.</p>
+            <pre>/weather</pre>
+            <p>Показывает текущую погоду. Параметры:</p>
+            <br>
+            <pre>city</pre>
+            <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
         </div>
     </div>
+    <script id="footer" src="/scripts/footer.js"></script>
 </body>
 </html>
