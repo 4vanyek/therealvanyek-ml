@@ -6,6 +6,7 @@
 }
 body {
     margin: 0;
+    background: #130028;
 }
 .left {
     float: left;
@@ -18,7 +19,7 @@ body {
     margin: auto; /* выравнивание по центру */
 }
 h1, h2, h3, h4, h5, h6, p {
-    color: #333;
+    color: #eee;
 }
 h1 {
     font-family: 'Inter Tight', sans-serif;
@@ -35,6 +36,12 @@ h2 {
     font-weight: 400;
     margin: 0;
     letter-spacing: -.025em; /* чуть плотнее буквы */
+}
+h1, h2 {
+    background: linear-gradient(90deg, rgba(175,110,255,1) 0%, rgba(115,0,255,1) 72%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .flex { display: flex; }
 .center {
@@ -93,7 +100,7 @@ a::after {
 }
 
 a:visited, a {
-    color: #8330e9;
+    color: #9c4bff;
 }
 a:hover {
     /*border-color: #ddd;*/
@@ -111,7 +118,7 @@ button, .button {
     border-radius: 6px;
     font-size: 18px;
     font-family: 'Inter Tight', sans-serif;
-    background: #f5ecff;
+    background: #280051;
     transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     color: #9035ff;
     text-shadow: none;
@@ -156,11 +163,11 @@ button, .button {
     background: #7129c8;
 }
 button:hover, .button:hover {
-    background-color: #ead9ff;
+    background-color: #340068;
     text-decoration: none;
 }
 button:active, .button:active {
-    background: #e2caff;
+    background: #2d0066;
 }
 footer {
     display: flex;
@@ -168,7 +175,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    background: #f5ecff;
+    background: #1b0039;
     margin-top: 20px;
 }
 footer a:hover {
@@ -200,12 +207,12 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     padding: 0.5em;
-    background: #ead9ff;
+    background: #220048;
     text-align: center;
 }
 .devlog-notification:hover {
     text-decoration: none;
-    background: #dacaee;
+    background: #2f005e;
 }
 .commands-grid {
     display: grid;
@@ -225,9 +232,22 @@ blockquote {
     width: fit-content;
     margin: 10px 0;
     padding: 15px;
-    border-left: 3px solid #ccc;
-    background: #f4f3f3;
+    border-left: 3px solid #9c4bff;
+    background: #1b0039;
 }
 blockquote q {
     padding: 0.3em;
+    color: #fff;
+}
+footer hr {
+    width: 5%;
+    color: #9c4bff;
+    margin: 10px;
+    border: 1px solid #9c4bff;
+}
+hr {
+    width: 100%;
+    color: #9c4bff;
+    margin: 10px;
+    border: 1px solid #9c4bff;
 }

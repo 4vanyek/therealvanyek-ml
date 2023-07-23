@@ -9,12 +9,13 @@
     font-family: inherit;
     margin: 0;
     font-weight: 500;
+    color: #9c4bff;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: #290059;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000000;
     border-radius: 8px;
@@ -22,13 +23,14 @@
   }
   
   .dropdown-content a {
-    padding: 1em 2em;
+    padding: 0.8em 1.4em;
     text-decoration: none;
     display: block;
   }
   
   .dropdown-content a:hover {
-    background-color: #f5ecff;
+    background-color: #34006f;
+    color: #9c4bff !important;
   }
   
   /*.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {

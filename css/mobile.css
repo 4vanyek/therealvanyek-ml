@@ -4,6 +4,12 @@
     }
 }
 @media screen and (max-width: 1000px) {
+    body {
+        margin-top: 4.4em !important;
+    }
+    footer hr {
+        width: 25% !important;
+    }
     .non-mobile {
         display: none;
     }

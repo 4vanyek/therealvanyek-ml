@@ -13,19 +13,8 @@
         rel="stylesheet"> <!-- подключение шрифтов -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
 </head>
-<body style="margin-top: 4em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
+<body style="margin-top: 3.15em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
     <script id="nav" src="/scripts/nav.js"></script>
-    <script>
-// Get the current page URL
-var currentPageUrl = window.location.href;
-
-// Find and select the language changer link element
-var languageChangerLink = document.querySelector('.internal_link[href="/en/"]');
-
-// Change its href attribute to include the current page URL without leading slash
-languageChangerLink.href = "/en" + currentPageUrl.substring(currentPageUrl.indexOf("/", 8));
-
-    </script>
      <div class="tcent">
         <h2>Доступные тесты:</h2>
         <button onclick="location.href='./nav'">nav</button>

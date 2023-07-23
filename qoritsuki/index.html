@@ -47,6 +47,9 @@
             color: #888;
             padding: 5px;
         }
+        .nav-line {
+            color: #c04 !important;
+        }
       </style>
     <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 2em;">
         <div style="display: flex; align-items: center; justify-content: center;">
@@ -104,12 +107,8 @@
             <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
         </div>
         <div>
-            <pre>/info ping</pre>
-            <p>Позволяет узнать задержку бота в миллисекундах. Параметров нет.</p>
-        </div>
-        <div>
-            <pre>/info status</pre>
-            <p>Показывает статус бота (ОЗУ, CPU и др.). Параметров нет.</p>
+            <pre>/status</pre>
+            <p>Показывает статус бота (ОЗУ, CPU, задержка и др.). Параметров нет.</p>
         </div>
         <div>
             <pre>/translate</pre>
@@ -135,7 +134,7 @@
             <pre>city</pre>
             <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
         </div>
-        <div>
+        <!--div>
             <pre>/welcome channel</pre>
             <p>Позволяет настроить канал для приветственных сообщений. Параметры:</p>
             <br>
@@ -155,7 +154,7 @@
             <br>
             <pre>enabled</pre>
             <p>Обязательный параметр. Позволяет включить/выключить сообщения.</p>
-        </div>
+        </div-->
     </div>
     <script id="footer" src="/scripts/footer.js"></script>
 </body>
