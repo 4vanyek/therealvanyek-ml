@@ -4,6 +4,19 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #222;
+}
+  
+/* Scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #9c4bff;
+}
+
+:root {
+    scrollbar-color: #9c4bff #222;
+}  
 body {
     margin: 0;
     background: #130028;
@@ -250,4 +263,8 @@ hr {
     color: #9c4bff;
     margin: 10px;
     border: 1px solid #9c4bff;
+}
+.vertical-line {
+    color: #9c4bff;
+    font-weight: 700;
 }
