@@ -118,10 +118,9 @@ a:visited, a {
 a:hover {
     /*border-color: #ddd;*/
     text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
-}
-a:active {
-    scale: 0.97;
 }
 button, .button {
     padding: 1em 2em;
@@ -133,7 +132,7 @@ button, .button {
     font-family: 'Inter Tight', sans-serif;
     background: #280051;
     transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
-    color: #9035ff;
+    color: #9c4bff;
     text-shadow: none;
 }
 .mobile {
@@ -142,7 +141,7 @@ button, .button {
 .main-button, .qor-main-button, .qor-button {
     font-size: 18px;
     /* margin: 5px; */
-    background: #9035ff;
+    background: #7c11ff;
     padding: 1em 2em;
     color: #fff !important;
     border-radius: 6px;
@@ -191,10 +190,10 @@ footer {
     background: #1b0039;
     margin-top: 20px;
 }
-footer a:hover {
+/*footer a:hover {
     text-decoration: underline;
     background: none;
-}
+}*/
 .devlogs-link {
     padding: 0.5em;
     margin: 5px;
@@ -267,4 +266,5 @@ hr {
 .vertical-line {
     color: #9c4bff;
     font-weight: 700;
+    user-select: none;
 }
