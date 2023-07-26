@@ -27,11 +27,13 @@
         a {
             color: #c04 !important;
         }
-        .notif {
+        .notif, .accordion {
             background: rgb(2, 0, 36);
+        }
+        .notif {
             color: #fff !important;
         }
-        .notif:hover {
+        .notif:hover, .accordion:hover, .active {
             background: #370012 !important;
         }
         footer {
@@ -47,11 +49,18 @@
             color: #888;
             padding: 5px;
         }
-        .vertical-line {
+        .vertical-line, .accordion, .accordion::after {
             color: #c04 !important;
         }
         hr {
             border-color: #c04 !important;
+            color: #c04 !important;
+        }
+        .panel {
+            background-color: rgba(2,0,36,1) !important;
+        }
+        .commands-grid div {
+            background: #370012 !important;
         }
       </style>
     <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 2em;">
@@ -82,83 +91,91 @@
     <br>
     <h2 class="tcent" style="color: #fff">Команды:</h2>
     <br>
-    <div class="commands-grid">
-        <div>
-            <pre>/changelog</pre>
-            <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
+    <div class="accordions">
+    <button class="accordion">Список команд</button>
+    <div class="panel">
+        <div class="panel-cont">
+            <div class="commands-grid">
+                <div>
+                    <pre>/changelog</pre>
+                    <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
+                </div>
+                <div>
+                    <pre>/delete</pre>
+                    <p>Удаляет выбранное количество последних сообщений. Параметры:</p>
+                    <br>
+                    <pre>amount</pre>
+                    <p>Обязательный параметр. Позволяет указать количество сообщений, которые нужно удалить.</p>
+                </div>
+                <div>
+                    <pre>/dog</pre>
+                    <p>Гав! :)</p>
+                </div>
+                <div>
+                    <pre>/help</pre>
+                    <p>Показывает помощь по командам. Параметров нет.</p>
+                </div>
+                <div>
+                    <pre>/image</pre>
+                    <p>Ищет изображение из Google Images по запросу. Параметры:</p>
+                    <br>
+                    <pre>query</pre>
+                    <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
+                </div>
+                <div>
+                    <pre>/status</pre>
+                    <p>Показывает статус бота (ОЗУ, CPU, задержка и др.). Параметров нет.</p>
+                </div>
+                <div>
+                    <pre>/translate</pre>
+                    <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
+                    <br>
+                    <pre>query</pre>
+                    <p>Обязательный параметр. Позволяет указать фразу для перевода.</p>
+                    <br>
+                    <pre>lang</pre>
+                    <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
+                </div>
+                <div>
+                    <pre>/video</pre>
+                    <p>Ищет видео из YouTube по запросу. Параметры:</p>
+                    <br>
+                    <pre>query</pre>
+                    <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
+                </div>
+                <div>
+                    <pre>/weather</pre>
+                    <p>Показывает текущую погоду. Параметры:</p>
+                    <br>
+                    <pre>city</pre>
+                    <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
+                </div>
+                <!--div>
+                    <pre>/welcome channel</pre>
+                    <p>Позволяет настроить канал для приветственных сообщений. Параметры:</p>
+                    <br>
+                    <pre>channel</pre>
+                    <p>Обязательный параметр. Позволяет указать канал.</p>
+                </div>
+                <div>
+                    <pre>/welcome message</pre>
+                    <p>Позволяет настроить приветственное сообщение. Параметры:</p>
+                    <br>
+                    <pre>message</pre>
+                    <p>Обязательный параметр. Позволяет указать сообщение.</p>
+                </div>
+                <div>
+                    <pre>/welcome toggle</pre>
+                    <p>Позволяет включить/выключить приветственные сообщения. Параметры:</p>
+                    <br>
+                    <pre>enabled</pre>
+                    <p>Обязательный параметр. Позволяет включить/выключить сообщения.</p>
+                </div-->
+            </div>
         </div>
-        <div>
-            <pre>/delete</pre>
-            <p>Удаляет выбранное количество последних сообщений. Параметры:</p>
-            <br>
-            <pre>amount</pre>
-            <p>Обязательный параметр. Позволяет указать количество сообщений, которые нужно удалить.</p>
-        </div>
-        <div>
-            <pre>/dog</pre>
-            <p>Гав! :)</p>
-        </div>
-        <div>
-            <pre>/help</pre>
-            <p>Показывает помощь по командам. Параметров нет.</p>
-        </div>
-        <div>
-            <pre>/image</pre>
-            <p>Ищет изображение из Google Images по запросу. Параметры:</p>
-            <br>
-            <pre>query</pre>
-            <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
-        </div>
-        <div>
-            <pre>/status</pre>
-            <p>Показывает статус бота (ОЗУ, CPU, задержка и др.). Параметров нет.</p>
-        </div>
-        <div>
-            <pre>/translate</pre>
-            <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
-            <br>
-            <pre>query</pre>
-            <p>Обязательный параметр. Позволяет указать фразу для перевода.</p>
-            <br>
-            <pre>lang</pre>
-            <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
-        </div>
-        <div>
-            <pre>/video</pre>
-            <p>Ищет видео из YouTube по запросу. Параметры:</p>
-            <br>
-            <pre>query</pre>
-            <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
-        </div>
-        <div>
-            <pre>/weather</pre>
-            <p>Показывает текущую погоду. Параметры:</p>
-            <br>
-            <pre>city</pre>
-            <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
-        </div>
-        <!--div>
-            <pre>/welcome channel</pre>
-            <p>Позволяет настроить канал для приветственных сообщений. Параметры:</p>
-            <br>
-            <pre>channel</pre>
-            <p>Обязательный параметр. Позволяет указать канал.</p>
-        </div>
-        <div>
-            <pre>/welcome message</pre>
-            <p>Позволяет настроить приветственное сообщение. Параметры:</p>
-            <br>
-            <pre>message</pre>
-            <p>Обязательный параметр. Позволяет указать сообщение.</p>
-        </div>
-        <div>
-            <pre>/welcome toggle</pre>
-            <p>Позволяет включить/выключить приветственные сообщения. Параметры:</p>
-            <br>
-            <pre>enabled</pre>
-            <p>Обязательный параметр. Позволяет включить/выключить сообщения.</p>
-        </div-->
+    </div>
     </div>
     <script id="footer" src="/scripts/footer.js"></script>
+    <script src="/scripts/accord.js"></script>
 </body>
 </html>

@@ -118,7 +118,7 @@ a:visited, a {
 a:hover {
     /*border-color: #ddd;*/
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
     text-decoration-thickness: 2px;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
@@ -169,10 +169,10 @@ button, .button {
     text-decoration: none;
 }
 .main-button:hover {
-    background: #8330e9;
+    background: #6f11e1;
 }
 .main-button:active {
-    background: #7129c8;
+    background: #5a0fb6;
 }
 button:hover, .button:hover {
     background-color: #340068;
@@ -228,13 +228,12 @@ footer {
 }
 .commands-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px; 
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 }
 .commands-grid div {
-    background: linear-gradient(172deg, rgba(2,0,36,1) 35%, rgb(204, 34, 59) 100%);;
+    background: rgba(2,0,36,1);
     padding: 1em;
     color: #fff;
     margin: 5px 2.5px;
