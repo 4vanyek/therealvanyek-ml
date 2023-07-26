@@ -7,6 +7,9 @@
     footer hr {
         width: 25% !important;
     }
+    .accordions {
+        width: 90% !important;
+    }
     .non-mobile {
         display: none;
     }
