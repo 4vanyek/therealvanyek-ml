@@ -10,10 +10,13 @@
         rel="stylesheet"> <!-- подключение шрифтов -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
 </head>
-<body style="background: #111;">
-    <a class="notif internal_link" href="/">Вернуться на главную</a>
+<body style="background: #000;">
+    <!--a class="notif internal_link" href="/">Вернуться на главную</a-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
         pre {
             font-family: 'Source Code Pro';
             background: #000;
@@ -21,7 +24,7 @@
             padding: 5px;
             border-radius: 6px;
         }
-        p {
+        p, pre {
             color: #fff;
         }
         a {
@@ -62,16 +65,109 @@
         .commands-grid div {
             background: #370012 !important;
         }
+        h3 {
+            margin-top: 10px;
+        }
+        h2 {
+            text-shadow: 0px 0px 15px rgba(255,255,255,0.6);
+        }
+        .down-arrow {
+            font-size: 24px;
+            color: #fff !important;
+            width: fit-content;
+            display: inline-block;
+        }
+        .down-arrow:hover, .cmd-cloud:hover {
+            text-decoration: none;
+        }
+        .cmd-cloud pre {
+            transition: 0.1s;
+        }
+        .cmd-cloud pre:hover {
+            scale: 1.05;
+            transition: 0.1s;
+        }
+        .navbar {
+            position: relative;
+            background: none;
+            justify-content: center;
+        }
+        .navbar a:hover {
+            color: #f05 !important;
+        }
+        .img-cont {
+            height: 550px;
+        }
+        /* Scrollbar track */
+        ::-webkit-scrollbar-track {
+            background: #222;
+        }
+  
+        /* Scrollbar handle (thumb) */
+        ::-webkit-scrollbar-thumb {
+            background: #c04;
+        }
+
+        :root {
+            scrollbar-color: #c04 #222;
+        }
       </style>
-    <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 2em;">
+    <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 0 2em 2em 2em; height: 100vh;">
+        <nav class="navbar">
+            <!-- лого -->
+            <a href="/" class="logo-link">
+                <img class="logo" src="/TRV_favicon.svg" width="36px" alt="лого trv">
+            </a>
+            <div class="non-mobile">
+                <p class="vertical-line" style="font-weight: 400; color: #ffffff50 !important;">&nbsp;|&nbsp;</p>
+            </div>
+            <a href="/qoritsuki/" class="logo-link">
+                <img class="logo" src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="36px" alt="лого qoritsuki">
+            </a>
+            <img class="mlogo" src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="50%" style="z-index: 999;">
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- NAVIGATION MENUS -->
+                <div class="menu flex" style="border-radius: 8px;">
+                    <a href="/qoritsuki/" class="internal_link" style="margin-left: 0;"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
+                    <a href="#features" class="internal_link"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Возможности</a>
+                    <a href="https://dsc.gg/qoritsuki" class="internal_link" target="_blank"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Пригласить</a>
+                    <a href="https://dsc.gg/qorsupport" class="internal_link" target="_blank"><i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Support сервер</a>
+                    <!--p>|</p>
+                    <button onclick="switchLanguage('en')">English</button>
+                    <button onclick="switchLanguage('ru')">Russian</button>
+                    <a href="/en/" class="internal_link lang-changer"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;English</a-->
+                </div>
+            </ul>
+        </nav>
         <div style="display: flex; align-items: center; justify-content: center;">
-            <h1 style="color: #fff">Qoritsuki</h1>&nbsp;&nbsp;
+            <h1 style="color: #fff; text-shadow: 0px 0px 40px rgba(255,255,255,0.6);">Qoritsuki</h1>&nbsp;&nbsp;
             <img src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="92">
         </div>
-        <br>
+        <div style="white-space: nowrap;">
+            <a href="#translate" class="internal_link cmd-cloud">
+                <pre style="display: inline-block; font-size: 24px;">/translate</pre>
+            </a>
+            <a href="#video" class="internal_link cmd-cloud">
+                <pre style="display: inline-block; font-size: 24px;">/video</pre>
+            </a>
+            <div class="mobile">
+                <br><br>
+            </div>
+            <a href="#weather" class="internal_link cmd-cloud hover-text">
+                <pre style="display: inline-block; font-size: 24px;">/weather</pre>
+            </a>
+            <a href="#image" class="internal_link cmd-cloud">
+                <pre style="display: inline-block; font-size: 24px;">/image</pre>
+            </a>
+        </div>
         <div style="flex-direction: column;">
             <br>
-            <p style="color: #fff">многоцелевой Discord бот</p>
+            <p style="color: #fff; text-shadow: 0px 0px 15px rgba(255,255,255,0.6);">многоцелевой Discord бот</p>
             <br>
             <p>Powered by <a href="https://github.com/devcat86" target="_blank" style="color: #fff !important;">m1cro_cat's</a> cloud</p>
             <br><br>
@@ -86,14 +182,117 @@
                 <br><br>
             </div>
             <a class="qor-button" target="_blank" href="https://dsc.gg/qorbeta">Beta версия (unstable)</a>
+            <br><br><br>
+            <a href="#features" class="down-arrow internal_link">
+                <h3 style="font-size: 18px;">Узнайте про возможности этого бота</h3>
+                <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+        </div>
+    </div>
+    <br id="features">
+    <h2 class="tcent" style="color: #fff">Возможности:</h2>
+    <br>
+    <div class="screen1-qor" id="weather">
+        <div class="img-cont">
+            <pre>/weather</pre>
+            <h1><i class="fa-solid fa-cloud-sun-rain"></i> Погода</h1>
+            <p>Показывает погоду в указанном регионе</p>
+            <br><br>
+            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
+            <div class="panel" style="width: fit-content;">
+                <div class="panel-cont">
+                    <div class="commands-grid">
+                        <div>
+                            <pre>/weather</pre>
+                            <p>Показывает текущую погоду. Параметры:</p>
+                            <br>
+                            <pre>city</pre>
+                            <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
+        </div>
+    </div>
+    <div class="screen2-qor" id="video">
+        <div class="img-cont">
+            <pre>/video</pre>
+            <h1><i class="fa-solid fa-play"></i> Видео</h1>
+            <p>Ищет видео по названию в YouTube</p>
+            <br><br>
+            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
+            <div class="panel" style="width: fit-content;">
+                <div class="panel-cont">
+                    <div class="commands-grid">
+                        <div>
+                            <pre>/video</pre>
+                            <p>Ищет видео из YouTube по запросу. Параметры:</p>
+                            <br>
+                            <pre>query</pre>
+                            <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
+        </div>
+    </div>
+    <div class="screen3-qor" id="image">
+        <div class="img-cont">
+            <pre>/image</pre>
+            <h1><i class="fa-solid fa-image"></i> Изображение</h1>
+            <p>Ищет изображение по названию в Google Images</p>
+            <br><br>
+            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
+            <div class="panel" style="width: fit-content;">
+                <div class="panel-cont">
+                    <div class="commands-grid">
+                        <div>
+                            <pre>/image</pre>
+                            <p>Ищет изображение из Google Images по запросу. Параметры:</p>
+                            <br>
+                            <pre>query</pre>
+                            <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
+        </div>
+    </div>
+    <div class="screen4-qor" id="translate">
+        <div class="img-cont" style="height: 600px;">
+            <pre>/translate</pre>
+            <h1><i class="fa-solid fa-language"></i> Переводчик</h1>
+            <p>Переводит фразы на 100+ языков</p>
+            <br><br>
+            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
+            <div class="panel" style="width: fit-content;">
+                <div class="panel-cont">
+                    <div class="commands-grid">
+                        <div>
+                            <pre>/translate</pre>
+                            <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
+                            <br>
+                            <pre>query</pre>
+                            <p>Обязательный параметр. Позволяет указать фразу для перевода.</p>
+                            <br>
+                            <pre>lang</pre>
+                            <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
         </div>
     </div>
     <br>
-    <h2 class="tcent" style="color: #fff">Команды:</h2>
+    <h2 class="tcent" style="color: #fff">Полезное:</h2>
     <br>
     <div class="accordions">
-    <button class="accordion">Список команд</button>
-    <div class="panel">
+    <button class="accordion">Все команды</button>
+    <div class="panel" style="grid-area: 1 / 1 / 2 / 2;">
         <div class="panel-cont">
             <div class="commands-grid">
                 <div>
@@ -174,7 +373,27 @@
             </div>
         </div>
     </div>
+    <button class="accordion">Помощь в создании</button>
+    <div class="panel" style="grid-area: 1 / 2 / 2 / 3;">
+        <div class="panel-cont">
+            <h3>Хостинг</h3>
+            <p><a href="https://discord.gg/TRzH2exzpp" target="_blank">m1cro_cloud</a> - хостинг бота<br>
+            <a href="https://heliohost.org" target="_blank">HelioHost</a> - хостинг сайта</p>
+            <h3>Помощь</h3>
+            <p><a href="https://discord.com/users/1102902223870119977" target="_blank">m1cro_cat</a> - хостинг и некоторые идеи</p>
+            <h3>Пакеты</h3>
+            <p><a href="https://pypi.org/project/py-cord/" target="_blank">py-cord</a><br>
+                <a href="https://pypi.org/project/requests/" target="_blank">requests</a><br>
+                <a href="https://pypi.org/project/chardet/" target="_blank">chardet</a><br>
+                <a href="https://pypi.org/project/psutil/" target="_blank">psutil</a><br>
+                <a href="https://pypi.org/project/google-api-python-client/" target="_blank">google-api-python-client</a><br>
+                <a href="https://pypi.org/project/python-dotenv/" target="_blank">python-dotenv</a><br>
+                <a href="https://pypi.org/project/translatepy/" target="_blank">translatepy</a>
+            </p>
+        </div>
     </div>
+    </div>
+    
     <script id="footer" src="/scripts/footer.js"></script>
     <script src="/scripts/accord.js"></script>
 </body>

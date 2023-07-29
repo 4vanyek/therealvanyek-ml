@@ -16,7 +16,7 @@
 
 :root {
     scrollbar-color: #9c4bff #222;
-}  
+}
 body {
     margin: 0;
     background: #130028;
@@ -153,7 +153,7 @@ button, .button {
 }
 .qor-main-button:hover {
     background: #c04;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 .qor-main-button:active {
     background: #54001c;

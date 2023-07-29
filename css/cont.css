@@ -12,20 +12,29 @@
     -webkit-text-fill-color: transparent;
 }
 .image {
-    background-image: linear-gradient(0deg, #9c4bff80 0%, rgba(0, 0, 0, 0.76) 100%), url(https://tinypic.host/images/2023/07/10/forum-therealvanyek-ml-1280x540desktop-766236.png);
+    background-image: linear-gradient(0deg, #9c4bff80 0%, rgba(0, 0, 0, 0.76) 100%), url(https://tinypic.host/images/2023/07/29/forum-realvanyek-eu-org-1280x540desktop-eeb36b.png);
 }
-.image, .rvf-img, .tvhome-img, .qor-img {
+.image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
     height: 400px;
     background-size: cover;
-}
-.rvf-img {
-    background-image: linear-gradient(0deg, #9c4bff80 0%, rgba(0, 0, 0, 0.76) 100%), url(https://tinypic.host/images/2023/06/19/rv-helioho-st-1280x360desktop-d2acab.png);
 }
 .tvhome-img {
     background-image: linear-gradient(0deg, #9c4bff80 0%, rgba(0, 0, 0, 0.76) 100%), url(https://tinypic.host/images/2023/07/10/therealvanyek-ml-1280x540desktop-b77f1d.png);
 }
 .qor-img {
     background-image: linear-gradient(0deg, #9c4bff80 0%, rgba(0, 0, 0, 0.76) 100%), url(https://tinypic.host/images/2023/07/14/therealvanyek-ml-1280x540desktop-870c87.png);
+}
+.screen1-qor {
+    background-image: linear-gradient(0deg, rgba(255,41,73,0.7) 0%, rgba(0, 0, 0, 0.76) 100%), url(/qoritsuki/assets/img/Screenshot_20230729_164018.png);
+}
+.screen2-qor {
+    background-image: linear-gradient(0deg, rgba(255,41,73,0.7) 0%, rgba(0, 0, 0, 0.76) 100%), url(/qoritsuki/assets/img/Screenshot_20230729_164121.png);
+}
+.screen3-qor {
+    background-image: linear-gradient(0deg, rgba(255,41,73,0.7) 0%, rgba(0, 0, 0, 0.76) 100%), url(/qoritsuki/assets/img/Screenshot_20230729_164156.png);
+}
+.screen4-qor {
+    background-image: linear-gradient(0deg, rgba(255,41,73,0.7) 0%, rgba(0, 0, 0, 0.76) 100%), url(/qoritsuki/assets/img/Screenshot_20230729_164248.png);
 }
 .img-cont {
     padding: 100px 100px 100px 70px;

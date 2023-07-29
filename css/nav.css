@@ -57,6 +57,7 @@ li {
 	padding: 0.7em;
 	border-radius: 6px;
 	font-weight: 500;
+	user-select: none;
 }
 .last-link-menu {
 	display: flex;
