@@ -20,7 +20,7 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 5px;
+	padding: 5px 0 5px 8px;
 	background-color: #1b0039;
 	color: #444;
 	position: fixed;
@@ -38,9 +38,11 @@ li {
 }
 .logo-link {
 	border-radius: 6px;
+	display: flex;
+	align-items: center;
 }
 .logo-link:hover {
-	background: none !important;
+	background: #340068 !important;
 }
 .logo-link::after {
 	content: '';

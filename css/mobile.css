@@ -21,14 +21,14 @@
         text-align: center;
     }
     .navbar {
-        padding: 1em !important;
+        padding: .7em !important;
         justify-content: space-between !important;
     }
     .logo {
         display: none;
     }
-    .logo-link {
-        display: none;
+    .trv-logo {
+        display: none !important;
     }
     .mlogo {
         display: flex;
@@ -36,10 +36,16 @@
     .nav-mobile {
         display: block;
     }
+    .nav-links {
+        margin-right: 5px !important;
+    }
     .menu-content {
         /*display: none;*/
         display: flex;
         flex-direction: column;
+    }
+    .menu {
+        margin-left: 0 !important;
     }
     .projects {
         display: flex;
@@ -67,6 +73,7 @@
     }
     .dropdown-content {
         position: relative !important;
+        left: 0 !important;
     }
     .dropdown-content a {
         padding: 0.5em 1em;
@@ -74,6 +81,7 @@
     .dropdown .dropbtn {
         font-size: 18px !important;
         width: 100% !important;
+        outline: none;
     }
     footer .main {
         flex-direction: column !important;

@@ -1,7 +1,10 @@
 <nav class="navbar">
     <!-- лого -->
-    <a href="/" class="logo-link"><img class="logo" src="/TRV_favicon.svg" width="36px" alt="лого"></a>
-    <img class="mlogo" src="/TRV_favicon.svg" width="50%" style="z-index: 999;">
+    <a href="/" class="logo-link">
+      <img class="logo" src="/TRV_favicon.svg" width="36px" alt="лого" style="display: inline-block; margin-left: 2px;">
+      <p style="display: inline-block; margin: 0 2.5px;">therealvanyek</p>
+    </a>
+    <!--img class="mlogo" src="/TRV_favicon.svg" width="50%" style="z-index: 999;"-->
     <!-- NAVIGATION MENU -->
     <ul class="nav-links">
         <!-- USING CHECKBOX HACK -->
@@ -17,9 +20,18 @@
                   <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="thedropdown">
-                  <a href="/tvhome" class="internal_link"><i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome</a>
-                  <a href="/qoritsuki/" class="internal_link"><i class="fa-solid fa-robot"></i>&nbsp;&nbsp;Qoritsuki</a>
-                  <a href="https://forum.realvanyek.eu.org" target="_blank"><i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;RVTECH</a>
+                  <a href="/tvhome" class="internal_link">
+                    <i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome
+                    <p class="dropdown-link-desc">стартовая страница для Smart TV</p>
+                  </a>
+                  <a href="/qoritsuki/" class="internal_link">
+                    <i class="fa-solid fa-robot"></i>&nbsp;&nbsp;Qoritsuki
+                    <p class="dropdown-link-desc">многоцелевой Discord бот</p>
+                  </a>
+                  <a href="https://forum.realvanyek.eu.org" target="_blank" class="internal_link">
+                    <i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;RVTECH
+                    <p class="dropdown-link-desc">dev форум</p>
+                  </a>
                 </div>
               </div>
             <a href="/t" class="internal_link"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>

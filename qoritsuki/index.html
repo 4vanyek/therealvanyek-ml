@@ -14,9 +14,6 @@
     <!--a class="notif internal_link" href="/">Вернуться на главную</a-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-        html {
-            scroll-behavior: smooth;
-        }
         pre {
             font-family: 'Source Code Pro';
             background: #000;
@@ -30,7 +27,7 @@
         a {
             color: #c04 !important;
         }
-        .notif, .accordion {
+        .notif, .accordion, .copy-button {
             background: rgb(2, 0, 36);
         }
         .notif {
@@ -98,6 +95,12 @@
         .img-cont, .image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
             height: 650px !important;
         }
+        .img-cont {
+            text-shadow: 0px 0px 6px rgba(2,0,36,1);
+        }
+        .logo-link:hover {
+            background: none !important;
+        }
         /* Scrollbar track */
         ::-webkit-scrollbar-track {
             background: #222;
@@ -111,20 +114,39 @@
         :root {
             scrollbar-color: #c04 #222;
         }
+        .update {
+            padding: 0.7em 2em;
+            background: rgb(2, 0, 36);
+            border-radius: 40px;
+            border: 2px solid rgb(140, 0, 47);
+            color: #fff !important;
+            transition: 0.2s;
+            font-size: 14px;
+        }
+        .update:hover {
+            text-decoration: none;
+            border-color: #c04;
+            transition: 0.2s;
+        }
+        .update::after {
+            content: ' \f178';
+        }
       </style>
-    <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 0 2em 2em 2em; height: 100vh;">
+    <div class="center" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 0 2em 2em 2em; height: 600px;">
         <nav class="navbar">
             <!-- лого -->
-            <a href="/" class="logo-link">
-                <img class="logo" src="/TRV_favicon.svg" width="36px" alt="лого trv">
+            <a href="/" class="logo-link trv-logo" title="лого trv">
+                <img class="logo" src="/TRV_favicon.svg" width="36px" alt="лого trv" style="display: inline-block; margin-left: 2px;">
+                <p style="display: inline-block; font-size: 14px; margin: 0 2.5px;">therealvanyek</p>
             </a>
             <div class="non-mobile">
                 <p class="vertical-line" style="font-weight: 400; color: #ffffff50 !important;">&nbsp;|&nbsp;</p>
             </div>
-            <a href="/qoritsuki/" class="logo-link">
-                <img class="logo" src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="36px" alt="лого qoritsuki">
+            <a href="/qoritsuki/" class="logo-link" title="лого qoritsuki">
+                <p style="display: inline-block; margin: 0 2.5px; font-size: 18px; font-family: 'Inter Tight', Arial, Helvetica, sans-serif;">Qoritsuki</p>
+                <img class="logo" src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="36px" alt="лого qoritsuki" style="display: inline-block; margin-left: 2px;">
             </a>
-            <img class="mlogo" src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="50%" style="z-index: 999;">
+            <!--img class="mlogo" src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="50%" style="z-index: 999;"-->
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <!-- USING CHECKBOX HACK -->
@@ -132,7 +154,7 @@
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         
                 <!-- NAVIGATION MENUS -->
-                <div class="menu flex" style="border-radius: 8px;">
+                <div class="menu flex" style="border-radius: 8px; margin-left: 30px;">
                     <a href="/qoritsuki/" class="internal_link" style="margin-left: 0;"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
                     <a href="#features" class="internal_link"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Возможности</a>
                     <a href="https://dsc.gg/qoritsuki" class="internal_link" target="_blank"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Пригласить</a>
@@ -148,6 +170,9 @@
             <h1 style="color: #fff; text-shadow: 0px 0px 40px rgba(255,255,255,0.6);">Qoritsuki</h1>&nbsp;&nbsp;
             <img src="/qoritsuki/assets/img/qoritsuki_transparent.svg" width="92">
         </div>
+        <div>
+            <a class="update" href="https://trv.bearblog.dev/qoritsuki-release-1-0-0/" target="_blank">Вышел релиз 1.0.0!</a>
+        </div>
         <div style="white-space: nowrap;">
             <a href="#translate" class="internal_link cmd-cloud">
                 <pre style="display: inline-block; font-size: 24px;">/translate</pre>
@@ -156,7 +181,7 @@
                 <pre style="display: inline-block; font-size: 24px;">/video</pre>
             </a>
             <div class="mobile">
-                <br><br>
+                <br>
             </div>
             <a href="#weather" class="internal_link cmd-cloud hover-text">
                 <pre style="display: inline-block; font-size: 24px;">/weather</pre>
@@ -169,7 +194,10 @@
             <br>
             <p style="color: #fff; text-shadow: 0px 0px 15px rgba(255,255,255,0.6);">многоцелевой Discord бот</p>
             <br>
-            <p>Powered by <a href="https://github.com/devcat86" target="_blank" style="color: #fff !important;">m1cro_cat's</a> cloud</p>
+            <p>Powered by 
+                <a href="https://discord.com/users/1102902223870119977" target="_blank" style="color: #fff !important;">m1cro_cat's</a> cloud & 
+                <a href="https://heliohost.org" target="_blank" style="color: #fff !important;">HelioHost</a>
+            </p>
             <br><br>
             <a class="qor-main-button" target="_blank" href="https://dsc.gg/qoritsuki">
                 Пригласить на сервер
@@ -194,7 +222,7 @@
     <br>
     <div class="screen1-qor" id="weather">
         <div class="img-cont">
-            <pre>/weather</pre>
+            <precopy><pre style="display: inline-block;">/weather</pre></precopy>
             <h1><i class="fa-solid fa-cloud-sun-rain"></i> Погода</h1>
             <p>Показывает погоду в указанном регионе</p>
             <br><br>
@@ -217,7 +245,7 @@
     </div>
     <div class="screen2-qor" id="video">
         <div class="img-cont">
-            <pre>/video</pre>
+            <precopy><pre style="display: inline-block;">/video</pre></precopy>
             <h1><i class="fa-solid fa-play"></i> Видео</h1>
             <p>Ищет видео по названию в YouTube</p>
             <br><br>
@@ -240,7 +268,7 @@
     </div>
     <div class="screen3-qor" id="image">
         <div class="img-cont">
-            <pre>/image</pre>
+            <precopy><pre style="display: inline-block;">/image</pre></precopy>
             <h1><i class="fa-solid fa-image"></i> Изображение</h1>
             <p>Ищет изображение по названию в Google Images</p>
             <br><br>
@@ -263,7 +291,7 @@
     </div>
     <div class="screen4-qor" id="translate">
         <div class="img-cont" style="height: 600px;">
-            <pre>/translate</pre>
+            <precopy><pre style="display: inline-block;">/translate</pre></precopy>
             <h1><i class="fa-solid fa-language"></i> Переводчик</h1>
             <p>Переводит фразы на 100+ языков</p>
             <br><br>
@@ -276,10 +304,13 @@
                             <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
                             <br>
                             <pre>query</pre>
-                            <p>Обязательный параметр. Позволяет указать фразу для перевода.</p>
+                            <p>Необязательный параметр. Позволяет указать фразу для перевода.</p>
+                            <br>
+                            <pre>message_id</pre>
+                            <p>Необязательный параметр. Позволяет указать ID сообщения, которое нужно перевести.</p>
                             <br>
                             <pre>lang</pre>
-                            <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
+                            <p>Необязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
                         </div>
                     </div>
                 </div>
@@ -292,89 +323,82 @@
     <br>
     <div class="accordions">
     <button class="accordion">Все команды</button>
-    <div class="panel" style="grid-area: 1 / 1 / 2 / 2;">
+    <div class="panel">
         <div class="panel-cont">
             <div class="commands-grid">
                 <div>
-                    <pre>/changelog</pre>
+                    <precopy><pre style="display: inline-block;">/changelog</pre></precopy>
                     <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
                 </div>
                 <div>
-                    <pre>/delete</pre>
+                    <precopy><pre style="display: inline-block;">/delete</pre></precopy>
                     <p>Удаляет выбранное количество последних сообщений. Параметры:</p>
                     <br>
                     <pre>amount</pre>
                     <p>Обязательный параметр. Позволяет указать количество сообщений, которые нужно удалить.</p>
                 </div>
                 <div>
-                    <pre>/dog</pre>
+                    <precopy><pre style="display: inline-block;">/dog</pre></precopy>
                     <p>Гав! :)</p>
                 </div>
                 <div>
-                    <pre>/help</pre>
+                    <precopy><pre style="display: inline-block;">/credits</pre></precopy>
+                    <p>Показывает, с помощью чего и кого был создан бот. Параметров нет.</p>
+                </div>
+                <div>
+                    <precopy><pre style="display: inline-block;">/help</pre></precopy>
                     <p>Показывает помощь по командам. Параметров нет.</p>
                 </div>
                 <div>
-                    <pre>/image</pre>
+                    <precopy><pre style="display: inline-block;">/image</pre></precopy>
                     <p>Ищет изображение из Google Images по запросу. Параметры:</p>
                     <br>
                     <pre>query</pre>
                     <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
                 </div>
                 <div>
-                    <pre>/status</pre>
+                    <precopy><pre style="display: inline-block;">/math</pre></precopy>
+                    <p>Решает лёгкие математические выражения. Параметры:</p>
+                    <br>
+                    <pre>expression</pre>
+                    <p>Обязательный параметр. Позволяет указать выражение для решения.</p>
+                </div>
+                <div>
+                    <precopy><pre style="display: inline-block;">/status</pre></precopy>
                     <p>Показывает статус бота (ОЗУ, CPU, задержка и др.). Параметров нет.</p>
                 </div>
                 <div>
-                    <pre>/translate</pre>
+                    <precopy><pre style="display: inline-block;">/translate</pre></precopy>
                     <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
                     <br>
                     <pre>query</pre>
-                    <p>Обязательный параметр. Позволяет указать фразу для перевода.</p>
+                    <p>Необязательный параметр. Позволяет указать фразу для перевода.</p>
+                    <br>
+                    <pre>message_id</pre>
+                    <p>Необязательный параметр. Позволяет указать ID сообщения, которое нужно перевести.</p>
                     <br>
                     <pre>lang</pre>
-                    <p>Обязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
+                    <p>Необязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
                 </div>
                 <div>
-                    <pre>/video</pre>
+                    <precopy><pre style="display: inline-block;">/video</pre></precopy>
                     <p>Ищет видео из YouTube по запросу. Параметры:</p>
                     <br>
                     <pre>query</pre>
                     <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
                 </div>
                 <div>
-                    <pre>/weather</pre>
+                    <precopy><pre style="display: inline-block;">/weather</pre></precopy>
                     <p>Показывает текущую погоду. Параметры:</p>
                     <br>
                     <pre>city</pre>
                     <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
                 </div>
-                <!--div>
-                    <pre>/welcome channel</pre>
-                    <p>Позволяет настроить канал для приветственных сообщений. Параметры:</p>
-                    <br>
-                    <pre>channel</pre>
-                    <p>Обязательный параметр. Позволяет указать канал.</p>
-                </div>
-                <div>
-                    <pre>/welcome message</pre>
-                    <p>Позволяет настроить приветственное сообщение. Параметры:</p>
-                    <br>
-                    <pre>message</pre>
-                    <p>Обязательный параметр. Позволяет указать сообщение.</p>
-                </div>
-                <div>
-                    <pre>/welcome toggle</pre>
-                    <p>Позволяет включить/выключить приветственные сообщения. Параметры:</p>
-                    <br>
-                    <pre>enabled</pre>
-                    <p>Обязательный параметр. Позволяет включить/выключить сообщения.</p>
-                </div-->
             </div>
         </div>
     </div>
     <button class="accordion">Помощь в создании</button>
-    <div class="panel" style="grid-area: 1 / 2 / 2 / 3;">
+    <div class="panel">
         <div class="panel-cont">
             <h3>Хостинг</h3>
             <p><a href="https://discord.gg/TRzH2exzpp" target="_blank">m1cro_cloud</a> - хостинг бота<br>
@@ -396,5 +420,6 @@
     
     <script id="footer" src="/scripts/footer.js"></script>
     <script src="/scripts/accord.js"></script>
+    <script src="/scripts/copy.js"></script>
 </body>
 </html>

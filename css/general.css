@@ -17,6 +17,9 @@
 :root {
     scrollbar-color: #9c4bff #222;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: #130028;
@@ -90,11 +93,7 @@ h1, h2 {
 }
 .logo, .logo img {
     background: none;
-    margin: 0 5px 0 5px;
     padding: 0;
-    align-items: center;
-    justify-content: center;
-    display: flex;
 }
 .logo::after {
     content: '';
@@ -134,11 +133,12 @@ button, .button {
     transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     color: #9c4bff;
     text-shadow: none;
+    user-select: none;
 }
 .mobile {
     display: none;
 }
-.main-button, .qor-main-button, .qor-button {
+.main-button, .qor-main-button, .qor-button, .copy-button {
     font-size: 18px;
     /* margin: 5px; */
     background: #7c11ff;
@@ -146,6 +146,7 @@ button, .button {
     color: #fff !important;
     border-radius: 6px;
     text-shadow: none;
+    user-select: none;
 }
 .qor-main-button {
     background: #750026;
@@ -155,13 +156,13 @@ button, .button {
     background: #c04;
     transition-duration: 0.2s;
 }
-.qor-main-button:active {
+.qor-main-button:active, .copy-button:active {
     background: #54001c;
 }
 .qor-button {
     background: #111;
 }
-.qor-button:hover {
+.qor-button:hover, .copy-button:hover {
     background: #610020;
     transition-duration: 0.1s;
 }
@@ -266,4 +267,8 @@ hr {
     color: #9c4bff;
     font-weight: 700;
     user-select: none;
+}
+.copy-button {
+    padding: 0.5em;
+    font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
 }

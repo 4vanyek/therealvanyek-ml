@@ -20,6 +20,7 @@
     z-index: 1000000;
     border-radius: 8px;
     padding: 0.3em;
+    left: 58.3%;
   }
   
   .dropdown-content a {
@@ -39,3 +40,7 @@
   .show {
     display: block;
   }
+.dropdown-link-desc {
+  font-size: 14px;
+  color: #bbb;
+}
