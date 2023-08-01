@@ -89,6 +89,9 @@
     .img-cont {
         height: 800px !important;
     }
+    .head {
+        height: 100% !important;
+    }
 .open-menu {
     color: #fff;
     font-size: 36px;
