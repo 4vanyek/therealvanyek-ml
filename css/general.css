@@ -115,10 +115,11 @@ a:visited, a {
     color: #9c4bff;
 }
 a:hover {
-    /*border-color: #ddd;*/
+    /*border-color: #ddd;
     text-decoration: underline;
     text-underline-offset: 3px;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 2px;*/
+    color: #6a32ae;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
 button, .button {

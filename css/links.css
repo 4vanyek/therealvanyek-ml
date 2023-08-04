@@ -11,7 +11,7 @@
     padding: 1.5em;
     border-radius: 8px;
     color: #111;
-    background: #220048;
+    border: 2px solid #220048;
     margin: 5px;
     width: 25%;
 }
@@ -23,6 +23,7 @@
 }
 .links-cont:hover {
     background: #2f005e;
+    border-color: #2f005e;
 }
 .link::after, .link a::after {
     content: '' !important;

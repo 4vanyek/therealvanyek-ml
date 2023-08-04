@@ -42,7 +42,7 @@ li {
 	align-items: center;
 }
 .logo-link:hover {
-	background: #340068 !important;
+	filter: brightness(70%);
 }
 .logo-link::after {
 	content: '';

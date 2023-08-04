@@ -11,56 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
 </head>
 <body style="background: #000;">
-    <!--a class="notif internal_link" href="/">Вернуться на главную</a-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
         pre {
             font-family: 'Source Code Pro';
             background: #000;
             width: fit-content;
-            padding: 5px;
             border-radius: 6px;
         }
-        p, pre {
-            color: #fff;
+        pre, .rev {
+            padding: 5px;
         }
-        a {
-            color: #c04 !important;
-        }
-        .notif, .accordion, .copy-button {
-            background: rgb(2, 0, 36);
-        }
-        .notif {
+        .qor-main-button:hover, .qor-button:hover, .down-arrow:hover, 
+        .update:hover, .social-icon, .notif,
+        .down-arrow, .update, p, pre {
             color: #fff !important;
         }
-        .notif:hover, .accordion:hover, .active {
+        a, .social-icon:hover, .vertical-line, 
+        .accordion, .accordion::after, hr {
+            color: #c04 !important;
+        }
+        .notif, .accordion, .copy-button,
+        footer, .panel, .update {
+            background: rgb(2, 0, 36, 1) !important;
+        }
+        .notif:hover, .accordion:hover, .active,
+        .commands-grid div {
             background: #370012 !important;
-        }
-        footer {
-            background: rgb(2, 0, 36) !important;
-        }
-        .social-icon {
-            color: #fff !important;
-        }
-        .social-icon:hover {
-            color: #c04 !important;
         }
         .rev {
             color: #888;
-            padding: 5px;
         }
-        .vertical-line, .accordion, .accordion::after {
-            color: #c04 !important;
-        }
-        hr {
+        hr, .update:hover {
             border-color: #c04 !important;
-            color: #c04 !important;
-        }
-        .panel {
-            background-color: rgba(2,0,36,1) !important;
-        }
-        .commands-grid div {
-            background: #370012 !important;
         }
         h3 {
             margin-top: 10px;
@@ -70,11 +53,10 @@
         }
         .down-arrow {
             font-size: 24px;
-            color: #fff !important;
             width: fit-content;
             display: inline-block;
         }
-        .down-arrow:hover, .cmd-cloud:hover {
+        .down-arrow:hover, .cmd-cloud:hover, .update:hover {
             text-decoration: none;
         }
         .cmd-cloud pre {
@@ -100,6 +82,7 @@
         }
         .logo-link:hover {
             background: none !important;
+            filter: brightness(70%);
         }
         /* Scrollbar track */
         ::-webkit-scrollbar-track {
@@ -114,19 +97,14 @@
         :root {
             scrollbar-color: #c04 #222;
         }
+        .update, .update:hover {
+            transition: 0.2s;
+        }
         .update {
             padding: 0.7em 2em;
-            background: rgb(2, 0, 36);
             border-radius: 40px;
             border: 2px solid rgb(140, 0, 47);
-            color: #fff !important;
-            transition: 0.2s;
             font-size: 14px;
-        }
-        .update:hover {
-            text-decoration: none;
-            border-color: #c04;
-            transition: 0.2s;
         }
         .update::after {
             content: ' \f178';
@@ -170,7 +148,7 @@
             <div class="mobile">
                 <br>
             </div>
-            <a class="update" href="https://trv.bearblog.dev/qoritsuki-release-1-0-0/" target="_blank">Вышел релиз 1.0.0!</a>
+            <a class="update" href="https://trv.bearblog.dev/qoritsuki-release-1-2-0/" target="_blank">Вышел релиз 1.2.0!</a>
             <div class="mobile">
                 <br>
             </div>
