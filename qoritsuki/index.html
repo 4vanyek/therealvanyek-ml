@@ -5,111 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qoritsuki</title>
     <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/qoritsuki.css" rel="stylesheet">
     <link 
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
 </head>
 <body style="background: #000;">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-        pre {
-            font-family: 'Source Code Pro';
-            background: #000;
-            width: fit-content;
-            border-radius: 6px;
-        }
-        pre, .rev {
-            padding: 5px;
-        }
-        .qor-main-button:hover, .qor-button:hover, .down-arrow:hover, 
-        .update:hover, .social-icon, .notif,
-        .down-arrow, .update, p, pre {
-            color: #fff !important;
-        }
-        a, .social-icon:hover, .vertical-line, 
-        .accordion, .accordion::after, hr {
-            color: #c04 !important;
-        }
-        .notif, .accordion, .copy-button,
-        footer, .panel, .update {
-            background: rgb(2, 0, 36, 1) !important;
-        }
-        .notif:hover, .accordion:hover, .active,
-        .commands-grid div {
-            background: #370012 !important;
-        }
-        .rev {
-            color: #888;
-        }
-        hr, .update:hover {
-            border-color: #c04 !important;
-        }
-        h3 {
-            margin-top: 10px;
-        }
-        h2 {
-            text-shadow: 0px 0px 15px rgba(255,255,255,0.6);
-        }
-        .down-arrow {
-            font-size: 24px;
-            width: fit-content;
-            display: inline-block;
-        }
-        .down-arrow:hover, .cmd-cloud:hover, .update:hover {
-            text-decoration: none;
-        }
-        .cmd-cloud pre {
-            transition: 0.1s;
-        }
-        .cmd-cloud pre:hover {
-            scale: 1.05;
-            transition: 0.1s;
-        }
-        .navbar {
-            position: relative;
-            background: none;
-            justify-content: center;
-        }
-        .navbar a:hover {
-            color: #f05 !important;
-        }
-        .img-cont, .image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
-            height: 650px !important;
-        }
-        .img-cont {
-            text-shadow: 0px 0px 6px rgba(2,0,36,1);
-        }
-        .logo-link:hover {
-            background: none !important;
-            filter: brightness(70%);
-        }
-        /* Scrollbar track */
-        ::-webkit-scrollbar-track {
-            background: #222;
-        }
-  
-        /* Scrollbar handle (thumb) */
-        ::-webkit-scrollbar-thumb {
-            background: #c04;
-        }
-
-        :root {
-            scrollbar-color: #c04 #222;
-        }
-        .update, .update:hover {
-            transition: 0.2s;
-        }
-        .update {
-            padding: 0.7em 2em;
-            border-radius: 40px;
-            border: 2px solid rgb(140, 0, 47);
-            font-size: 14px;
-        }
-        .update::after {
-            content: ' \f178';
-        }
-      </style>
     <div class="center head" style="background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(255,41,73,1) 100%); display: grid; padding: 0 2em 2em 2em; height: 600px;">
         <nav class="navbar">
             <!-- лого -->
@@ -189,7 +91,7 @@
             <div class="mobile">
                 <br><br>
             </div>
-            <a class="qor-button" target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=1130128582774108210&permissions=8&scope=applications.commands%20bot">Beta версия (unstable)</a>
+            <a class="qor-button" target="_blank" href="https://qoritsuki.gitbook.io/docs">Документация</a>
             <br><br><br>
             <a href="#features" class="down-arrow internal_link">
                 <h3 style="font-size: 18px;">Узнайте про возможности этого бота</h3>
@@ -206,21 +108,7 @@
             <h1><i class="fa-solid fa-cloud-sun-rain"></i> Погода</h1>
             <p>Показывает погоду в указанном регионе</p>
             <br><br>
-            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
-            <div class="panel" style="width: fit-content;">
-                <div class="panel-cont">
-                    <div class="commands-grid">
-                        <div>
-                            <pre>/weather</pre>
-                            <p>Показывает текущую погоду. Параметры:</p>
-                            <br>
-                            <pre>city</pre>
-                            <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
+            <a class="qor-button second-button internal_link" href="https://qoritsuki.gitbook.io/docs/commands/weather">Как использовать</a>
         </div>
     </div>
     <div class="screen2-qor" id="video">
@@ -229,20 +117,7 @@
             <h1><i class="fa-solid fa-play"></i> Видео</h1>
             <p>Ищет видео по названию в YouTube</p>
             <br><br>
-            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
-            <div class="panel" style="width: fit-content;">
-                <div class="panel-cont">
-                    <div class="commands-grid">
-                        <div>
-                            <pre>/video</pre>
-                            <p>Ищет видео из YouTube по запросу. Параметры:</p>
-                            <br>
-                            <pre>query</pre>
-                            <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="qor-button second-button internal_link" href="https://qoritsuki.gitbook.io/docs/commands/video">Как использовать</a>
             <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
         </div>
     </div>
@@ -252,20 +127,7 @@
             <h1><i class="fa-solid fa-image"></i> Изображение</h1>
             <p>Ищет изображение по названию в Google Images</p>
             <br><br>
-            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
-            <div class="panel" style="width: fit-content;">
-                <div class="panel-cont">
-                    <div class="commands-grid">
-                        <div>
-                            <pre>/image</pre>
-                            <p>Ищет изображение из Google Images по запросу. Параметры:</p>
-                            <br>
-                            <pre>query</pre>
-                            <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="qor-button second-button internal_link" href="https://qoritsuki.gitbook.io/docs/commands/image">Как использовать</a>
             <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
         </div>
     </div>
@@ -275,127 +137,138 @@
             <h1><i class="fa-solid fa-language"></i> Переводчик</h1>
             <p>Переводит фразы на 100+ языков</p>
             <br><br>
-            <button class="accordion" style="width: fit-content; font-size: 16px; color: #fff !important; padding: 1em;">Как использовать</button>
-            <div class="panel" style="width: fit-content;">
-                <div class="panel-cont">
-                    <div class="commands-grid">
-                        <div>
-                            <pre>/translate</pre>
-                            <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
-                            <br>
-                            <pre>query</pre>
-                            <p>Необязательный параметр. Позволяет указать фразу для перевода.</p>
-                            <br>
-                            <pre>message_id</pre>
-                            <p>Необязательный параметр. Позволяет указать ID сообщения, которое нужно перевести.</p>
-                            <br>
-                            <pre>lang</pre>
-                            <p>Необязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a class="qor-button second-button internal_link" href="https://qoritsuki.gitbook.io/docs/commands/translate">Как использовать</a>
             <!--a class="qor-main-button internal_link" href="#translate">Как использовать</a-->
         </div>
+    </div>
+    <br>
+    <h2 class="tcent" style="color: #fff;">Нужна помощь? Зайдите на сервер Qoritsuki Support!</h2>
+    <div class="center" style="flex-direction: column;">
+        <div style="flex-direction: row; margin-bottom: 5px;">
+            <a href="https://e.widgetbot.io/channels/1062245964171198464/1137341564901933186" style="margin: 5px;" target="_blank">
+                Открыть виджет в новой вкладке
+            </a>
+            <a href="https://dsc.gg/qorsupport" style="margin: 5px;" target="_blank">Открыть сервер в Discord</a>
+        </div>
+        <div class="non-mobile">
+        <widgetbot
+            server="1062245964171198464"
+            channel="1137341564901933186"
+            width="1100"
+            height="400"
+        ></widgetbot>
+        </div>
+        <div class="mobile" style="width: 90%; height: 600px;">
+            <widgetbot
+                server="1062245964171198464"
+                channel="1137341564901933186"
+                width="100%"
+                height="600"
+            ></widgetbot>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
     </div>
     <br>
     <h2 class="tcent" style="color: #fff">Полезное:</h2>
     <br>
     <div class="accordions">
-    <button class="accordion">Все команды</button>
-    <div class="panel">
-        <div class="panel-cont">
-            <div class="commands-grid">
-                <div>
-                    <precopy><pre style="display: inline-block;">/changelog</pre></precopy>
-                    <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/delete</pre></precopy>
-                    <p>Удаляет выбранное количество последних сообщений. Параметры:</p>
-                    <br>
-                    <pre>amount</pre>
-                    <p>Обязательный параметр. Позволяет указать количество сообщений, которые нужно удалить.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/dog</pre></precopy>
-                    <p>Гав! :)</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/credits</pre></precopy>
-                    <p>Показывает, с помощью чего и кого был создан бот. Параметров нет.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/help</pre></precopy>
-                    <p>Показывает помощь по командам. Параметров нет.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/image</pre></precopy>
-                    <p>Ищет изображение из Google Images по запросу. Параметры:</p>
-                    <br>
-                    <pre>query</pre>
-                    <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/math</pre></precopy>
-                    <p>Решает лёгкие математические выражения. Параметры:</p>
-                    <br>
-                    <pre>expression</pre>
-                    <p>Обязательный параметр. Позволяет указать выражение для решения.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/status</pre></precopy>
-                    <p>Показывает статус бота (ОЗУ, CPU, задержка и др.). Параметров нет.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/translate</pre></precopy>
-                    <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
-                    <br>
-                    <pre>query</pre>
-                    <p>Необязательный параметр. Позволяет указать фразу для перевода.</p>
-                    <br>
-                    <pre>message_id</pre>
-                    <p>Необязательный параметр. Позволяет указать ID сообщения, которое нужно перевести.</p>
-                    <br>
-                    <pre>lang</pre>
-                    <p>Необязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/video</pre></precopy>
-                    <p>Ищет видео из YouTube по запросу. Параметры:</p>
-                    <br>
-                    <pre>query</pre>
-                    <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
-                </div>
-                <div>
-                    <precopy><pre style="display: inline-block;">/weather</pre></precopy>
-                    <p>Показывает текущую погоду. Параметры:</p>
-                    <br>
-                    <pre>city</pre>
-                    <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
+        <div class="tcent">
+            <a class="qor-button second-button internal_link" style="display: inherit;" href="https://qoritsuki.gitbook.io/docs/">Документация</a>
+        </div>
+        <button class="accordion">Все команды</button>
+        <div class="panel">
+            <div class="panel-cont">
+                <div class="commands-grid">
+                    <div>
+                        <precopy><pre style="display: inline-block;">/changelog</pre></precopy>
+                        <p>Показывает последний changelog из файла changelog.md. Параметров нет.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/delete</pre></precopy>
+                        <p>Удаляет выбранное количество последних сообщений. Параметры:</p>
+                        <br>
+                        <pre>amount</pre>
+                        <p>Обязательный параметр. Позволяет указать количество сообщений, которые нужно удалить.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/dog</pre></precopy>
+                        <p>Гав! :)</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/credits</pre></precopy>
+                        <p>Показывает, с помощью чего и кого был создан бот. Параметров нет.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/help</pre></precopy>
+                        <p>Показывает помощь по командам. Параметров нет.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/image</pre></precopy>
+                        <p>Ищет изображение из Google Images по запросу. Параметры:</p>
+                        <br>
+                        <pre>query</pre>
+                        <p>Обязательный параметр. Позволяет указать изображение для поиска.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/math</pre></precopy>
+                        <p>Решает лёгкие математические выражения. Параметры:</p>
+                        <br>
+                        <pre>expression</pre>
+                        <p>Обязательный параметр. Позволяет указать выражение для решения.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/status</pre></precopy>
+                        <p>Показывает статус бота (ОЗУ, CPU, задержка и др.). Параметров нет.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/translate</pre></precopy>
+                        <p>Позволяет переводить фразы на любой язык (который поддерживает Google Переводчик). Параметры:</p>
+                        <br>
+                        <pre>query</pre>
+                        <p>Необязательный параметр. Позволяет указать фразу для перевода.</p>
+                        <br>
+                        <pre>message_id</pre>
+                        <p>Необязательный параметр. Позволяет указать ID сообщения, которое нужно перевести.</p>
+                        <br>
+                        <pre>lang</pre>
+                        <p>Необязательный параметр. Позволяет указать язык, на который нужно перевести фразу.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/video</pre></precopy>
+                        <p>Ищет видео из YouTube по запросу. Параметры:</p>
+                        <br>
+                        <pre>query</pre>
+                        <p>Обязательный параметр. Позволяет указать название видео для поиска.</p>
+                    </div>
+                    <div>
+                        <precopy><pre style="display: inline-block;">/weather</pre></precopy>
+                        <p>Показывает текущую погоду. Параметры:</p>
+                        <br>
+                        <pre>city</pre>
+                        <p>Обязательный параметр. Позволяет указать город, в котором нужно посмотреть погоду.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <button class="accordion">Помощь в создании</button>
-    <div class="panel">
-        <div class="panel-cont">
-            <h3>Хостинг</h3>
-            <p><a href="https://discord.gg/TRzH2exzpp" target="_blank">m1cro_cloud</a> - хостинг бота<br>
-            <a href="https://heliohost.org" target="_blank">HelioHost</a> - хостинг сайта</p>
-            <h3>Помощь</h3>
-            <p><a href="https://discord.com/users/1102902223870119977" target="_blank">m1cro_cat</a> - хостинг и некоторые идеи</p>
-            <h3>Пакеты</h3>
-            <p><a href="https://pypi.org/project/py-cord/" target="_blank">py-cord</a><br>
-                <a href="https://pypi.org/project/requests/" target="_blank">requests</a><br>
-                <a href="https://pypi.org/project/chardet/" target="_blank">chardet</a><br>
-                <a href="https://pypi.org/project/psutil/" target="_blank">psutil</a><br>
-                <a href="https://pypi.org/project/google-api-python-client/" target="_blank">google-api-python-client</a><br>
-                <a href="https://pypi.org/project/python-dotenv/" target="_blank">python-dotenv</a><br>
-                <a href="https://pypi.org/project/translatepy/" target="_blank">translatepy</a>
-            </p>
+        <button class="accordion">Помощь в создании</button>
+        <div class="panel">
+            <div class="panel-cont">
+                <h3>Хостинг</h3>
+                <p><a href="https://discord.gg/TRzH2exzpp" target="_blank">m1cro_cloud</a> - хостинг бота<br>
+                <a href="https://heliohost.org" target="_blank">HelioHost</a> - хостинг сайта</p>
+                <h3>Помощь</h3>
+                <p><a href="https://discord.com/users/1102902223870119977" target="_blank">m1cro_cat</a> - хостинг и некоторые идеи</p>
+                <h3>Пакеты</h3>
+                <p><a href="https://pypi.org/project/py-cord/" target="_blank">py-cord</a><br>
+                    <a href="https://pypi.org/project/requests/" target="_blank">requests</a><br>
+                    <a href="https://pypi.org/project/chardet/" target="_blank">chardet</a><br>
+                    <a href="https://pypi.org/project/psutil/" target="_blank">psutil</a><br>
+                    <a href="https://pypi.org/project/google-api-python-client/" target="_blank">google-api-python-client</a><br>
+                    <a href="https://pypi.org/project/python-dotenv/" target="_blank">python-dotenv</a><br>
+                    <a href="https://pypi.org/project/translatepy/" target="_blank">translatepy</a>
+                </p>
+            </div>
         </div>
-    </div>
     </div>
     
     <script id="footer" src="/scripts/footer.js"></script>

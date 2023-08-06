@@ -115,11 +115,7 @@ a:visited, a {
     color: #9c4bff;
 }
 a:hover {
-    /*border-color: #ddd;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 2px;*/
-    color: #6a32ae;
+    filter: brightness(80%);
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
 button, .button {
@@ -139,9 +135,14 @@ button, .button {
 .mobile {
     display: none;
 }
-.main-button, .qor-main-button, .qor-button, .copy-button {
+.main-button:hover, .qor-main-button:hover, .qor-button:hover, 
+.copy-button:hover, .button:hover, .update:hover, 
+.menu a:hover, .devlog-notification:hover, .cmd-cloud:hover, 
+.down-arrow:hover {
+    filter: none;
+}
+.main-button, .qor-main-button, .qor-button, .copy-button, .button {
     font-size: 18px;
-    /* margin: 5px; */
     background: #7c11ff;
     padding: 1em 2em;
     color: #fff !important;
@@ -164,7 +165,7 @@ button, .button {
     background: #111;
 }
 .qor-button:hover, .copy-button:hover {
-    background: #610020;
+    background: #610020 !important;
     transition-duration: 0.1s;
 }
 .main-button:hover, .qor-main-button:hover, .qor-button:hover {
@@ -178,7 +179,9 @@ button, .button {
 }
 button:hover, .button:hover {
     background-color: #340068;
+    color: #9c4bff;
     text-decoration: none;
+    filter: none;
 }
 button:active, .button:active {
     background: #2d0066;
@@ -192,10 +195,6 @@ footer {
     background: #1b0039;
     margin-top: 20px;
 }
-/*footer a:hover {
-    text-decoration: underline;
-    background: none;
-}*/
 .devlogs-link {
     padding: 0.5em;
     margin: 5px;
@@ -227,6 +226,7 @@ footer {
 .devlog-notification:hover {
     text-decoration: none;
     background: #2f005e;
+    color: #9c4bff;
 }
 .commands-grid {
     display: grid;

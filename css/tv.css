@@ -15,6 +15,7 @@ a:hover, a:active {
   background-color: transparent !important;
   border: none !important;
   padding: 0 1em 0 1em !important;
+  font-family: 'Inter', Arial, Helvetica, sans-serif !important;
 }
 .gsc-input-box, .gsc-search-button-v2 {
   border: none !important;

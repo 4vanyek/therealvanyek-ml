@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+pre {
+    font-family: 'Source Code Pro';
+    background: #000;
+    width: fit-content;
+    border-radius: 6px;
+}
+pre, .rev {
+    padding: 5px;
+}
+.qor-main-button:hover, .qor-button:hover, .down-arrow:hover, 
+.update:hover, .social-icon, .notif,
+.down-arrow, .update, p, pre {
+    color: #fff !important;
+}
+a, .social-icon:hover, .vertical-line, 
+.accordion, .accordion::after, hr {
+    color: #c04 !important;
+}
+.notif, .accordion, .copy-button,
+footer, .panel, .update {
+    background: rgb(2, 0, 36, 1) !important;
+}
+.notif:hover, .accordion:hover, .active,
+.commands-grid div {
+    background: #370012 !important;
+}
+.rev {
+    color: #888;
+}
+hr, .update:hover {
+    border-color: #c04 !important;
+}
+h3 {
+    margin-top: 10px;
+}
+h2 {
+    text-shadow: 0px 0px 15px rgba(255,255,255,0.6);
+}
+.down-arrow {
+    font-size: 24px;
+    width: fit-content;
+    display: inline-block;
+}
+.down-arrow:hover, .cmd-cloud:hover, .update:hover {
+    text-decoration: none;
+}
+.cmd-cloud pre {
+    transition: 0.1s;
+}
+.cmd-cloud pre:hover {
+    scale: 1.05;
+    transition: 0.1s;
+}
+.navbar {
+    position: relative;
+    background: none;
+    justify-content: center;
+}
+.navbar a:hover {
+    color: #f05 !important;
+}
+.img-cont, .image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
+    height: 700px !important;
+}
+.img-cont {
+    text-shadow: 0px 0px 6px rgba(2,0,36,1);
+}
+.logo-link:hover {
+    background: none !important;
+    filter: brightness(70%);
+}
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+/* Scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #c04;
+}
+
+:root {
+    scrollbar-color: #c04 #222;
+}
+.update, .update:hover {
+    transition: 0.2s;
+}
+.update {
+    padding: 0.7em 2em;
+    border-radius: 40px;
+    border: 2px solid rgb(140, 0, 47);
+    font-size: 14px;
+}
+.update::after, .second-button::after {
+    content: ' \f178';
+}
