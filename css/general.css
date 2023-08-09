@@ -141,7 +141,7 @@ button, .button {
 .down-arrow:hover {
     filter: none;
 }
-.main-button, .qor-main-button, .qor-button, .copy-button, .button {
+.main-button, .qor-main-button, .qor-button, .copy-button {
     font-size: 18px;
     background: #7c11ff;
     padding: 1em 2em;
