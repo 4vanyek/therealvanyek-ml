@@ -17,7 +17,7 @@ a, .social-icon:hover, .vertical-line,
 .accordion, .accordion::after, hr {
     color: #c04 !important;
 }
-.notif, .accordion, .copy-button,
+.notif, .accordion,
 footer, .panel, .update {
     background: rgb(2, 0, 36, 1) !important;
 }

@@ -121,7 +121,7 @@ a:hover {
 button, .button {
     padding: 1em 2em;
     border: none;
-    margin: 5px;
+    margin: 2.5px;
     cursor: pointer;
     border-radius: 6px;
     font-size: 18px;
@@ -158,13 +158,13 @@ button, .button {
     background: #c04;
     transition-duration: 0.2s;
 }
-.qor-main-button:active, .copy-button:active {
+.qor-main-button:active {
     background: #54001c;
 }
 .qor-button {
     background: #111;
 }
-.qor-button:hover, .copy-button:hover {
+.qor-button:hover {
     background: #610020 !important;
     transition-duration: 0.1s;
 }
@@ -270,6 +270,14 @@ hr {
     user-select: none;
 }
 .copy-button {
-    padding: 0.5em;
+    padding: 0;
     font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+    width: 30px;
+    background: none !important;
 }
+/*.copy-button:hover {
+    color: #610020 !important;
+}
+.copy-button:active {
+    color: #54001c;
+}*/

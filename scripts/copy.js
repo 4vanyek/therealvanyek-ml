@@ -9,7 +9,7 @@ blocks.forEach(block => {
     let button = document.createElement("button");
 	button.classList.add("copy-button");
     
-    button.innerHTML = `<i class="fa-solid fa-copy"></i>&nbsp;Скопировать`;
+    button.innerHTML = `<i class="fa-solid fa-copy"></i>`;
     
     block.appendChild(button);
 
@@ -36,10 +36,10 @@ async function copyCode(block) {
 	// get button reference
 	let button = block.querySelector("button");
   
-	button.innerHTML = `<i class="${copiedIconClass}"></i>&nbsp;Скопировано!`;
+	button.innerHTML = `<i class="${copiedIconClass}"></i>`;
   
 	setTimeout(() => {
-	  button.innerHTML = `<i class="${copyIconClass}"></i>&nbsp;Скопировать`;
+	  button.innerHTML = `<i class="${copyIconClass}"></i>`;
 	}, 1000);
   
   }
