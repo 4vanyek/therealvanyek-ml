@@ -40,7 +40,10 @@
         <h2>Добро пожаловать на мой сайт!</h2>
         <p>Он до сих пор находится в разработке, но я надеюсь завершить его к концу лета.</p>
     </div>
-    <div class="main-container">
+    <div class="main-container" style="flex-direction: row;">
+        <div class="mobile">
+            <img src="./mystiehum_full.svg" width="300">
+        </div>
         <div class="main-cc">
             <h2>Обо мне:</h2>
             <p>
@@ -59,6 +62,9 @@
             <button onclick="location.href='#RVTECH'">RVTECH</button>
             <button onclick="location.href='#TVHome'">TVHome</button>
             <!--button onclick="location.href='#RVFILES'">RVFILES</button-->
+        </div>
+        <div class="non-mobile">
+            <img src="./mystiehum.svg" width="300" height="300">
         </div>
     </div>
     <div class="projects">
@@ -124,7 +130,7 @@
             data-reactions-enabled="1"
             data-emit-metadata="0"
             data-input-position="top"
-            data-theme="noborder_dark"
+            data-theme="https://realvanyek.eu.org/css/purpledark.css"
             data-lang="ru"
             data-loading="lazy"
             crossorigin="anonymous"

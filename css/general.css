@@ -24,6 +24,9 @@ body {
     margin: 0;
     background: #130028;
 }
+.main-cc p {
+    max-width: 70%;
+}
 .left {
     float: left;
 }
