@@ -41,6 +41,11 @@ h2 {
     font-size: 24px;
     width: fit-content;
     display: inline-block;
+    transition: 0.4s;
+}
+.down-arrow:hover {
+    transition: 0.4s;
+    letter-spacing: 4px;
 }
 .down-arrow:hover, .cmd-cloud:hover, .update:hover {
     text-decoration: none;

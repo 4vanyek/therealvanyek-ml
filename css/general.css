@@ -253,7 +253,7 @@ blockquote q {
     color: #fff;
 }
 footer hr {
-    width: 5%;
+    /*width: 5%;*/
     color: #9c4bff;
     margin: 10px;
     border: 1px solid #9c4bff;
@@ -274,6 +274,9 @@ hr {
     font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
     width: 30px;
     background: none !important;
+}
+.copy-button:hover {
+    cursor: copy;
 }
 /*.copy-button:hover {
     color: #610020 !important;
