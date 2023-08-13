@@ -3,12 +3,12 @@ ol {
     margin: 0;
     padding: 0;
   }
-  i.fa-brands.fa-discord.social-icon:hover {
+  /*i.fa-brands.fa-discord.social-icon:hover {
     color: #5865F2 !important;
   }
   i.fa-brands.fa-telegram.social-icon:hover {
     color: #2AABEE !important;
-  }
+  }*/
   .nav .social-icon:hover {
     color: #ccc;
     background:transparent;
