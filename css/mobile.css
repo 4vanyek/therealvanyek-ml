@@ -60,7 +60,7 @@
         max-width: 100% !important;
     }
     .main-container .mobile {
-        margin: 20px auto;
+        margin: 20px/* auto*/;
     }
     .img-cont {
         padding: 60px 60px 60px 40px !important;
