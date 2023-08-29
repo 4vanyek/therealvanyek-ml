@@ -112,6 +112,7 @@ a::after {
     font-family: "Font Awesome 6 Free";
     content: ' \f08e';
     font-weight: 900;
+    font-size: 14px;
 }
 
 a:visited, a {
@@ -170,6 +171,9 @@ button, .button {
 .qor-button:hover {
     background: #610020 !important;
     transition-duration: 0.1s;
+}
+.qor-button, .qor-main-button {
+    border-radius: 10px;
 }
 .main-button:hover, .qor-main-button:hover, .qor-button:hover {
     text-decoration: none;

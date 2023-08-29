@@ -10,19 +10,19 @@ pre, .rev {
 }
 .qor-main-button:hover, .qor-button:hover, .down-arrow:hover, 
 .update:hover, .social-icon, .notif,
-.down-arrow, .update, p, pre {
+.down-arrow, .update, p, pre, span {
     color: #fff !important;
 }
 a, .social-icon:hover, .vertical-line, 
-.accordion, .accordion::after, hr {
+.accordion, .accordion::after, hr, .icons i, .windowtoggle.qor-button {
     color: #c04 !important;
 }
 .notif, .accordion,
-footer, .panel, .update {
+footer, .panel, .update, #windowheader {
     background: rgb(2, 0, 36, 1) !important;
 }
 .notif:hover, .accordion:hover, .active,
-.commands-grid div {
+.commands-grid div, .icons button:hover, .icons button:active {
     background: #370012 !important;
 }
 .rev {
@@ -99,4 +99,34 @@ h2 {
 }
 .update::after, .second-button::after {
     content: ' \f178';
+}
+#window {
+    box-shadow: 0px 0px 15px rgb(2, 0, 36, 1) !important;
+    position: static !important;
+}
+.windowtoggle.qor-button {
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.windowtoggle.qor-button:hover {
+    background: none !important;
+    filter: brightness(80%);
+}
+.opacity-50 {
+    opacity: 0.5 !important;
+}
+.opacity-75 {
+    opacity: 0.75 !important;
+}
+@media screen and (max-width: 1000px) {
+    footer {
+        text-align: center;
+    }
+    footer p.rev {
+        justify-content: center;
+    }
 }

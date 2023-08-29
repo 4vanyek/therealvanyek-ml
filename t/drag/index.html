@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- start favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#9035ff">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#9035ff">
+    <!-- end favicons -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="/scripts/link.js"></script>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet"> <!-- подключение шрифтов -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
+    <title>Under Reconstruction</title>
+</head>
+<body>
+
+<h1>Draggable DIV Element</h1>
+
+<p>Click and hold the mouse button down while moving the DIV element</p>
+<button onclick="toggleWindow()" class="windowtoggle">Toggle Window</button>
+<div id="window" class="hide">
+    <div id="windowheader">
+        <div class="header">
+            <p>WidgetBot - Qoritsuki Support</p>
+        </div>
+        <div class="icons">
+            <button onclick="toggleWindow()"><i class="fa-solid fa-xmark" styke="padding: 10px 13px;"></i></button>
+        </div>
+    </div>
+    <div class="windowcontent">
+        <div class="non-mobile">
+        <widgetbot
+            server="1062245964171198464"
+            channel="1137341564901933186"
+            width="1100"
+            height="500"
+        ></widgetbot>
+        </div>
+        <div class="mobile" style="width: 90%; height: 600px;">
+            <widgetbot
+                server="1062245964171198464"
+                channel="1137341564901933186"
+                width="100%"
+                height="600"
+            ></widgetbot>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+    </div>
+</div>
+<script src="/scripts/window.js"></script>
+</body>
+</html>
