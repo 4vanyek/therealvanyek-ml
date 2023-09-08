@@ -50,12 +50,10 @@
     <div class="mobile">
         <br>
     </div>
-    <a class="devlog-notification internal_link" href="https://trv.bearblog.dev/farewell-ml-domains/" target="_blank">
-        <p>Важно! Переход с therealvanyek.ml на realvanyek.eu.org</p>
-    </a>
+    <a class="devlog-notification internal_link" href="" target="_blank"></a>
     <div class="tcent" style="padding: 20px; background: #190035;">
         <h2>Добро пожаловать на мой сайт!</h2>
-        <p>Он до сих пор находится в разработке, но я надеюсь завершить его к концу лета.</p>
+        <p>Этот сайт был создан как некое портфолио для того, чтобы показать свои проекты.</p>
     </div>
     <div class="main-container" style="align-items: center;">
         <div class="main-cc">
@@ -82,7 +80,7 @@
     </div>
     <div class="projects">
         <div class="qor-img" id="Qoritsuki">
-            <div class="img-cont">
+            <div class="img-cont animate-on-scroll">
                 <h1>Qoritsuki</h1>
                 <p>"совершенно оригинальный" Discord бот</p>
                 <br><br><br><br>
@@ -94,7 +92,7 @@
             </div>
         </div>
         <div class="image" id="RVTECH">
-            <div class="img-cont">
+            <div class="img-cont animate-on-scroll">
                 <h1>RVTECH</h1>
                 <p>dev форум</p>
                 <br><br><br><br>
@@ -102,7 +100,7 @@
             </div>
         </div>
         <div class="tvhome-img" id="TVHome">
-            <div class="img-cont">
+            <div class="img-cont animate-on-scroll">
                 <h1>TVHome</h1>
                 <p>стартовая страница для Smart TV</p>
                 <br><br><br><br>
@@ -113,25 +111,6 @@
     <br>
     <h2 class="tcent">Комментарии:</h2>
     <br>
-    <!--div class="gh-comments">
-         скрипт для подключения giscus (системы комментариев)
-        <script  src="https://giscus.app/client.js"
-            data-repo="4vanyek/comments"
-            data-repo-id="R_kgDOJs5phw"
-            data-category="Announcements"
-            data-category-id="DIC_kwDOJs5ph84CXDxu"
-            data-mapping="title"
-            data-strict="1"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="top"
-            data-theme="dark"
-            data-lang="ru"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-        </script>
-    </div-->
     <div class="gh-comments">
         <script src="https://giscus.app/client.js"
             data-repo="MystieHum/comments"
@@ -153,5 +132,26 @@
     <br>
     <script id="footer" src="/scripts/footer.js"></script>
     <script src="/scripts/dropdown.js"></script>
+    <script src="/scripts/animateScroll.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          let url = "https://proxy.mangaraiku.eu.org/?url=" + encodeURIComponent("https://trv.bearblog.dev/posts");
+          fetch(url)
+            .then(response => response.text())
+            .then(data => {
+              const parser = new DOMParser();
+              const html = parser.parseFromString(data, "text/html");
+              const firstLink = html.querySelector(".blog-posts > li:nth-child(1) > a:nth-child(2)");
+
+              const notificationLink = document.querySelector(".devlog-notification");
+              const baseUrl = 'https://trv.bearblog.dev';  // Base URL
+              const relativeLink = firstLink.getAttribute("href");  // Relative link from firstLink
+              const absoluteLink = new URL(relativeLink, baseUrl).href;  // Build the absolute URL
+              notificationLink.href = absoluteLink;
+              notificationLink.innerHTML = "<b>Новости:&nbsp;</b>" + firstLink.textContent;
+            })
+            .catch(error => console.error(error));
+        });
+    </script>
 </body>
 </html>

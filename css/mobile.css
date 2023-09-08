@@ -40,12 +40,6 @@
     .navbar {
         justify-content: space-between !important;
     }
-    .logo {
-        display: none;
-    }
-    .trv-logo {
-        display: none !important;
-    }
     .mlogo {
         display: flex;
     }

@@ -20,6 +20,9 @@
     z-index: 1000000;
     border-radius: 8px;
     padding: 0.6em;
+    /* Add transition properties */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .dropdown-content a {
@@ -36,7 +39,8 @@
   /*.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
     display: block;
   }*/
-  .show {
+  .dropdown-content.show {
+    opacity: 1;
     display: block;
   }
 .dropdown-link-desc {

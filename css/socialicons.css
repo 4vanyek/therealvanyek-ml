@@ -26,7 +26,7 @@ ol {
     color: #9035ff !important;
     border: none;
     padding: 0 !important;
-    margin: 0 5px 0 5px;
+    margin: 0 2.5px;
   }
   .social-icons a::after {
     content: none;

@@ -61,6 +61,7 @@ h1, h2 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    animation: fadeIn 1s ease-in-out;
 }
 .flex { display: flex; }
 .center {
@@ -285,9 +286,52 @@ hr {
 .copy-button:hover {
     cursor: copy;
 }
-/*.copy-button:hover {
-    color: #610020 !important;
+img {
+    animation: lightSpeedIn 1s ease-in-out;
 }
-.copy-button:active {
-    color: #54001c;
-}*/
+p, span, h1, h2, h3, h4, h5, h6 {
+    animation: fadeIn .5s ease-in-out;
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* keyframes & animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lightSpeedIn {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}

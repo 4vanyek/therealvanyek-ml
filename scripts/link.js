@@ -1,40 +1,55 @@
 window.addEventListener('DOMContentLoaded', function() {
   var links = document.querySelectorAll('a');
 
-  for(var i = 0; i < links.length; i++) {
+  for (var i = 0; i < links.length; i++) {
     var url;
+    var href = links[i].getAttribute('href'); // Get the href attribute value
 
-    if (!links[i].href.startsWith('http') && !links[i].href.startsWith('//')) {
-      // Handle internal anchor links
-      if(links[i].href.startsWith('#')){
-        continue; // Skip processing as these are internal anchor links
+    if (href && href.trim().length > 0) { // Check if href value exists and is not empty
+      if (!href.startsWith('http') && !href.startsWith('//')) {
+        // Handle internal anchor links
+        if (href.startsWith('#')) {
+          continue; // Skip processing as these are internal anchor links
+        }
+
+        var origin = window.location.origin; // Get the current origin
+
+        if (href.startsWith('/')) {
+          url = new URL(origin + href);
+        } else {
+          url = new URL(href, origin);
+        }
+
+        // Check if the link has the "button" class
+        if (links[i].classList.contains('button')) {
+          // Modify the button click behavior without appending hostname
+          links[i].addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = href;
+          });
+        } else {
+          // Create a new span element
+          var span = document.createElement('span');
+          span.classList.add('site-url');
+
+          var hostnameText = ''; // Initialize the hostname text
+
+          if (url.hash) {
+            hostnameText += url.hash;
+          }
+
+          links[i].textContent += hostnameText;
+        }
+      } else {
+        url = new URL(href);
+
+        // Create a new span element
+        var span = document.createElement('span');
+        span.classList.add('site-url');
+        span.textContent = ' (' + url.hostname + ')' + (url.hash ? url.hash : '');
+
+        links[i].appendChild(span);
       }
-      
-       // Prepend current origin to relative URLs/paths
-
-       if (links[i].getAttribute('href').startsWith('/')) {
-         url = new URL(window.location.origin + links[i].getAttribute('href'));
-       } else {
-         url = new URL(links[i].getAttribute('href'), window.location.origin);
-       }
-    } else {
-      url = new URL(links[i].getAttribute('href'));
     }
-
-    // Create a new span element
-    var span = document.createElement('span');
-    span.classList.add('site-url');
-    
-     // Append the site domain/subdomain to existing link text
-     
-     var hostnameText;
-
-     if(url.hash) { 
-       hostnameText = ' (' + url.hostname + ')' + url.hash;
-     } else{
-       hostnameText = ' (' + url.hostname + ')';
-     }
-     
-     links[i].textContent += hostnameText;
-   }
+  }
 });

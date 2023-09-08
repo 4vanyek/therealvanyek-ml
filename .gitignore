@@ -1,3 +1,4 @@
 .htaccess
 access_log
 pdo_connection.php
+pricing/

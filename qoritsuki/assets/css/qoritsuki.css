@@ -10,11 +10,10 @@ pre, .rev {
 }
 .qor-main-button:hover, .qor-button:hover, .down-arrow:hover, 
 .update:hover, .social-icon, .notif,
-.down-arrow, .update, p, pre, span {
+.down-arrow, .update, p, pre, span, .social-icons a {
     color: #fff !important;
 }
-a, .social-icon:hover, .vertical-line, 
-.accordion, .accordion::after, hr, .icons i, .windowtoggle.qor-button {
+a, .vertical-line, .accordion, .accordion::after, hr, .icons i, .windowtoggle.qor-button {
     color: #c04 !important;
 }
 .notif, .accordion,
@@ -121,6 +120,29 @@ h2 {
 }
 .opacity-75 {
     opacity: 0.75 !important;
+}
+.social-icons a span {
+    font-size: 18px;
+    font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+    margin: 0 5px;
+    font-weight: normal;
+}
+.social-icons a {
+    margin: 0 !important;
+}
+.social-icon i {
+    display: inline-flex;
+    align-items: center;
+    background: #03003c;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 35px;
+    transition: .2s;
+}
+.social-icon i:hover {
+    background: #c04;
+    color: #fff;
+    transition: .2s;
 }
 @media screen and (max-width: 1000px) {
     footer {
