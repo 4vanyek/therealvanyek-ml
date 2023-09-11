@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-pre {
-    font-family: 'Source Code Pro';
-    background: #000;
-    width: fit-content;
-    border-radius: 6px;
-}
-pre, .rev {
+.rev {
     padding: 5px;
 }
 .qor-main-button:hover, .qor-button:hover, .down-arrow:hover, 

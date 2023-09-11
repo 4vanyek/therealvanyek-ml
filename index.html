@@ -47,10 +47,8 @@
 <body style="margin-top: 3.15em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
     <div style="display: none;"><a rel="me" href="https://mas.to/@mystie">Mastodon</a></div> <!-- верификация домена на Mastodon -->
     <script id="nav" src="/scripts/nav.js"></script>
-    <div class="mobile">
-        <br>
-    </div>
-    <a class="devlog-notification internal_link" href="" target="_blank"></a>
+    <div class="mobile"><br></div>
+    <a class="devlog-notification internal_link" href="" target="_blank"><i class="fa-solid fa-clock"></i>&nbsp;Поиск новостей...</a>
     <div class="tcent" style="padding: 20px; background: #190035;">
         <h2>Добро пожаловать на мой сайт!</h2>
         <p>Этот сайт был создан как некое портфолио для того, чтобы показать свои проекты.</p>
@@ -64,15 +62,16 @@
                 , в основном занимаюсь разработкой сайтов.
 				 Люблю слушать музыку, кодить (очевидно же), прошивать девайсы.
 				 <br>
-				 Любимый трек: <a href="https://music.youtube.com/watch?v=YXYYCFaUUHQ&feature=share" target="_blank">Noisestorm - Heist</a>
+				 Любимый трек: <a href="https://music.youtube.com/watch?v=AWuDqCtoo7s" target="_blank">meganeko - Moonflowers</a>
 				 <br>
+                 Плейлист на YouTube Music: <a href="https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh" target="_blank">MusicdasH</a>
+                 <br>
 				 Основной девайс: <a href="https://4pda.to/devdb/xiaomi_redmi_6a" target="_blank">Xiaomi Redmi 6A</a>
                  <br>
                  Ссылки на соцсети есть на отдельной странице: <a href="/links/" class="internal_link">Ссылки</a>
             </p>
 			<h2>Мои проекты:</h2>
             <button onclick="location.href='#Qoritsuki'">Qoritsuki</button><button onclick="location.href='#RVTECH'">RVTECH</button><button onclick="location.href='#TVHome'">TVHome</button>
-            <!--button onclick="location.href='#RVFILES'">RVFILES</button-->
         </div>
         <div class="non-mobile">
             <img src="./mystiehum.svg" width="300" height="300">
@@ -80,7 +79,7 @@
     </div>
     <div class="projects">
         <div class="qor-img" id="Qoritsuki">
-            <div class="img-cont animate-on-scroll">
+            <div class="img-cont">
                 <h1>Qoritsuki</h1>
                 <p>"совершенно оригинальный" Discord бот</p>
                 <br><br><br><br>
@@ -92,7 +91,7 @@
             </div>
         </div>
         <div class="image" id="RVTECH">
-            <div class="img-cont animate-on-scroll">
+            <div class="img-cont">
                 <h1>RVTECH</h1>
                 <p>dev форум</p>
                 <br><br><br><br>
@@ -100,7 +99,7 @@
             </div>
         </div>
         <div class="tvhome-img" id="TVHome">
-            <div class="img-cont animate-on-scroll">
+            <div class="img-cont">
                 <h1>TVHome</h1>
                 <p>стартовая страница для Smart TV</p>
                 <br><br><br><br>
@@ -132,10 +131,9 @@
     <br>
     <script id="footer" src="/scripts/footer.js"></script>
     <script src="/scripts/dropdown.js"></script>
-    <script src="/scripts/animateScroll.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-          let url = "https://proxy.mangaraiku.eu.org/?url=" + encodeURIComponent("https://trv.bearblog.dev/posts");
+          let url = "https://proxy.mangaraiku.eu.org/?url=" + encodeURIComponent("https://mystie.bearblog.dev/blog");
           fetch(url)
             .then(response => response.text())
             .then(data => {
@@ -144,7 +142,7 @@
               const firstLink = html.querySelector(".blog-posts > li:nth-child(1) > a:nth-child(2)");
 
               const notificationLink = document.querySelector(".devlog-notification");
-              const baseUrl = 'https://trv.bearblog.dev';  // Base URL
+              const baseUrl = 'https://mystie.bearblog.dev';  // Base URL
               const relativeLink = firstLink.getAttribute("href");  // Relative link from firstLink
               const absoluteLink = new URL(relativeLink, baseUrl).href;  // Build the absolute URL
               notificationLink.href = absoluteLink;

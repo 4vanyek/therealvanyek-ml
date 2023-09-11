@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 * {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
@@ -124,7 +125,7 @@ a:hover {
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
 button, .button {
-    padding: 1em 2em;
+    padding: 0.8em 1.6em;
     border: none;
     margin: 2.5px;
     cursor: pointer;
@@ -149,7 +150,7 @@ button, .button {
 .main-button, .qor-main-button, .qor-button, .copy-button {
     font-size: 18px;
     background: #7c11ff;
-    padding: 1em 2em;
+    padding: 0.8em 1.6em;
     color: #fff !important;
     border-radius: 6px;
     text-shadow: none;
@@ -292,15 +293,17 @@ img {
 p, span, h1, h2, h3, h4, h5, h6 {
     animation: fadeIn .5s ease-in-out;
 }
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+pre {
+    font-family: 'Source Code Pro';
+    background: #000;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 5px;
 }
-
-.animate-on-scroll.animate {
-  opacity: 1;
-  transform: translateY(0);
+.powered-by {
+    margin-top: 10px;
+    border: 1px solid #595959;
+    border-radius: 5px;
 }
 
 /* keyframes & animations */

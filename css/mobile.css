@@ -19,6 +19,11 @@
         width: 95%;
         height: 100%;
     }
+    h1 {
+        font-size: 2rem;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 1000px) {
     footer hr {
