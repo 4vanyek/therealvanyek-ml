@@ -24,6 +24,7 @@
 .links-cont:hover {
     background: #2f005e;
     border-color: #2f005e;
+    filter: none;
 }
 .link::after, .link a::after {
     content: '' !important;
@@ -47,6 +48,7 @@
     text-decoration: none;
     background: #2f005e !important;
     transition-duration: 0ms;
+    filter: none;
 }
 .notif:active {
     scale: inherit;

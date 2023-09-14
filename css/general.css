@@ -137,6 +137,8 @@ button, .button {
     color: #9c4bff;
     text-shadow: none;
     user-select: none;
+    position: relative;
+    overflow: hidden;
 }
 .mobile {
     display: none;
@@ -305,9 +307,38 @@ pre {
     border: 1px solid #595959;
     border-radius: 5px;
 }
+/* start ripple effect */
+span.ripple {
+    position: absolute; /* The absolute position we mentioned earlier */
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.circle-ripple > .ripple-obj {
+    fill: hsl(185, 50%, 35%);
+}
+.ripple-obj {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
+.ripple-obj use {
+  opacity: 0;
+}
 /* keyframes & animations */
-
+@keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+}
+/* end ripple effect */
 @keyframes fadeIn {
   0% {
     opacity: 0;
