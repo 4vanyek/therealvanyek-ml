@@ -113,6 +113,10 @@
     .dl-desc {
         margin: 5px 0;
     }
+    .dl-variants {
+        display: flex;
+        flex-direction: row;
+    }
     @media screen and (max-width: 800px) {
         .dl {
             flex-direction: column;
@@ -128,6 +132,12 @@
         }
         .dropdown-content.show {
             display: inline-block !important;
+        }
+        .dl-variants a {
+            margin-right: 0 !important;
+        }
+        .dl-variants {
+            flex-direction: column;
         }
     }
 </style>
@@ -193,8 +203,10 @@
             <div class="dl-description">
                 <h2>Powered by HelioHost</h2>
                 <p class="translatable dl-desc" data-translationkey="heliohost-desc">A "Powered by HelioHost" banner for those, that host their stuff on HelioHost and want to promote it</p>
-                <p class="translatable" data-translationkey="hh-filesize">Filesize: ~128 KB</p>
-                <a data-translationkey="download" href="/img/second_prototype.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;Download</a>
+                <div class="dl-variants">
+                    <a data-translationkey="download1" style="margin-right: 5px" href="/img/second_prototype.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;Download</a>
+                    <a data-translationkey="download2" href="/img/helio_thumb-1.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;Download</a>
+                </div>
             </div>
             <div class="dl-preview">
                 <a href="/img/second_prototype.png" data-fancybox data-caption="Powered by HelioHost" class="internal_link"><img src="/img/second_prototype.png" style="animation: none;" width="200"/></a>

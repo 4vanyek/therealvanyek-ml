@@ -1,7 +1,7 @@
 {
   	"downloads": "<i class='fa-solid fa-download'></i>&nbsp;Downloads",
-  	"download": "<i class='fa-solid fa-download'></i>&nbsp;Download",
-  	"hh-filesize": "Filesize: ~0.1 MB",
+  	"download1": "<i class='fa-solid fa-download'></i>&nbsp;1st variant",
+  	"download2": "<i class='fa-solid fa-download'></i>&nbsp;2nd variant",
   	"preview": "Preview",
   	"heliohost-desc": "The “Powered by HelioHost” banner is for those who host their sites on HelioHost and want to give credit to this hosting."
 }
