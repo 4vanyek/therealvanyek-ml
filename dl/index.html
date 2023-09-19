@@ -46,7 +46,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
-    <title>Загрузки</title>
+    <title class="translatable" data-translationkey="dl_page_title">Загрузки</title>
 </head>
 <style>
     nav .dropdown {
@@ -59,26 +59,32 @@
     }
     .dl {
         padding: 1em;
-        border: 2px solid #9035ff;
+        /*border: 2px solid #9035ff;*/
         border-radius: 6px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        background: #1b0039;
     }
     .dl-description p {
         max-width: 60%;
     }
     .dl-button {
         max-width: fit-content;
-        padding: 0.3em;
-        border: 2px solid #9035ff;
+        padding: 0.5em;
+        /*border: 2px solid #9035ff;*/
+        background: #280051;
         border-radius: 6px;
-        margin: 5px 0;
+        margin: 5px 0 0 0;
+        user-select: none;
     }
     .dl-button:hover {
         filter: none;
-        background: #9035ff;
-        color: #fff;
+        background: #340068;
+        /*color: #fff;*/
+    }
+    .dl-button:active {
+        background: #2d0066;
     }
     .dl-description {
         display: flex;
@@ -103,7 +109,9 @@
     }
     .active {
         border-radius: 6px !important;
-        margin: inherit !important;
+        margin: 2.5px !important;
+        background: #340068;
+        padding: 0.7em 1.6em;
     }
     .active::after {
         content: ' \f00c';
@@ -117,10 +125,23 @@
         display: flex;
         flex-direction: row;
     }
+    .dropdown-content.show {
+        display: grid;
+    }
+    button[disabled] {
+        cursor: default;
+        background: #340068;
+    }
+    button[disabled]:active {
+        background: #340068;
+    }
     @media screen and (max-width: 800px) {
         .dl {
             flex-direction: column;
             max-width: 95%;
+        }
+        .dl-preview {
+            margin-top: 20px;
         }
         .dl-description p {
             max-width: 100%;
@@ -128,16 +149,23 @@
         .dl-button {
             max-width: 100%;
             text-align: center;
-            padding: 0.6em;
-        }
-        .dropdown-content.show {
-            display: inline-block !important;
+            padding: 0.8em;
         }
         .dl-variants a {
             margin-right: 0 !important;
         }
         .dl-variants {
             flex-direction: column;
+        }
+        .dropdown {
+            margin-top: 0 !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            float: none !important;
+        }
+        #lang-dropdown.dropdown-content.show {
+            display: flex;
         }
     }
 </style>
@@ -181,36 +209,49 @@
             <a href="/latest-news" class="internal_link"><i class="fa-solid fa-newspaper"></i>&nbsp;&nbsp;Новости</a>
             <a href="https://mystie.bearblog.dev" target="_blank"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;Блог</a>
             <a href="/t" class="internal_link"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
-            <div class="dropdown">
+            <!--div class="dropdown">
                 <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
                     <i class="fa-solid fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content" id="lang-dropdown">
-                    <button class="language-button" data-lang="ru">Русский (ru-RU)</button>
-                    <button class="language-button" data-lang="en">English (en-US)</button>
+                    <button class="language-button" data-lang="ru">Russian</button>
+                    <button class="language-button" data-lang="en">English</button>
                 </div>
-            </div>
+            </div-->
             <!--a href="https://github.com/MystieHum/mystie.eu.org" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a-->
         </div>
     </ul>
 </nav>
     <div class="mobile"><br></div>
     <br>
-    <h2 class="tcent translatable" data-translationkey="downloads"><i class="fa-solid fa-download"></i>&nbsp;Загрузки</h2>
+    <div class="page-title">
+        <h2 class="tcent translatable" data-translationkey="downloads"><i class="fa-solid fa-download"></i>&nbsp;Загрузки</h2>
+        <div class="dropdown" style="margin-top: -44px;float: right;">
+            <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="lang-dropdown">
+                <button class="language-button" data-lang="ru">Russian</button>
+                <button class="language-button" data-lang="en">English</button>
+            </div>
+        </div>
+    </div>
     <br>
     <div class="dl-container">
         <div class="dl">
             <div class="dl-description">
                 <h2>Powered by HelioHost</h2>
-                <p class="translatable dl-desc" data-translationkey="heliohost-desc">A "Powered by HelioHost" banner for those, that host their stuff on HelioHost and want to promote it</p>
+                <p class="translatable dl-desc" data-translationkey="heliohost-desc">Баннер «Powered by HelioHost» для тех, кто размещает свои сайты на HelioHost и хочет отдать должное этому хостингу.</p>
+                <h2 class="translatable" data-translationkey="dl_text">Скачать:</h2>
                 <div class="dl-variants">
-                    <a data-translationkey="download1" style="margin-right: 5px" href="/img/second_prototype.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;Download</a>
-                    <a data-translationkey="download2" href="/img/helio_thumb-1.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;Download</a>
+                    <a data-translationkey="download1" style="margin-right: 5px" href="/img/second_prototype.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;1 вариант</a>
+                    <a data-translationkey="download2" href="/img/helio_thumb-1.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;2 вариант</a>
                 </div>
             </div>
             <div class="dl-preview">
-                <a href="/img/second_prototype.png" data-fancybox data-caption="Powered by HelioHost" class="internal_link"><img src="/img/second_prototype.png" style="animation: none;" width="200"/></a>
-                <span class="translatable" data-translationkey="preview">Preview</span>
+                <a href="/img/second_prototype.png" data-fancybox="gallery" data-caption="Powered by HelioHost 1" class="internal_link"><img src="/img/second_prototype.png" style="animation: none;" width="150"/></a>
+                <a href="/img/helio_thumb-1.png" data-fancybox="gallery" data-caption="Powered by HelioHost 2" class="internal_link"><img src="/img/helio_thumb-1.png" style="animation: none; display: none;" width="150"/></a>
+                <span class="translatable" data-translationkey="preview">Превью</span>
             </div>
         </div>
     </div>
@@ -226,6 +267,9 @@ document.addEventListener('DOMContentLoaded', () => {
   languageButtons.forEach((button) => {
     if (button.dataset.lang === selectedLanguage) {
       button.classList.add('active');
+      button.disabled = true;
+    } else {
+        button.disabled = false;
     }
   });
 
@@ -248,9 +292,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to translate elements
 function translateElements() {
-  const selectedLanguage = localStorage.getItem('selectedLanguage');
+  let selectedLanguage = localStorage.getItem('selectedLanguage');
   if (!selectedLanguage) {
     selectedLanguage = 'ru';
+      // Add 'active' class to the button representing the selected language
+  languageButtons.forEach((button) => {
+    if (button.dataset.lang === selectedLanguage) {
+      //button.classList.add('active');
+      button.disabled = true;
+    } else {
+        button.disabled = false;
+    }
+  });
   }
   fetch(`${selectedLanguage}.json`)
     .then((response) => response.json())

@@ -1,5 +1,7 @@
 {
   	"downloads": "<i class='fa-solid fa-download'></i>&nbsp;Загрузки",
+  	"dl_page_title": "Загрузки",
+  	"dl_text": "Скачать:",
   	"download1": "<i class='fa-solid fa-download'></i>&nbsp;1 вариант",
   	"download2": "<i class='fa-solid fa-download'></i>&nbsp;2 вариант",
   	"preview": "Превью",

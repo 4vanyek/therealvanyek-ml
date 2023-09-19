@@ -140,6 +140,9 @@ button, .button {
     position: relative;
     overflow: hidden;
 }
+.button span.site-url, .main-button span.site-url {
+    display: none;
+}
 .mobile {
     display: none;
 }

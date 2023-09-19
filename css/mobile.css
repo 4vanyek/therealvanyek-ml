@@ -4,10 +4,14 @@
     }
 }
 @media screen and (max-width: 779px) {
+    *, *:hover, *:active {
+        cursor: default !important;
+    }
     .dropdown .dropbtn {
         font-size: 18px !important;
         width: 100% !important;
         outline: none;
+        max-width: fit-content;
     }
     .navbar {
         padding: .7em !important;
@@ -19,7 +23,7 @@
         width: 95%;
         height: 100%;
     }
-    h1 {
+    .privacy-h1 {
         font-size: 2rem;
         line-height: normal;
         margin-bottom: 10px;
@@ -104,6 +108,9 @@
     }
     .head {
         height: 100% !important;
+    }
+    .image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
+        background-size: auto !important;
     }
 .open-menu {
     color: #fff;
