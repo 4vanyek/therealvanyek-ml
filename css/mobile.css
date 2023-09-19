@@ -14,7 +14,7 @@
         max-width: fit-content;
     }
     .navbar {
-        padding: .7em !important;
+        padding: .9em .7em !important;
     }
     .dropdown-content {
         position: relative !important;
