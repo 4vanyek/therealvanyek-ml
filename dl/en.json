@@ -5,5 +5,5 @@
   	"download1": "<i class='fa-solid fa-download'></i>&nbsp;1st variant",
   	"download2": "<i class='fa-solid fa-download'></i>&nbsp;2nd variant",
   	"preview": "Preview",
-  	"heliohost-desc": "The “Powered by HelioHost” banner is for those who host their sites on HelioHost and want to give credit to this hosting."
+  	"heliohost-desc": "The “Powered by HelioHost” banner is for those who host their sites on HelioHost and want to give credit to this hosting.<br><br>1st variant: without border<br>2nd variant: with border"
 }

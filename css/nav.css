@@ -9,9 +9,6 @@
 	text-decoration: none;
 	color: #7729d7 !important;
 }
-nav .dropdown:nth-child(7) {
-	display: none;
-}
 li {
 	list-style: none;
 }

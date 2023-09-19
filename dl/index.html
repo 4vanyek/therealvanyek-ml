@@ -128,11 +128,11 @@
     .dropdown-content.show {
         display: grid;
     }
-    button[disabled] {
+    .language-button[disabled] {
         cursor: default;
         background: #340068;
     }
-    button[disabled]:active {
+    .language-button[disabled]:active {
         background: #340068;
     }
     @media screen and (max-width: 800px) {
@@ -170,58 +170,7 @@
     }
 </style>
 <body style="margin-top: 3.15em;">
-<nav class="navbar">
-    <!-- лого -->
-    <a href="/" class="logo-link">
-      <img class="logo" src="/mystiehum.svg" width="36px" alt="лого" style="display: inline-block; margin-left: 2px;">
-      <p style="display: inline-block; margin: 0 2.5px;">MystieHum</p>
-    </a>
-    <!--img class="mlogo" src="/TRV_favicon.svg" width="50%" style="z-index: 999;"-->
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-        <!-- NAVIGATION MENUS -->
-        <div class="menu flex">
-            <a href="/" class="internal_link" style="margin-left: 0;"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
-            <a href="/dl" class="internal_link"><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Загрузки</a>
-            <div class="dropdown">
-                <button onclick="showDropdown()" class="dropbtn"><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;Проекты 
-                  <i class="fa-solid fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="thedropdown">
-                  <a href="/tvhome" class="internal_link">
-                    <i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome
-                    <p class="dropdown-link-desc">стартовая страница для Smart TV</p>
-                  </a>
-                  <a href="/qoritsuki/" class="internal_link">
-                    <i class="fa-solid fa-robot"></i>&nbsp;&nbsp;Qoritsuki
-                    <p class="dropdown-link-desc">многоцелевой Discord бот</p>
-                  </a>
-                  <a href="https://rvtech.eu.org" target="_blank" class="internal_link">
-                    <i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;RVTECH
-                    <p class="dropdown-link-desc">dev форум</p>
-                  </a>
-                </div>
-              </div>
-            <a href="/latest-news" class="internal_link"><i class="fa-solid fa-newspaper"></i>&nbsp;&nbsp;Новости</a>
-            <a href="https://mystie.bearblog.dev" target="_blank"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;Блог</a>
-            <a href="/t" class="internal_link"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
-            <!--div class="dropdown">
-                <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
-                    <i class="fa-solid fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="lang-dropdown">
-                    <button class="language-button" data-lang="ru">Russian</button>
-                    <button class="language-button" data-lang="en">English</button>
-                </div>
-            </div-->
-            <!--a href="https://github.com/MystieHum/mystie.eu.org" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a-->
-        </div>
-    </ul>
-</nav>
+    <script id="nav" src="/scripts/nav.js"></script>
     <div class="mobile"><br></div>
     <br>
     <div class="page-title">
