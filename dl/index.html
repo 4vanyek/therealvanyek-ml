@@ -56,6 +56,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
     .dl {
         padding: 1em;
@@ -65,8 +66,11 @@
         flex-direction: row;
         align-items: center;
         background: #1b0039;
+        margin: 10px 0;
+        width: 80%;
+        justify-content: space-between;
     }
-    .dl-description p {
+    .dl-description {
         max-width: 60%;
     }
     .dl-button {
@@ -139,12 +143,14 @@
         .dl {
             flex-direction: column;
             max-width: 95%;
+            width: 95%;
         }
         .dl-preview {
             margin-top: 20px;
         }
-        .dl-description p {
+        .dl-description {
             max-width: 100%;
+            width: 100%;
         }
         .dl-button {
             max-width: 100%;
@@ -190,16 +196,32 @@
         <div class="dl">
             <div class="dl-description">
                 <h2>Powered by HelioHost</h2>
-                <p class="translatable dl-desc" data-translationkey="heliohost-desc">Баннер «Powered by HelioHost» для тех, кто размещает свои сайты на HelioHost и хочет отдать должное этому хостингу.</p>
+                <p class="translatable dl-desc" data-translationkey="heliohost-desc">Баннер «Powered by HelioHost» для тех, кто размещает свои сайты на HelioHost и хочет отдать должное этому хостингу.<br><br>1 вариант: без границы<br>2 вариант: с границей</p>
                 <h2 class="translatable" data-translationkey="dl_text">Скачать:</h2>
                 <div class="dl-variants">
-                    <a data-translationkey="download1" style="margin-right: 5px" href="/img/second_prototype.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;1 вариант</a>
-                    <a data-translationkey="download2" href="/img/helio_thumb-1.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;2 вариант</a>
+                    <a data-translationkey="download1" style="margin-right: 5px" href="/files/img/second_prototype.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;1 вариант</a>
+                    <a data-translationkey="download2" href="/files/img/helio_thumb-1.png" download class="dl-button translatable internal_link"><i class="fa-solid fa-download"></i>&nbsp;2 вариант</a>
                 </div>
             </div>
             <div class="dl-preview">
-                <a href="/img/second_prototype.png" data-fancybox="gallery" data-caption="Powered by HelioHost 1" class="internal_link"><img src="/img/second_prototype.png" style="animation: none;" width="150"/></a>
-                <a href="/img/helio_thumb-1.png" data-fancybox="gallery" data-caption="Powered by HelioHost 2" class="internal_link"><img src="/img/helio_thumb-1.png" style="animation: none; display: none;" width="150"/></a>
+                <a href="/files/img/second_prototype.png" data-fancybox="gallery" data-caption="Powered by HelioHost 1" class="internal_link"><img src="/files/img/second_prototype.png" style="animation: none;" width="150"/></a>
+                <a href="/files/img/helio_thumb-1.png" data-fancybox="gallery" data-caption="Powered by HelioHost 2" class="internal_link"><img src="/files/img/helio_thumb-1.png" style="animation: none; display: none;" width="150"/></a>
+                <span class="translatable" data-translationkey="preview">Превью</span>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-description">
+                <h2 class="translatable" data-translationkey="logos-desc1">Лого MystieHum</h2>
+                <p class="translatable dl-desc" data-translationkey="logos-desc">Все мои лого, которые я на данный момент использую<br><br>Архив содержит иконку и лого в двух форматах: SVG и PNG</p>
+                <h2 class="translatable" data-translationkey="dl_text">Скачать:</h2>
+                <div class="dl-variants">
+                    <a data-translationkey="dl_logo" style="margin-right: 5px" href="/mystiehum_full.svg" download class="dl-button translatable internal_link"><i class='fa-solid fa-download'></i>&nbsp;Лого</a>
+                    <a data-translationkey="dl_icon" style="margin-right: 5px" href="/mystiehum.svg" download class="dl-button translatable internal_link"><i class='fa-solid fa-download'></i>&nbsp;Иконка</a>
+                    <a data-translationkey="dl_archive" style="margin-right: 5px" href="/files/mystiehum.zip" download class="dl-button translatable internal_link"><i class='fa-solid fa-download'></i>&nbsp;Архив</a>
+                </div>
+            </div>
+            <div class="dl-preview">
+                <a href="/files/img/mystiehum_full.png" data-fancybox class="internal_link"><img src="/mystiehum_full.svg" style="animation: none;" width="150"/></a>
                 <span class="translatable" data-translationkey="preview">Превью</span>
             </div>
         </div>
