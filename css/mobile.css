@@ -100,9 +100,9 @@
     .dropdown-content a {
         padding: 0.5em 1em;
     }
-    /*footer .main {
+    footer .main {
         flex-direction: column !important;
-    }*/
+    }
     .img-cont {
         height: 800px !important;
     }

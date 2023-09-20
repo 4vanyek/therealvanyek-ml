@@ -21,7 +21,7 @@ li {
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px 0 5px 8px;
-	background-color: #1b0039bb;
+	background-color: #1b0039de;
 	color: #444;
 	position: fixed;
 	width: 100%;
@@ -97,7 +97,7 @@ input[type=checkbox] {
 	.menu {
 		display: none;
 		position: absolute;
-		background-color: #1b0039bb;
+		background-color: #1b0039de;
 		right: 0;
 		left: 0;
 		top: 100%;
@@ -132,7 +132,7 @@ input[type=checkbox] {
 	.menu {
 		 display: none;
 		 position: absolute;
-		 background-color: #1b0039bb;
+		 background-color: #1b0039de;
 		 right: 0;
 		 left: 0;
 		 top: 100%;
