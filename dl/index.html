@@ -139,6 +139,9 @@
     .language-button[disabled]:active {
         background: #340068;
     }
+    .dropdown .dropbtn {
+        font-size: 14px;
+    }
     @media screen and (max-width: 800px) {
         .dl {
             flex-direction: column;
@@ -226,79 +229,9 @@
             </div>
         </div>
     </div>
+<script src="/scripts/translate.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Get all language buttons
-  const languageButtons = document.querySelectorAll('.language-button');
-
-  // Retrieve the selected language from localStorage
-  const selectedLanguage = localStorage.getItem('selectedLanguage');
-
-  // Add 'active' class to the button representing the selected language
-  languageButtons.forEach((button) => {
-    if (button.dataset.lang === selectedLanguage) {
-      button.classList.add('active');
-      button.disabled = true;
-    } else {
-        button.disabled = false;
-    }
-  });
-
-  // Add click event listener to each button
-  languageButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      // Get the selected language from the button's data attribute
-      const selectedLanguage = button.dataset.lang;
-
-      // Update the selectedLanguage variable and store it in localStorage
-      localStorage.setItem('selectedLanguage', selectedLanguage);
-
-      // Perform any necessary language-specific actions or reload the page
-      // ...
-
-      // Example: Reload the page to apply the selected language
-      location.reload();
-    });
-  });
-
-  // Function to translate elements
-function translateElements() {
-  let selectedLanguage = localStorage.getItem('selectedLanguage');
-  if (!selectedLanguage) {
-    selectedLanguage = 'ru';
-      // Add 'active' class to the button representing the selected language
-  languageButtons.forEach((button) => {
-    if (button.dataset.lang === selectedLanguage) {
-      //button.classList.add('active');
-      button.disabled = true;
-    } else {
-        button.disabled = false;
-    }
-  });
-  }
-  fetch(`${selectedLanguage}.json`)
-    .then((response) => response.json())
-    .then((translation) => {
-      const elementsToTranslate = document.querySelectorAll('.translatable');
-      elementsToTranslate.forEach((element) => {
-        const key = element.dataset.translationkey;
-        if (translation.hasOwnProperty(key)) {
-          element.innerHTML = translation[key];
-        }
-      });
-    })
-    .catch((error) => {
-      console.error('Error fetching translation file:', error);
-    });
-}
-
-
-  // Call the translateElements function on page load
-  translateElements();
-});
-
-
-    Fancybox.bind("[data-fancybox]", {
+Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 
@@ -315,7 +248,7 @@ window.onclick = function(event) {
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
+            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
                 openDropdown.classList.remove('show');
             }
         }

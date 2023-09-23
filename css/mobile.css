@@ -28,6 +28,9 @@
         line-height: normal;
         margin-bottom: 10px;
     }
+    h2 {
+        font-size: 2rem;
+    }
 }
 @media screen and (max-width: 1000px) {
     footer hr {
@@ -37,7 +40,7 @@
         width: 90% !important;
     }
     .non-mobile {
-        display: none;
+        display: none !important;
     }
     .mobile {
         display: block !important;
