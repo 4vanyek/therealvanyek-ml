@@ -12,11 +12,11 @@
   
 /* Scrollbar handle (thumb) */
 ::-webkit-scrollbar-thumb {
-    background: #9c4bff;
+    background: var(--main-color);
 }
 
 :root {
-    scrollbar-color: #9c4bff #222;
+    scrollbar-color: var(--main-color) #222;
 }
 html {
     scroll-behavior: smooth;
@@ -72,7 +72,7 @@ h1, h2 {
     align-items: center;
 }
 /* навбар */
-.nav {
+/*.nav {
     display: flex;
     background: #333;
     align-items: center;
@@ -84,7 +84,7 @@ h1, h2 {
 }
 .nav-mobile {
     display: none;
-}
+}*/
 .jleft {
     justify-content: left !important;
     display: flex;
@@ -92,7 +92,6 @@ h1, h2 {
 .jright {
     justify-content: right !important;
 }
-/* центрирование текста с id tcent */
 .tcent {
     text-align: center;
 }
@@ -117,12 +116,14 @@ a::after {
     font-size: 14px;
 }
 
-a:visited, a {
-    color: #9c4bff;
+a:visited, a, span.site-url, span.translatable {
+    color: var(--main-color);
 }
 a:hover {
-    filter: brightness(80%);
+    /*filter: brightness(80%);
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 button, .button {
     padding: 0.8em 1.6em;
@@ -134,7 +135,7 @@ button, .button {
     font-family: 'Inter Tight', sans-serif;
     background: #280051;
     transition: 150ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
-    color: #9c4bff;
+    color: var(--main-color);
     text-shadow: none;
     user-select: none;
     position: relative;
@@ -148,7 +149,7 @@ button, .button {
 }
 .main-button:hover, .qor-main-button:hover, .qor-button:hover, 
 .copy-button:hover, .button:hover, .update:hover, 
-.menu a:hover, .devlog-notification:hover, .cmd-cloud:hover, 
+.menu a:hover, .latest-post:hover, .cmd-cloud:hover, 
 .down-arrow:hover {
     filter: none;
 }
@@ -194,7 +195,7 @@ button, .button {
 }
 button:hover, .button:hover {
     background-color: #340068;
-    color: #9c4bff;
+    color: var(--main-color);
     text-decoration: none;
     filter: none;
 }
@@ -229,7 +230,7 @@ footer {
     display: flex;
     align-items: center;
 }
-.devlog-notification {
+.latest-post {
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -238,10 +239,10 @@ footer {
     background: #220048;
     text-align: center;
 }
-.devlog-notification:hover {
+.latest-post:hover {
     text-decoration: none;
     background: #2f005e;
-    color: #9c4bff;
+    color: var(--main-color);
 }
 .commands-grid {
     display: grid;
@@ -263,7 +264,7 @@ blockquote {
     width: fit-content;
     margin: 10px 0;
     padding: 15px;
-    border-left: 3px solid #9c4bff;
+    border-left: 3px solid var(--main-color);
     background: #1b0039;
 }
 blockquote q {
@@ -272,18 +273,18 @@ blockquote q {
 }
 footer hr {
     /*width: 5%;*/
-    color: #9c4bff;
+    color: var(--main-color);
     margin: 10px;
-    border: 1px solid #9c4bff;
+    border: 1px solid var(--main-color);
 }
 hr {
     width: 100%;
-    color: #9c4bff;
+    color: var(--main-color);
     margin: 10px;
-    border: 1px solid #9c4bff;
+    border: 1px solid var(--main-color);
 }
 .vertical-line {
-    color: #9c4bff;
+    color: var(--main-color);
     font-weight: 700;
     user-select: none;
 }

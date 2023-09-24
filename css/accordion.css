@@ -17,7 +17,7 @@
 .active, .accordion:hover {
     background-color: #2f005e;
 }
-.active {
+.accordion.active {
     border-radius: 6px 6px 0 0 !important;
     margin: 0 !important;
 }
@@ -31,7 +31,7 @@
 }
 
 .active:after {
-    content: "\f106";
+    content: "\f106" !important;
 }
 
 .panel {

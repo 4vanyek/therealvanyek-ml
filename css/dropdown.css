@@ -37,6 +37,9 @@
     color: #9c4bff !important;
     filter: none;
   }
+  .dropdown-content a:active {
+    background: #3c0080;
+  }
   
   /*.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
     display: block;

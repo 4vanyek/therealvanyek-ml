@@ -41,7 +41,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" 
         rel="stylesheet"> <!-- подключение шрифтов -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- подключение Font Awesome 6.4.0 -->
-    <title>Последние новости</title>
+    <title class="translatable" data-translationkey="latest-news_title">Последние новости</title>
 </head>
 <style>
 	.post {
@@ -84,7 +84,16 @@
 </style>
 <body style="margin-top: 3.15em;">
   <script id="nav" src="/scripts/nav.js"></script>
-	<h2 style="text-align: center; margin: 70px 0 10px 0;"><i class="fa-solid fa-newspaper"></i>&nbsp;Последние новости</h2>
+	<h2 style="text-align: center; margin: 70px 0 10px 0;" class="translatable" data-translationkey="latest-news_h2"><i class="fa-solid fa-newspaper"></i>&nbsp;Последние новости</h2>
+          <div class="dropdown lang-dropdown" style="margin-top: -50px; float: right;">
+            <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="lang-dropdown">
+                <button class="language-button" data-lang="ru">Russian</button>
+                <button class="language-button" data-lang="en">English</button>
+            </div>
+        </div>
 <div class="links-container">
 	<div class="post">
     	<a class="post-link internal_link" href="" target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
@@ -128,7 +137,7 @@
     </div>
 </div>
 <footer>
-  <p style="text-align: center;">Данные получаются с <a href="https://bearblog.dev" target="_blank">Bear Blog</a> через <a href="https://github.com/manga-raiku/proxy" target="_blank">Manga Raiku Proxy</a></p>
+  <p style="text-align: center;" class="translatable" data-translationkey="latest-news_footer">Данные получаются с <a href="https://bearblog.dev" target="_blank">Bear Blog</a> через <a href="https://github.com/manga-raiku/proxy" target="_blank">Manga Raiku Proxy</a></p>
   </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -164,5 +173,27 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <script src="/scripts/dropdown.js"></script>
+<script src="/scripts/translate.min.js"></script>
+     <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function showLangDropdown() {
+    document.getElementById("lang-dropdown").classList.toggle("show");
+}
+          
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
 </body>
 </html>

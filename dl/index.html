@@ -48,136 +48,6 @@
     />
     <title class="translatable" data-translationkey="dl_page_title">Загрузки</title>
 </head>
-<style>
-    nav .dropdown {
-        display: block !important;
-    }
-    .dl-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .dl {
-        padding: 1em;
-        /*border: 2px solid #9035ff;*/
-        border-radius: 6px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background: #1b0039;
-        margin: 10px 0;
-        width: 80%;
-        justify-content: space-between;
-    }
-    .dl-description {
-        max-width: 60%;
-    }
-    .dl-button {
-        max-width: fit-content;
-        padding: 0.5em;
-        /*border: 2px solid #9035ff;*/
-        background: #280051;
-        border-radius: 6px;
-        margin: 5px 0 0 0;
-        user-select: none;
-    }
-    .dl-button:hover {
-        filter: none;
-        background: #340068;
-        /*color: #fff;*/
-    }
-    .dl-button:active {
-        background: #2d0066;
-    }
-    .dl-description {
-        display: flex;
-        flex-direction: column;
-    }
-    .dl-preview {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .dl h2 {
-        font-size: 2rem;
-    }
-    .fancybox-image {
-        animation: none;
-    }
-    span {
-        color: #fff;
-    }
-    button .active {
-        background: #2d0066;
-    }
-    .active {
-        border-radius: 6px !important;
-        margin: 2.5px !important;
-        background: #340068;
-        padding: 0.7em 1.6em;
-    }
-    .active::after {
-        content: ' \f00c';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-    }
-    .dl-desc {
-        margin: 5px 0;
-    }
-    .dl-variants {
-        display: flex;
-        flex-direction: row;
-    }
-    .dropdown-content.show {
-        display: grid;
-    }
-    .language-button[disabled] {
-        cursor: default;
-        background: #340068;
-    }
-    .language-button[disabled]:active {
-        background: #340068;
-    }
-    .dropdown .dropbtn {
-        font-size: 14px;
-    }
-    @media screen and (max-width: 800px) {
-        .dl {
-            flex-direction: column;
-            max-width: 95%;
-            width: 95%;
-        }
-        .dl-preview {
-            margin-top: 20px;
-        }
-        .dl-description {
-            max-width: 100%;
-            width: 100%;
-        }
-        .dl-button {
-            max-width: 100%;
-            text-align: center;
-            padding: 0.8em;
-        }
-        .dl-variants a {
-            margin-right: 0 !important;
-        }
-        .dl-variants {
-            flex-direction: column;
-        }
-        .dropdown {
-            margin-top: 0 !important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            float: none !important;
-        }
-        #lang-dropdown.dropdown-content.show {
-            display: flex;
-        }
-    }
-</style>
 <body style="margin-top: 3.15em;">
     <script id="nav" src="/scripts/nav.js"></script>
     <div class="mobile"><br></div>
@@ -229,7 +99,7 @@
             </div>
         </div>
     </div>
-<script src="/scripts/translate.js"></script>
+<script src="/scripts/translate.min.js"></script>
 <script>
 Fancybox.bind("[data-fancybox]", {
   // Your custom options

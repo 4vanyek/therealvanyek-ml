@@ -11,5 +11,36 @@
   	"download1": "<i class='fa-solid fa-download'></i>&nbsp;1st variant",
   	"download2": "<i class='fa-solid fa-download'></i>&nbsp;2nd variant",
   	"preview": "Preview",
-  	"heliohost-desc": "The “Powered by HelioHost” banner is for those who host their sites on HelioHost and want to give credit to this hosting.<br><br>1st variant: without border<br>2nd variant: with border"
+  	"heliohost-desc": "The “Powered by HelioHost” banner is for those who host their sites on HelioHost and want to give credit to this hosting.<br><br>1st variant: without border<br>2nd variant: with border",
+
+  	"homepage_nav": "<i class='fa-solid fa-house'></i>&nbsp;&nbsp;Homepage",
+  	"downloads_nav": "<i class='fa-solid fa-download'></i>&nbsp;&nbsp;Downloads",
+  	"projects_nav": "<i class='fa-solid fa-folder'></i>&nbsp;&nbsp;Projects&nbsp;<i class='fa-solid fa-caret-down'></i>",
+  	"tvhome_desc_dropdown": "start page for Smart TVs",
+  	"qoritsuki_desc_dropdown": "multi-purpose Discord bot",
+  	"rvtech_desc_dropdown": "dev forum",
+  	"news_nav": "<i class='fa-solid fa-newspaper'></i>&nbsp;&nbsp;News",
+  	"blog_nav": "<i class='fa-solid fa-user-pen'></i>&nbsp;&nbsp;Blog",
+  	"tests_nav": "<i class='fa-solid fa-vial'></i>&nbsp;&nbsp;Tests",
+
+  	"welcome_index": "Welcome to my site!",
+  	"welcome_desc_index": "This site was created as a kind of portfolio to show my projects.",
+  	"aboutme_h2_index": "About me:",
+  	"aboutme_index": "My name is Ivan, I am a 14-year-old developer originally from <a href='https://en.wikipedia.org/wiki/Syktyvkar' target='_blank'>Syktyvkar</a>, I mainly develop websites. I like listening to music, coding (obviously), flashing devices.<br>Favorite track: <a href='https://music.youtube.com/watch?v=AWuDqCtoo7s' target='_blank'>meganeko - Moonflowers</a><br>Playlist on YouTube Music: <a href='https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh' target='_blank'>MusicdasH</a><br>Main device: <a href='https://4pda.to/devdb/xiaomi_redmi_6a' target='_blank'>Xiaomi Redmi 6A</a><br>Links to social media are on a separate page: <a href='/links/' class='internal_link'>Links</a>",
+  	"myprojects_index": "My projects:",
+  	"go": "Go",
+  	"invite": "Invite",
+
+  	"qoritsuki_desc_index": "“completely original” Discord bot",
+  	"rvtech_small_desc": "dev forum",
+  	"tvhome_small_desc": "start page for Smart TVs",
+
+  	"comments_h2": "Comments:",
+  	"status": "Status",
+  	"revision_from": "revision from",
+  	"available-tests": "Available tests:",
+  	"tests": "Tests",
+  	"latest-news_h2": "<i class='fa-solid fa-newspaper'></i>&nbsp;Latest news",
+  	"latest-news_title": "Latest news",
+  	"latest-news_footer": "Data is obtained from <a href='https://bearblog.dev' target='_blank'>Bear Blog</a> via <a href='https://github.com/manga-raiku/proxy' target= '_blank'>Manga Raiku Proxy</a>"
 }

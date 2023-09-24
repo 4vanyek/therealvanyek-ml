@@ -1,3 +1,4 @@
+@import "./variables.css";
 @import "./cont.css"; /* стили для контейнеров */
 @import "./general.css"; /* основные стили */
 @import "./links.css";
@@ -5,5 +6,5 @@
 @import "./nav.css";
 @import "./socialicons.css"; /* стили для иконок соцсетей */
 @import "./dropdown.css";
-@import "./accordion.css";
 @import "./window.css";
+@import "./dl.css";
