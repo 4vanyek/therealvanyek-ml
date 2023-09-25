@@ -12,7 +12,6 @@
   	"download2": "<i class='fa-solid fa-download'></i>&nbsp;2 вариант",
   	"preview": "Превью",
   	"heliohost-desc": "Баннер «Powered by HelioHost» для тех, кто размещает свои сайты на HelioHost и хочет отдать должное этому хостингу.<br><br>1 вариант: без границы<br>2 вариант: с границей",
-
   	"homepage_nav": "<i class='fa-solid fa-house'></i>&nbsp;&nbsp;Главная",
   	"downloads_nav": "<i class='fa-solid fa-download'></i>&nbsp;&nbsp;Загрузки",
   	"projects_nav": "<i class='fa-solid fa-folder'></i>&nbsp;&nbsp;Проекты&nbsp;<i class='fa-solid fa-caret-down'></i>",
@@ -22,7 +21,6 @@
   	"news_nav": "<i class='fa-solid fa-newspaper'></i>&nbsp;&nbsp;Новости",
   	"blog_nav": "<i class='fa-solid fa-user-pen'></i>&nbsp;&nbsp;Блог",
   	"tests_nav": "<i class='fa-solid fa-vial'></i>&nbsp;&nbsp;Тесты",
-
   	"welcome_index": "Добро пожаловать на мой сайт!",
   	"welcome_desc_index": "Этот сайт был создан как некое портфолио для того, чтобы показать свои проекты.",
   	"aboutme_h2_index": "Обо мне:",

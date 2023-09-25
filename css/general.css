@@ -116,7 +116,7 @@ a::after {
     font-size: 14px;
 }
 
-a:visited, a, span.site-url, span.translatable {
+a:visited, a, span.site-url, footer p.rev a.internal_link span.translatable {
     color: var(--main-color);
 }
 a:hover {

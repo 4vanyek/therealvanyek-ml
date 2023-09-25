@@ -12,7 +12,6 @@
   	"download2": "<i class='fa-solid fa-download'></i>&nbsp;2nd variant",
   	"preview": "Preview",
   	"heliohost-desc": "The “Powered by HelioHost” banner is for those who host their sites on HelioHost and want to give credit to this hosting.<br><br>1st variant: without border<br>2nd variant: with border",
-
   	"homepage_nav": "<i class='fa-solid fa-house'></i>&nbsp;&nbsp;Homepage",
   	"downloads_nav": "<i class='fa-solid fa-download'></i>&nbsp;&nbsp;Downloads",
   	"projects_nav": "<i class='fa-solid fa-folder'></i>&nbsp;&nbsp;Projects&nbsp;<i class='fa-solid fa-caret-down'></i>",
@@ -22,7 +21,6 @@
   	"news_nav": "<i class='fa-solid fa-newspaper'></i>&nbsp;&nbsp;News",
   	"blog_nav": "<i class='fa-solid fa-user-pen'></i>&nbsp;&nbsp;Blog",
   	"tests_nav": "<i class='fa-solid fa-vial'></i>&nbsp;&nbsp;Tests",
-
   	"welcome_index": "Welcome to my site!",
   	"welcome_desc_index": "This site was created as a kind of portfolio to show my projects.",
   	"aboutme_h2_index": "About me:",
@@ -30,11 +28,9 @@
   	"myprojects_index": "My projects:",
   	"go": "Go",
   	"invite": "Invite",
-
   	"qoritsuki_desc_index": "“completely original” Discord bot",
   	"rvtech_small_desc": "dev forum",
   	"tvhome_small_desc": "start page for Smart TVs",
-
   	"comments_h2": "Comments:",
   	"status": "Status",
   	"revision_from": "revision from",
