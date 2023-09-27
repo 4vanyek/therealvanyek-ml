@@ -30,6 +30,7 @@
         border-radius: 6px;
         margin: 5px 0 0 0;
         user-select: none;
+        text-decoration: none;
     }
     .dl-button:hover {
         filter: none;

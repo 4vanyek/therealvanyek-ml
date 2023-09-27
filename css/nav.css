@@ -60,6 +60,7 @@ li {
 	border-radius: 6px;
 	font-weight: 500;
 	user-select: none;
+	text-decoration: none;
 }
 .last-link-menu {
 	display: flex;

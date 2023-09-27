@@ -106,7 +106,8 @@ h1, h2 {
     display: none;
 }
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #9035ff50;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
 }
 a::after {
@@ -122,7 +123,8 @@ a:visited, a, span.site-url, footer p.rev a.internal_link span.translatable {
 a:hover {
     /*filter: brightness(80%);
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    text-decoration-color: #9035ff;
     text-underline-offset: 3px;
 }
 button, .button {
@@ -140,6 +142,7 @@ button, .button {
     user-select: none;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
 }
 .button span.site-url, .main-button span.site-url {
     display: none;
@@ -161,6 +164,7 @@ button, .button {
     border-radius: 6px;
     text-shadow: none;
     user-select: none;
+    text-decoration: none;
 }
 .qor-main-button {
     background: #750026;
@@ -238,6 +242,7 @@ footer {
     padding: 0.5em;
     background: #220048;
     text-align: center;
+    text-decoration: none;
 }
 .latest-post:hover {
     text-decoration: none;
