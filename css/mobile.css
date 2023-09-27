@@ -4,7 +4,12 @@
     }
 }
 @media screen and (max-width: 779px) {
-    *, *:hover, *:active {
+    a:hover {
+        cursor: pointer !important;
+    }
+    *, *:hover, *:active, .menu a:hover, .button:hover,
+    .main-button:hover, .qor-button:hover, .qor-main-button:hover,
+    .dl-button:hover {
         cursor: default !important;
     }
     .dropdown .dropbtn {
@@ -86,6 +91,7 @@
     }
     .img-cont {
         padding: 60px 60px 60px 40px !important;
+        display: block !important;
     }
     .social-icon {
         font-size: 34px !important;
@@ -107,7 +113,7 @@
         flex-direction: column !important;
     }
     .img-cont {
-        height: 800px !important;
+        height: 500px !important;
     }
     .head {
         height: 100% !important;

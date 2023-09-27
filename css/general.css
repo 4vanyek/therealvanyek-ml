@@ -120,6 +120,9 @@ a::after {
 a:visited, a, span.site-url, footer p.rev a.internal_link span.translatable {
     color: var(--main-color);
 }
+.no-domain span.site-url {
+    display: none;
+}
 a:hover {
     /*filter: brightness(80%);
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
@@ -165,6 +168,7 @@ button, .button {
     text-shadow: none;
     user-select: none;
     text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
 }
 .qor-main-button {
     background: #750026;

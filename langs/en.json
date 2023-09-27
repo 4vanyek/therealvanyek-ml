@@ -38,5 +38,6 @@
   	"tests": "Tests",
   	"latest-news_h2": "<i class='fa-solid fa-newspaper'></i>&nbsp;Latest news",
   	"latest-news_title": "Latest news",
-  	"latest-news_footer": "Data is obtained from <a href='https://bearblog.dev' target='_blank'>Bear Blog</a> via <a href='https://github.com/manga-raiku/proxy' target= '_blank'>Manga Raiku Proxy</a>"
+  	"latest-news_footer": "Data is obtained from <a href='https://bearblog.dev' target='_blank'>Bear Blog</a> via <a href='https://github.com/manga-raiku/proxy' target= '_blank'>Manga Raiku Proxy</a>",
+  	"links": "Links"
 }
