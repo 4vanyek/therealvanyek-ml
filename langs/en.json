@@ -24,7 +24,7 @@
   	"welcome_index": "Welcome to my site!",
   	"welcome_desc_index": "This site was created as a kind of portfolio to show my projects.",
   	"aboutme_h2_index": "About me:",
-  	"aboutme_index": "My name is Ivan, I am a 14-year-old developer originally from <a href='https://en.wikipedia.org/wiki/Syktyvkar' target='_blank'>Syktyvkar</a>, I mainly develop websites. I like listening to music, coding (obviously), flashing devices.<br>Favorite track: <a href='https://music.youtube.com/watch?v=AWuDqCtoo7s' target='_blank'>meganeko - Moonflowers</a><br>Playlist on YouTube Music: <a href='https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh' target='_blank'>MusicdasH</a><br>Main device: <a href='https://4pda.to/devdb/xiaomi_redmi_6a' target='_blank'>Xiaomi Redmi 6A</a><br>Links to social media are on a separate page: <a href='/links/' class='internal_link'>Links</a>",
+  	"aboutme_index": "My name is Ivan, I am a 14-year-old developer originally from <a href='https://en.wikipedia.org/wiki/Syktyvkar' target='_blank'>Syktyvkar</a>, I mainly develop websites. I like listening to music, coding (obviously), flashing devices.<br>Favorite track: <a href='https://music.youtube.com/watch?v=AWuDqCtoo7s' target='_blank'>meganeko - Moonflowers</a><br>Playlist on YouTube Music: <a href='https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh' target='_blank'>MusicdasH</a><br>Main device: <a href='https://4pda.to/devdb/xiaomi_redmi_6a' target='_blank'>Xiaomi Redmi 6A</a><br>Links to social media are on a separate page: <a href='/social/' class='internal_link'>Links</a>",
   	"myprojects_index": "My projects:",
   	"go": "Go",
   	"invite": "Invite",
@@ -39,5 +39,9 @@
   	"latest-news_h2": "<i class='fa-solid fa-newspaper'></i>&nbsp;Latest news",
   	"latest-news_title": "Latest news",
   	"latest-news_footer": "Data is obtained from <a href='https://bearblog.dev' target='_blank'>Bear Blog</a> via <a href='https://github.com/manga-raiku/proxy' target= '_blank'>Manga Raiku Proxy</a>",
-  	"links": "Links"
+  	"links": "Links",
+  	"go_home": "Go to homepage",
+  	"why-need-a-proxy_news": "Why receive data through a third-party proxy?",
+  	"proxy-explanation_news": "This is necessary to avoid errors related to <span class='has-title' title='Cross-origin resource sharing'>CORS</span>. Since <a href='https://bearblog.dev'>Bear Blog</a> does not set the <code>Access-Control-Allow-Origin: '*'</code> header in the request, this results in the following error: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code>",
+  	"view-post_news": "Go to post&nbsp;<i class='fa-solid fa-arrow-right'></i>"
 }

@@ -9,7 +9,7 @@
     }
     *, *:hover, *:active, .menu a:hover, .button:hover,
     .main-button:hover, .qor-button:hover, .qor-main-button:hover,
-    .dl-button:hover {
+    .dl-button:hover, .view-post-btn:hover {
         cursor: default !important;
     }
     .dropdown .dropbtn {

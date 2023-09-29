@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Retrieve the selected language from localStorage
   const selectedLanguage = localStorage.getItem('selectedLanguage');
 
-  // Add 'active' class to the button representing the selected language
+  // Add 'lang-active' class to the button representing the selected language
   languageButtons.forEach((button) => {
     if (button.dataset.lang === selectedLanguage) {
-      	button.classList.add('active');
+      	button.classList.add('lang-active');
       	button.disabled = true;
     } else {
         button.disabled = false;
@@ -30,10 +30,10 @@ languageButtons.forEach((button) => {
     // Update the active button and disabled state
     languageButtons.forEach((button) => {
       if (button.dataset.lang === selectedLanguage) {
-        button.classList.add('active');
+        button.classList.add('lang-active');
         button.disabled = true;
       } else {
-        button.classList.remove('active');
+        button.classList.remove('lang-active');
         button.disabled = false;
       }
     });
@@ -46,12 +46,13 @@ function translateElements() {
   let selectedLanguage = localStorage.getItem('selectedLanguage');
   if (!selectedLanguage) {
     selectedLanguage = 'ru';
-  // Add 'active' class to the button representing the selected language
+  // Add 'lang-active' class to the button representing the selected language
   languageButtons.forEach((button) => {
     if (button.dataset.lang === selectedLanguage) {
-      //button.classList.add('active');
+      button.classList.add('lang-active');
       button.disabled = true;
     } else {
+      button.classList.remove('lang-active');
         button.disabled = false;
     }
   });

@@ -24,7 +24,7 @@
   	"welcome_index": "Добро пожаловать на мой сайт!",
   	"welcome_desc_index": "Этот сайт был создан как некое портфолио для того, чтобы показать свои проекты.",
   	"aboutme_h2_index": "Обо мне:",
-  	"aboutme_index": "Меня зовут Иван, я 14-летний разработчик родом из <a href='https://ru.wikipedia.org/wiki/Сыктывкар' target='_blank'>Сыктывкара</a>, в основном занимаюсь разработкой сайтов. Люблю слушать музыку, кодить (очевидно же), прошивать девайсы.<br>Любимый трек: <a href='https://music.youtube.com/watch?v=AWuDqCtoo7s' target='_blank'>meganeko - Moonflowers</a><br>Плейлист на YouTube Music: <a href='https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh' target='_blank'>MusicdasH</a><br>Основной девайс: <a href='https://4pda.to/devdb/xiaomi_redmi_6a' target='_blank'>Xiaomi Redmi 6A</a><br> Ссылки на соцсети есть на отдельной странице: <a href='/links/' class='internal_link'>Ссылки</a>",
+  	"aboutme_index": "Меня зовут Иван, я 14-летний разработчик родом из <a href='https://ru.wikipedia.org/wiki/Сыктывкар' target='_blank'>Сыктывкара</a>, в основном занимаюсь разработкой сайтов. Люблю слушать музыку, кодить (очевидно же), прошивать девайсы.<br>Любимый трек: <a href='https://music.youtube.com/watch?v=AWuDqCtoo7s' target='_blank'>meganeko - Moonflowers</a><br>Плейлист на YouTube Music: <a href='https://music.youtube.com/playlist?list=PLglFzT7e0p-SCFG3JNdctW-7_Z8k23qrh' target='_blank'>MusicdasH</a><br>Основной девайс: <a href='https://4pda.to/devdb/xiaomi_redmi_6a' target='_blank'>Xiaomi Redmi 6A</a><br> Ссылки на соцсети есть на отдельной странице: <a href='/social/' class='internal_link'>Ссылки</a>",
   	"myprojects_index": "Мои проекты:",
   	"go": "Перейти",
   	"invite": "Пригласить",
@@ -39,5 +39,9 @@
   	"latest-news_h2": "<i class='fa-solid fa-newspaper'></i>&nbsp;Последние новости",
   	"latest-news_title": "Последние новости",
   	"latest-news_footer": "Данные получаются с <a href='https://bearblog.dev' target='_blank'>Bear Blog</a> через <a href='https://github.com/manga-raiku/proxy' target='_blank'>Manga Raiku Proxy</a>",
-  	"links": "Ссылки"
+  	"links": "Ссылки",
+  	"go_home": "Вернуться на главную",
+  	"why-need-a-proxy_news": "Зачем нужно получать данные через стороннее прокси?",
+  	"proxy-explanation_news": "Это нужно для того, чтобы не возникали ошибки, связанные с <span class='has-title' title='Cross-origin resource sharing'>CORS</span>. Так как <a href='https://bearblog.dev'>Bear Blog</a> не ставит заголовок <code>Access-Control-Allow-Origin: '*'</code> в запросе, это приводит к следующей ошибке: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code>",
+  	"view-post_news": "Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i>"
 }

@@ -59,16 +59,16 @@
     span {
         color: #fff;
     }
-    button .active {
+    button .lang-active {
         background: #2d0066;
     }
-    .active {
+    .lang-active {
         border-radius: 6px !important;
         margin: 2.5px !important;
         background: #340068;
         /*padding: 0.7em 1.6em;*/
     }
-    .active::after {
+    .lang-active::after {
         content: ' \f00c';
         font-family: 'Font Awesome 6 Free';
         font-weight: 900;
