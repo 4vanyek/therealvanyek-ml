@@ -16,7 +16,7 @@
         font-size: 18px !important;
         width: 100% !important;
         outline: none;
-        max-width: fit-content;
+        /*max-width: fit-content;*/
     }
     .navbar {
         padding: .9em .7em !important;
