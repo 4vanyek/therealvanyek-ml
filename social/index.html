@@ -24,8 +24,18 @@
 <body>
     <!-- TODO: place language switcher there -->
     <a class="notif internal_link translatable" data-translationkey="go_home" href="/">Вернуться на главную</a>
+              <div class="dropdown lang-dropdown" style="float: right;">
+            <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="lang-dropdown">
+                <button class="language-button" data-lang="ru">Russian</button>
+                <button class="language-button" data-lang="en">English</button>
+            </div>
+        </div>
+        <br><br>
     <div class="links-container">
-        <img style="margin: 50px 0" src="/mystiehum_full.svg" width="400">
+        <img style="margin: 20px 0 50px 0" src="/mystiehum_full.svg" width="400">
         <a class="links-cont link" href="https://github.com/MystieHum" target="_blank">
             <div class="col-default">
                 <i class="fa-brands fa-github"></i>&nbsp;GitHub
@@ -44,7 +54,7 @@
                 <p>UnnaMd</p>
             </div>
         </a-->
-        <a class="links-cont link" href="https://mas.to/@mystie" target="_blank">
+        <a class="links-cont link" href="https://wetdry.world/@mystie" target="_blank">
             <div class="col-default">
                 <i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon
                 <p>MystieHum</p>
@@ -66,5 +76,25 @@
     <script id="footer" src="/scripts/footer.js"></script>
     <script src="/scripts/dropdown.js"></script>
     <script src="/scripts/translate.min.js"></script>
+<script>
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function showLangDropdown() {
+    document.getElementById("lang-dropdown").classList.toggle("show");
+}
+          
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}</script>
 </body>
 </html>
