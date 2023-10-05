@@ -324,9 +324,10 @@ pre, code {
     display: inline-block;
     white-space: normal;
 }
-.has-title {
+abbr[title] {
     text-decoration: underline;
     text-decoration-style: dotted;
+    cursor: help;
 }
 .powered-by {
     /*margin-top: 10px;*/

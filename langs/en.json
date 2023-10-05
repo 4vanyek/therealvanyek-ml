@@ -42,6 +42,6 @@
   	"links": "Links",
   	"go_home": "Go to homepage",
   	"why-need-a-proxy_news": "Why receive data through a third-party proxy?",
-  	"proxy-explanation_news": "This is necessary to avoid errors related to <span class='has-title' title='Cross-origin resource sharing'>CORS</span>. Since <a href='https://bearblog.dev'>Bear Blog</a> does not set the <code>Access-Control-Allow-Origin: '*'</code> header in the request, this results in the following error: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code>",
+  	"proxy-explanation_news": "This is necessary to avoid errors related to <abbr title='Cross-origin resource sharing'>CORS</abbr>. Since <a href='https://bearblog.dev'>Bear Blog</a> does not set the <code>Access-Control-Allow-Origin: '*'</code> header in the request, this results in the following error: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code>",
   	"view-post_news": "Go to post&nbsp;<i class='fa-solid fa-arrow-right'></i>"
 }
