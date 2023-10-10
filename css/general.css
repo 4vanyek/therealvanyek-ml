@@ -66,27 +66,12 @@ h1, h2 {
     color: transparent;
     animation: fadeIn 1s ease-in-out;
 }
-.flex { display: flex; }
 .center {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* навбар */
-/*.nav {
-    display: flex;
-    background: #333;
-    align-items: center;
-    padding: 1em;
-    justify-content: center;
-}
-.nav a:hover {
-    background: #444;
-}
-.nav-mobile {
-    display: none;
-}*/
 .jleft {
     justify-content: left !important;
     display: flex;
@@ -111,6 +96,7 @@ a {
     text-decoration: underline;
     text-decoration-color: #9035ff50;
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
+    text-underline-offset: 3px;
 }
 a::after {
     font-family: "Font Awesome 6 Free";
@@ -130,7 +116,6 @@ a:hover {
     transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1); /* рандомный переход, предложенный emmet */
     /*text-decoration: underline;*/
     text-decoration-color: #9035ff;
-    text-underline-offset: 3px;
 }
 button, .button {
     padding: 0.8em 1.6em;

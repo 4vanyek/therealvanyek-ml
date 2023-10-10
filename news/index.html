@@ -52,148 +52,148 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-	}
+    }
 	/*.post:hover {
 		background: #2f005e;
 		border-color: #2f005e;
 		filter: none;
 	}*/
 	.links-container {
-	    max-width: 800px;
-	    margin: auto;
-	}
-	span {
-		color: #fff;
-	}
-	.post span {
-		margin-bottom: -10px;
-	}
-	.links-container {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(5, 1fr);
-	}
-    .post-date-div {
-        font-size: 14px;
-        width: fit-content;
-        margin-top: 10px;
+       max-width: 800px;
+       margin: auto;
+   }
+   span {
+      color: #fff;
+  }
+  .post span {
+      margin-bottom: -10px;
+  }
+  .links-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+  }
+  .post-date-div {
+    font-size: 14px;
+    width: fit-content;
+    margin-top: 10px;
+}
+.view-post-btn {
+    max-width: fit-content;
+    padding: 0.5em;
+    /*border: 2px solid #9035ff;*/
+    background: #280051;
+    border-radius: 6px;
+    margin: 5px 0 0 0;
+    user-select: none;
+    text-decoration: none;
+}
+.view-post-btn::after {
+    content: '';
+}
+.view-post-btn:hover {
+    filter: none;
+    background: #340068;
+    /*color: #fff;*/
+    text-decoration: none;
+}
+.view-post-btn:active {
+    background: #2d0066;
+}
+@media screen and (max-width: 800px) {
+    .links-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr); 
     }
-    .view-post-btn {
-        max-width: fit-content;
-        padding: 0.5em;
-        /*border: 2px solid #9035ff;*/
-        background: #280051;
-        border-radius: 6px;
-        margin: 5px 0 0 0;
-        user-select: none;
-        text-decoration: none;
+    .post {
+        margin: 15px;
     }
-    .view-post-btn::after {
-        content: '';
-    }
-    .view-post-btn:hover {
-        filter: none;
-        background: #340068;
-        /*color: #fff;*/
-        text-decoration: none;
-    }
-    .view-post-btn:active {
-        background: #2d0066;
-    }
-    @media screen and (max-width: 800px) {
-        .links-container {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr); 
-        }
-        .post {
-            margin: 15px;
-        }
-    }
+}
 </style>
 <body style="margin-top: 3.15em;">
   <script id="nav" src="/scripts/nav.js"></script>
-	<h2 style="text-align: center; margin: 70px 0 10px 0;" class="translatable" data-translationkey="latest-news_h2"><i class="fa-solid fa-newspaper"></i>&nbsp;Последние новости</h2>
-          <div class="dropdown lang-dropdown" style="margin-top: -50px; float: right;">
-            <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="lang-dropdown">
-                <button class="language-button" data-lang="ru">Russian</button>
-                <button class="language-button" data-lang="en">English</button>
-            </div>
-        </div>
-<div class="links-container">
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
-    </div>
-	<div class="post">
-    	<a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
-    	<div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
-        <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+  <h2 style="text-align: center; margin: 70px 0 10px 0;" class="translatable" data-translationkey="latest-news_h2"><i class="fa-solid fa-newspaper"></i>&nbsp;Последние новости</h2>
+  <div class="dropdown lang-dropdown" style="margin-top: -50px; float: right;">
+    <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
+        <i class="fa-solid fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="lang-dropdown">
+        <button class="language-button" data-lang="ru">Russian</button>
+        <button class="language-button" data-lang="en">English</button>
     </div>
 </div>
+<div class="links-container">
+	<div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+   <div class="post">
+       <a class="post-link internal_link"  target="_blank"><img style="animation: none;" src="/files/img/loading.svg" width="16" alt="loading gif">&nbsp;Загрузка...</a><br><br>
+       <div class="post-date-div"><i class='fa-solid fa-clock'></i>&nbsp;<span class="post-date"></span></div>
+       <a class="view-post-btn translatable" target="_blank" data-translationkey="view-post_news">Перейти к посту&nbsp;<i class='fa-solid fa-arrow-right'></i></a>
+   </div>
+</div>
 <br>
-    <h2 class="tcent">FAQ:</h2>
-    <br>
-      <div class="accordions">
-        <button class="accordion translatable" data-translationkey="why-need-a-proxy_news">Зачем нужно получать данные через стороннее прокси?</button>
-        <div class="panel">
-            <div class="panel-cont">
-                <p class="translatable" data-translationkey="proxy-explanation_news">Это нужно для того, чтобы не возникали ошибки, связанные с <abbr title="Cross-origin resource sharing">CORS</abbr>. Так как <a href='https://bearblog.dev'>Bear Blog</a> не ставит заголовок <code>Access-Control-Allow-Origin: '*'</code> в запросе, это приводит к следующей ошибке: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code></p>
-            </div>
+<h2 class="tcent">FAQ:</h2>
+<br>
+<div class="accordions">
+    <button class="accordion translatable" data-translationkey="why-need-a-proxy_news">Зачем нужно получать данные через стороннее прокси?</button>
+    <div class="panel">
+        <div class="panel-cont">
+            <p class="translatable" data-translationkey="proxy-explanation_news">Это нужно для того, чтобы не возникали ошибки, связанные с <abbr title="Cross-origin resource sharing">CORS</abbr>. Так как <a href='https://bearblog.dev'>Bear Blog</a> не ставит заголовок <code>Access-Control-Allow-Origin: '*'</code> в запросе, это приводит к следующей ошибке: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code></p>
         </div>
     </div>
+</div>
 <footer>
   <p style="text-align: center;" class="translatable" data-translationkey="latest-news_footer">Данные получаются с <a href="https://bearblog.dev" target="_blank">Bear Blog</a> через <a href="https://github.com/manga-raiku/proxy" target="_blank">Manga Raiku Proxy</a></p>
-  </footer>
+</footer>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+
   let url = "https://proxy.mangaraiku.eu.org/?url=" + encodeURIComponent("https://mystie.bearblog.dev/blog");
   fetch(url)
-    .then(response => response.text())
-    .then(data => {
+  .then(response => response.text())
+  .then(data => {
       const parser = new DOMParser();
       const html = parser.parseFromString(data, "text/html");
       const links = html.querySelectorAll(".blog-posts > li > a:nth-child(2)");
@@ -213,11 +213,11 @@ document.addEventListener("DOMContentLoaded", function() {
           notificationLinks[index].href = absoluteLink;
           notificationLinks[index].innerHTML = link.textContent;
           notificationLinks[index].classList.remove('internal_link');
-        }
+      }
 
-        if (index < viewPostButtons.length) {
-            viewPostButtons[index].href = absoluteLink;
-        }
+      if (index < viewPostButtons.length) {
+        viewPostButtons[index].href = absoluteLink;
+    }
 
         if (index < dateSpans.length) { // Checking if index is valid
           // Set the date in the corresponding span element
@@ -225,36 +225,36 @@ document.addEventListener("DOMContentLoaded", function() {
           const dateObj = new Date(datetime); // Convert the datetime string to a Date object
           const formattedDate = dateObj.toLocaleDateString(); // Format the date as per your locale
           dateSpans[index].textContent = formattedDate;
-        }
-      });
-    })
-    .catch(error => console.error(error));
-});
+      }
+  });
+  })
+  .catch(error => console.error(error));
+  ;
 
 </script>
 <script src="/scripts/dropdown.js"></script>
 <script src="/scripts/translate.min.js"></script>
 <script src="/scripts/accord.js"></script>
-     <script>
+<script>
         /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function showLangDropdown() {
-    document.getElementById("lang-dropdown").classList.toggle("show");
-}
-          
+    function showLangDropdown() {
+        document.getElementById("lang-dropdown").classList.toggle("show");
+    }
+    
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
-                openDropdown.classList.remove('show');
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+                    openDropdown.classList.remove('show');
+                }
             }
         }
     }
-}
 </script>
 </body>
 </html>

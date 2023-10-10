@@ -24,77 +24,103 @@
 <body>
     <!-- TODO: place language switcher there -->
     <a class="notif internal_link translatable" data-translationkey="go_home" href="/">Вернуться на главную</a>
-              <div class="dropdown lang-dropdown" style="float: right;">
-            <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="lang-dropdown">
-                <button class="language-button" data-lang="ru">Russian</button>
-                <button class="language-button" data-lang="en">English</button>
-            </div>
+    <div class="dropdown lang-dropdown" style="float: right;">
+        <button onclick="showLangDropdown()" class="dropbtn">
+            <i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="lang-dropdown">
+            <button class="language-button" data-lang="ru">Russian</button>
+            <button class="language-button" data-lang="en">English</button>
         </div>
-        <br><br>
+    </div>
+    <br>
+    <br>
     <div class="links-container">
         <img style="margin: 20px 0 50px 0" src="/mystiehum_full.svg" width="400">
         <a class="links-cont link" href="https://github.com/MystieHum" target="_blank">
-            <div class="col-default">
-                <i class="fa-brands fa-github"></i>&nbsp;GitHub
-                <p>MystieHum</p>
+            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+            	<div>
+                	<i class="fa-brands fa-github"></i>&nbsp;GitHub <p>MystieHum</p>
+                </div>
+                <div>
+                	<i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
         </a>
         <a class="links-cont link" href="https://t.me/MystieHum" target="_blank">
-            <div class="col-default">
-                <i class="fa-brands fa-telegram"></i>&nbsp;Telegram
-                <p>MystieHum</p>
+            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+            	<div>
+                	<i class="fa-brands fa-telegram"></i>&nbsp;Telegram <p>MystieHum</p>
+                </div>
+                <div>
+                	<i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
         </a>
-        <!--a class="links-cont link" href="https://4pda.to/forum/index.php?showuser=10840063" target="_blank">
-            <div class="col-default">
-                <i class="fa-brands fa-4"></i>&nbsp;4PDA
-                <p>UnnaMd</p>
-            </div>
-        </a-->
+        <!--a class="links-cont link" href="https://4pda.to/forum/index.php?showuser=10840063" target="_blank"><div class="col-default"><i class="fa-brands fa-4"></i>&nbsp;4PDA
+                <p>UnnaMd</p></div></a-->
         <a class="links-cont link" href="https://wetdry.world/@mystie" target="_blank">
-            <div class="col-default">
-                <i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon
-                <p>MystieHum</p>
+            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+            	<div>
+                	<i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon <p>MystieHum</p>
+                </div>
+                <div>
+                	<i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
         </a>
         <a class="links-cont link" href="https://www.youtube.com/@MystieHum" target="_blank">
-            <div class="col-default">
-                <i class="fa-brands fa-youtube"></i>&nbsp;YouTube
-                <p>MystieHum</p>
+            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+            	<div>
+                	<i class="fa-brands fa-youtube"></i>&nbsp;YouTube <p>MystieHum</p>
+                </div>
+                <div>
+                	<i class="fa-solid fa-arrow-right"></i>
+                </div>
             </div>
         </a>
         <a class="links-cont link" href="https://discord.com/users/658287767490527243" target="_blank">
-            <div class="col-default">
-                <i class="fa-brands fa-discord"></i>&nbsp;Discord
-                <p>mystiedev</p>
+            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <i class="fa-brands fa-discord"></i>&nbsp;Discord <p>mystiedev</p>
+                </div>
+                <div style="display: flex; align-items: center;">
+                	<div style="display: flex; margin-right: 10px; align-items: center;">
+	                    <svg xmlns="http://www.w3.org/2000/svg" id="discord-status-circle" viewBox="0 0 1792 1792" width="20">
+	                        <path d="M1664 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+	                    </svg>
+	                    <p id="discord-status" style="text-transform: capitalize; margin-left: 2px;"></p>
+	                </div>
+	                <div>
+	                	<i class="fa-solid fa-arrow-right"></i>
+	                </div>
+                </div>
             </div>
         </a>
     </div>
     <script id="footer" src="/scripts/footer.js"></script>
     <script src="/scripts/dropdown.js"></script>
     <script src="/scripts/translate.min.js"></script>
-<script>
-    /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function showLangDropdown() {
-    document.getElementById("lang-dropdown").classList.toggle("show");
-}
-          
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
-                openDropdown.classList.remove('show');
-            }
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function showLangDropdown() {
+        	document.getElementById("lang-dropdown").classList.toggle("show");
         }
-    }
-}</script>
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        	if (!event.target.matches('.dropbtn')) {
+        		var dropdowns = document.getElementsByClassName("dropdown-content");
+        		var i;
+        		for (i = 0; i < dropdowns.length; i++) {
+        			var openDropdown = dropdowns[i];
+        			if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+        				openDropdown.classList.remove('show');
+        			}
+        		}
+        	}
+        }
+    </script>
+    <script src="/scripts/dcStatus.js"></script>
 </body>
 </html>
