@@ -1,52 +1,46 @@
 ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  /*i.fa-brands.fa-discord.social-icon:hover {
-    color: #5865F2 !important;
-  }
-  i.fa-brands.fa-telegram.social-icon:hover {
-    color: #2AABEE !important;
-  }*/
-  .nav .social-icon:hover {
-    color: #ccc;
-    background:transparent;
-  }
-  .navbar .social-icons a:hover {
-    background: none !important;
-  }
-  .social-icons li {
-    vertical-align: top;
-    display: inline;
-    margin: 0;
-  }
-  .social-icons a {
-    background: none;
-    color: #9035ff !important;
-    border: none;
-    padding: 0 !important;
-    margin: 0 2.5px;
-  }
-  .social-icons a::after {
-    content: none;
-  }
-  .social-icons a:hover {
-    background: none;
-    filter: none;
-  }
-  .social-icons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-  }
-  .social-icon {
-    font-size: 28px;
-    transition-duration: 0.2s;
-    padding: 0;
-  }
-  .social-icon:hover {
-    color: #7129c8;
-    transition-duration: 0.2s;
-  }
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav .social-icon:hover {
+	color: #ccc;
+	background:transparent;
+}
+.navbar .social-icons a:hover {
+	background: none !important;
+}
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+	margin: 0;
+}
+.social-icons a {
+	background: none;
+	color: #9035ff !important;
+	border: none;
+	padding: 0 !important;
+	margin: 0 2.5px;
+}
+.social-icons a::after {
+	content: none;
+}
+.social-icons a:hover {
+	background: none;
+	filter: none;
+}
+.social-icons-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+}
+.social-icon {
+	font-size: 28px;
+	transition-duration: 0.2s;
+	padding: 0;
+}
+.social-icon:hover {
+	color: #7129c8;
+	transition-duration: 0.2s;
+}

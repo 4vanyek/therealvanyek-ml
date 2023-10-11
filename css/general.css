@@ -122,7 +122,7 @@ button, .button {
     border: none;
     margin: 2.5px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 18px;
     font-family: 'Inter Tight', sans-serif;
     background: #280051;
@@ -151,7 +151,7 @@ button, .button {
     background: #7c11ff;
     padding: 0.8em 1.6em;
     color: #fff !important;
-    border-radius: 6px;
+    border-radius: 10px;
     text-shadow: none;
     user-select: none;
     text-decoration: none;

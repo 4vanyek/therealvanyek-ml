@@ -1,43 +1,48 @@
 <nav class="navbar">
-    <!-- лого -->
-    <a href="/" class="logo-link">
-      <img class="logo" src="/mystiehum_full.svg" width="150px" alt="MystieHum logo" style="display: inline-block; margin-left: -8px;">
-      <!--p style="display: inline-block; margin: 0 2.5px;">MystieHum</p-->
-    </a>
-    <!--img class="mlogo" src="/TRV_favicon.svg" width="50%" style="z-index: 999;"-->
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-        <!-- USING CHECKBOX HACK -->
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+	<!-- лого -->
+	<a href="/" class="logo-link" style="text-decoration: none !important;">
+		<img class="logo" src="/mystiehum_full.svg" width="150px" alt="MystieHum logo" style="display: inline-block; margin-left: -8px;">
+		<div style="display: flex; align-items: center;">
+			<svg xmlns="http://www.w3.org/2000/svg" id="discord-status-circle" viewBox="0 0 1792 1792" width="15">
+				<path d="M1664 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+			</svg>
+			<p id="discord-status" style="text-transform: capitalize; margin-left: 2px; font-size: 14px;"></p>
+		</div>
+	</a>
+	<!--img class="mlogo" src="/TRV_favicon.svg" width="50%" style="z-index: 999;"-->
+	<!-- NAVIGATION MENU -->
+	<ul class="nav-links">
+		<!-- USING CHECKBOX HACK -->
+		<input type="checkbox" id="checkbox_toggle" />
+		<label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-        <!-- NAVIGATION MENUS -->
-        <div class="menu flex">
-            <a href="/" class="internal_link translatable" data-translationkey="homepage_nav" style="margin-left: 0;"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
-            <a href="/dl" class="internal_link translatable" data-translationkey="downloads_nav"><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Загрузки</a>
-            <div class="dropdown">
-                <button onclick="showDropdown()" class="dropbtn translatable" data-translationkey="projects_nav"><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;Проекты 
-                  <i class="fa-solid fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="thedropdown">
-                  <a href="/tvhome" class="internal_link">
-                    <i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome
-                    <p class="dropdown-link-desc translatable" data-translationkey="tvhome_desc_dropdown">стартовая страница для Smart TV</p>
-                  </a>
-                  <a href="/qoritsuki/" class="internal_link">
-                    <i class="fa-solid fa-robot"></i>&nbsp;&nbsp;Qoritsuki
-                    <p class="dropdown-link-desc translatable" data-translationkey="qoritsuki_desc_dropdown">многоцелевой Discord бот</p>
-                  </a>
-                  <a href="https://rvtech.eu.org" target="_blank" class="internal_link">
-                    <i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;RVTECH
-                    <p class="dropdown-link-desc translatable" data-translationkey="rvtech_desc_dropdown">dev форум</p>
-                  </a>
-                </div>
-              </div>
-            <a href="/news" class="internal_link translatable" data-translationkey="news_nav"><i class="fa-solid fa-newspaper"></i>&nbsp;&nbsp;Новости</a>
-            <a href="https://mystie.bearblog.dev" class="translatable" data-translationkey="blog_nav" target="_blank"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;Блог</a>
-            <a href="/t" class="internal_link translatable" data-translationkey="tests_nav"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
-            <!--a href="https://github.com/MystieHum/mystie.eu.org" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a-->
-        </div>
-    </ul>
+		<!-- NAVIGATION MENUS -->
+		<div class="menu flex">
+			<a href="/" class="internal_link translatable" data-translationkey="homepage_nav" style="margin-left: 0;"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Главная</a>
+			<a href="/dl" class="internal_link translatable" data-translationkey="downloads_nav"><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Загрузки</a>
+			<div class="dropdown">
+				<button onclick="showDropdown()" class="dropbtn translatable" data-translationkey="projects_nav"><i class="fa-solid fa-folder"></i>&nbsp;&nbsp;Проекты 
+					<i class="fa-solid fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content" id="thedropdown">
+					<a href="/tvhome" class="internal_link">
+						<i class="fa-solid fa-tv"></i>&nbsp;&nbsp;TVHome
+						<p class="dropdown-link-desc translatable" data-translationkey="tvhome_desc_dropdown">стартовая страница для Smart TV</p>
+					</a>
+					<a href="/qoritsuki/" class="internal_link">
+						<i class="fa-solid fa-robot"></i>&nbsp;&nbsp;Qoritsuki
+						<p class="dropdown-link-desc translatable" data-translationkey="qoritsuki_desc_dropdown">многоцелевой Discord бот</p>
+					</a>
+					<a href="https://rvtech.eu.org" target="_blank" class="internal_link">
+						<i class="fa-solid fa-star-and-crescent"></i>&nbsp;&nbsp;RVTECH
+						<p class="dropdown-link-desc translatable" data-translationkey="rvtech_desc_dropdown">dev форум</p>
+					</a>
+				</div>
+			</div>
+			<a href="/news" class="internal_link translatable" data-translationkey="news_nav"><i class="fa-solid fa-newspaper"></i>&nbsp;&nbsp;Новости</a>
+			<a href="https://mystie.bearblog.dev" class="translatable" data-translationkey="blog_nav" target="_blank"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;Блог</a>
+			<a href="/t" class="internal_link translatable" data-translationkey="tests_nav"><i class="fa-solid fa-vial"></i>&nbsp;&nbsp;Тесты</a>
+			<!--a href="https://github.com/MystieHum/mystie.eu.org" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub репозиторий</a-->
+		</div>
+	</ul>
 </nav>

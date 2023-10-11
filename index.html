@@ -34,8 +34,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/min/styles.min.css" rel="stylesheet">
-	<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /-->
+	<!-- production css -->
+	<!--link href="/css/min/styles.min.css" rel="stylesheet"-->
+	<!-- development css -->
+	<link href="/css/min/all.min.css" rel="stylesheet">
 	<link href="/fonts/fontawesome/css/fontawesome.min.css" rel="stylesheet">
 	<link href="/fonts/fontawesome/css/brands.min.css" rel="stylesheet">
 	<link href="/fonts/fontawesome/css/solid.min.css" rel="stylesheet">
@@ -59,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-container" style="align-items: center;">
+	<div class="main-container" style="align-items: center; justify-content: space-between;">
 		<div class="main-cc">
 			<img loading="lazy" class="mobile" src="./mystiehum_full.svg" width="300">
 			<h2 class="translatable" data-translationkey="aboutme_h2_index">Обо мне:</h2>
@@ -150,9 +152,9 @@
 </div>
 <br>
 <script id="footer" src="/scripts/footer.js"></script>
-<script src="/scripts/dropdown.js"></script>
-<script src="/scripts/link.min.js"></script>
-<script src="/scripts/translate.min.js"></script>
+<script defer src="/scripts/dropdown.js"></script>
+<script defer src="/scripts/translate.min.js"></script>
+<script defer src="/scripts/dcStatus.js"></script>
 <script>
 	let url = "https://proxy.mangaraiku.eu.org/?url=" + encodeURIComponent("https://mystie.bearblog.dev/blog");
 	fetch(url)

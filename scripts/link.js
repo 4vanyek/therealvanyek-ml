@@ -1,28 +1,28 @@
 window.addEventListener('DOMContentLoaded', function() {
-  var links = document.querySelectorAll('a');
+	var links = document.querySelectorAll('a');
 
-  for (var i = 0; i < links.length; i++) {
-    var url;
-    var href = links[i].getAttribute('href');
+	for (var i = 0; i < links.length; i++) {
+		var url;
+		var href = links[i].getAttribute('href');
 
-    if (href && href.trim().length > 0) {
-      if (!href.startsWith('http') && !href.startsWith('//')) {
-        if (href.startsWith('#')) {
-          continue;
-        }
+		if (href && href.trim().length > 0) {
+			if (!href.startsWith('http') && !href.startsWith('//')) {
+				if (href.startsWith('#')) {
+					continue;
+				}
 
-        var origin = window.location.origin;
+		var origin = window.location.origin;
         var isButton = links[i].classList.contains('button'); // Check if the link has the "button" class
 
         if (isButton) {
-          // Ignore links with the "button" class
-          continue;
+          	// Ignore links with the "button" class
+        	continue;
         }
 
         if (href.startsWith('/')) {
-          url = new URL(origin + href);
+        	url = new URL(origin + href);
         } else {
-          url = new URL(href, origin);
+        	url = new URL(href, origin);
         }
 
         var span = document.createElement('span');
@@ -31,19 +31,19 @@ window.addEventListener('DOMContentLoaded', function() {
         var hostnameText = '';
 
         if (url.hash) {
-          hostnameText += url.hash;
+        	hostnameText += url.hash;
         }
 
         links[i].textContent += hostnameText;
-      } else {
-        url = new URL(href);
+    } else {
+    	url = new URL(href);
 
-        var span = document.createElement('span');
-        span.classList.add('site-url');
-        span.textContent = ' (' + url.hostname + ')' + (url.hash ? url.hash : '');
+    	var span = document.createElement('span');
+    	span.classList.add('site-url');
+    	span.textContent = ' (' + url.hostname + ')' + (url.hash ? url.hash : '');
 
-        links[i].appendChild(span);
-      }
+    	links[i].appendChild(span);
     }
-  }
+}
+}
 });
