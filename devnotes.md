@@ -18,4 +18,8 @@ in `css` folder:
 `rm -rf all.css min/all.min.css && cat variables.css cont.css general.css links.css mobile.css nav.css socialicons.css dropdown.css dl.css fonts.css >> all.css && css-minify -f all.css -o min/`  
 *note that [css-minify](https://www.npmjs.com/package/css-minify) must be installed globally to minify css*
 ### JS
-*use minified versions when possible*  
+in `scripts` folder:
+`uglifyjs -o <FILENAME>.min.js -- <FILENAME>.js`
+`<FILENAME>` is the filename of a script without extension (like `dcStatus`)
+### Note
+if a script is small, there is no need in minifying it
