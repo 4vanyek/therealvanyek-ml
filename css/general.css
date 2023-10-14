@@ -1,3 +1,8 @@
+/* footer fix */
+footer {
+    align-items: normal !important;
+}
+
 * {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
@@ -17,9 +22,11 @@
 :root {
     scrollbar-color: var(--main-color) #222;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     background: #130028;
@@ -199,7 +206,6 @@ button:active, .button:active {
 }
 footer {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
@@ -270,7 +276,7 @@ blockquote q {
 footer hr {
     /*width: 5%;*/
     color: var(--main-color);
-    margin: 10px;
+    margin: 10px 0;
     border: 1px solid var(--main-color);
 }
 hr {

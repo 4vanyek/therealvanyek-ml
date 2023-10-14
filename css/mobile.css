@@ -1,128 +1,138 @@
 @media screen and (max-width: 1100px) {
-    .gh-comments {
-        width: 90%;
-    }
+	.gh-comments {
+		width: 90%;
+	}
 }
 @media screen and (max-width: 779px) {
-    a:hover {
-        cursor: pointer !important;
-    }
-    *, *:hover, *:active, .menu a:hover, .button:hover,
-    .main-button:hover, .qor-button:hover, .qor-main-button:hover,
-    .dl-button:hover, .view-post-btn:hover {
-        cursor: default !important;
-    }
-    .dropdown .dropbtn {
-        font-size: 18px !important;
-        width: 100% !important;
-        outline: none;
-        /*max-width: fit-content;*/
-    }
-    .navbar {
-        padding: .9em .7em !important;
-    }
-    .dropdown-content {
-        position: relative !important;
-    }
-    #window {
-        width: 95%;
-        height: 100%;
-    }
-    .privacy-h1 {
-        font-size: 2rem;
-        line-height: normal;
-        margin-bottom: 10px;
-    }
-    h2 {
-        font-size: 2rem;
-    }
+	a:hover {
+		cursor: pointer !important;
+	}
+	.dropdown-content {
+		position: relative !important;
+	}
+	#window {
+		width: 95%;
+		height: 100%;
+	}
+	.privacy-h1 {
+		font-size: 2rem;
+		line-height: normal;
+		margin-bottom: 10px;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	.copyleft {
+		flex-direction: column;
+		margin: 0 !important;
+	}
+	.copyleft p {
+		text-align: center;
+	}
+	.copyleft div {
+		margin: 10px 0;
+	}
+	footer .main div {
+		flex-direction: column;
+	}
 }
 @media screen and (max-width: 1000px) {
-    footer hr {
-        width: 25% !important;
-    }
-    .accordions {
-        width: 90% !important;
-    }
-    .non-mobile {
-        display: none !important;
-    }
-    .mobile {
-        display: block !important;
-    }
-    .warning-mobile {
-        display: block;
-        text-align: center;
-    }
-    .navbar {
-        justify-content: space-between !important;
-    }
-    .mlogo {
-        display: flex;
-    }
-    .nav-mobile {
-        display: block;
-    }
-    .nav-links {
-        margin-right: 5px !important;
-    }
-    .menu-content {
-        /*display: none;*/
-        display: flex;
-        flex-direction: column;
-    }
-    .menu {
-        margin-left: 0 !important;
-    }
-    .projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .main-container {
-        padding: 40px !important;
-        flex-direction: column !important;
-    }
-    .main-cc p {
-        max-width: 100% !important;
-    }
-    .main-container .mobile {
-        margin: 20px/* auto*/;
-    }
-    .img-cont {
-        padding: 60px 60px 60px 40px !important;
-        display: block !important;
-    }
-    .social-icon {
-        font-size: 34px !important;
-    }
-    .devlog {
-        flex-direction: column;
-        align-items: normal;
-    }
-    .devlog p {
-        font-size: 2rem;
-    }
-    .links-cont {
-        width: 85%;
-    }
-    .dropdown-content a {
-        padding: 0.5em 1em;
-    }
-    footer .main {
-        flex-direction: column !important;
-    }
-    .img-cont {
-        height: 500px !important;
-    }
-    .head {
-        height: 100% !important;
-    }
-    .image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
-        background-size: auto !important;
-    }
-.open-menu {
-    color: #fff;
-    font-size: 36px;
-}
+	*, *:hover, *:active, .menu a:hover, .button:hover,
+	.main-button:hover, .qor-button:hover, .qor-main-button:hover,
+	.dl-button:hover, .view-post-btn:hover {
+		cursor: default !important;
+	}
+	.dropdown .dropbtn {
+		font-size: 18px !important;
+		width: 100% !important;
+		outline: none;
+		/*max-width: fit-content;*/
+	}
+	.navbar {
+		padding: .9em .7em !important;
+	}
+	.accordions {
+		width: 90% !important;
+	}
+	.non-mobile {
+		display: none !important;
+	}
+	.mobile {
+		display: block !important;
+	}
+	.warning-mobile {
+		display: block;
+		text-align: center;
+	}
+	.navbar {
+		justify-content: space-between !important;
+	}
+	.mlogo {
+		display: flex;
+	}
+	.nav-mobile {
+		display: block;
+	}
+	.nav-links {
+		margin-right: 5px !important;
+	}
+	.menu-content {
+		/*display: none;*/
+		display: flex;
+		flex-direction: column;
+	}
+	.menu {
+		margin-left: 0 !important;
+	}
+	.projects {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.main-container {
+		padding: 40px !important;
+		flex-direction: column !important;
+	}
+	.main-cc p {
+		max-width: 100% !important;
+	}
+	.main-container .mobile {
+		margin: 20px/* auto*/;
+	}
+	.img-cont {
+		padding: 60px 60px 60px 40px !important;
+		display: block !important;
+	}
+	.social-icon {
+		font-size: 34px !important;
+	}
+	.devlog {
+		flex-direction: column;
+		align-items: normal;
+	}
+	.devlog p {
+		font-size: 2rem;
+	}
+	.links-cont {
+		width: 85%;
+	}
+	.dropdown-content a {
+		padding: 0.5em 1em;
+	}
+	footer .main {
+		flex-direction: column !important;
+	}
+	.img-cont {
+		height: 500px !important;
+	}
+	.head {
+		height: 100% !important;
+	}
+	.image, .rvf-img, .tvhome-img, .qor-img, .screen1-qor, .screen2-qor, .screen3-qor, .screen4-qor {
+		background-size: auto !important;
+	}
+	.open-menu {
+		color: #fff;
+		font-size: 36px;
+	}
 }

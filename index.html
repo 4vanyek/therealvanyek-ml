@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<!-- start favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#9035ff">
-	<meta name="msapplication-TileColor" content="#603cba">
+	<link rel="apple-touch-icon" sizes="180x180" href="/files/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/files/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/files/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/files/img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/files/img/favicons/safari-pinned-tab.svg" color="#562098">
+	<link rel="shortcut icon" href="/files/img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#562098">
+	<meta name="msapplication-config" content="/files/img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#9035ff">
 	<!-- end favicons -->
 	<!-- start meta tags -->
@@ -63,7 +63,7 @@
 	</div>
 	<div class="main-container" style="align-items: center; justify-content: space-between;">
 		<div class="main-cc">
-			<img loading="lazy" class="mobile" src="./mystiehum_full.svg" width="300">
+			<img loading="lazy" alt="Full MystieHum logo" class="mobile" src="./mystiehum_full.svg" width="300">
 			<h2 class="translatable" data-translationkey="aboutme_h2_index">Обо мне:</h2>
 			<p class="translatable" data-translationkey="aboutme_index">
 				Меня зовут Иван, я 14-летний разработчик родом из <a href="https://ru.wikipedia.org/wiki/Сыктывкар" target="_blank">Сыктывкара</a>
@@ -84,7 +84,7 @@
 			<button onclick="location.href='#Qoritsuki'">Qoritsuki</button><button onclick="location.href='#RVTECH'">RVTECH</button><button onclick="location.href='#TVHome'">TVHome</button>
 		</div>
 		<div class="non-mobile">
-			<img loading="lazy" src="./mystiehum.svg" width="300" height="300">
+			<img alt="MystieHum icon" loading="lazy" src="./mystiehum.svg" width="300" height="300">
 		</div>
 	</div>
 	<div class="projects">
@@ -165,12 +165,12 @@
 		const firstLink = html.querySelector(".blog-posts > li:nth-child(1) > a:nth-child(2)");
 
 		const notificationLink = document.querySelector(".latest-post");
-              const baseUrl = 'https://mystie.bearblog.dev';  // Base URL
-              const relativeLink = firstLink.getAttribute("href");  // Relative link from firstLink
-              const absoluteLink = new URL(relativeLink, baseUrl).href;  // Build the absolute URL
-              notificationLink.href = absoluteLink;
-              notificationLink.innerHTML = "<b>Новости:&nbsp;</b>" + firstLink.textContent;
-          })
+        const baseUrl = 'https://mystie.bearblog.dev';  // Base URL
+        const relativeLink = firstLink.getAttribute("href");  // Relative link from firstLink
+        const absoluteLink = new URL(relativeLink, baseUrl).href;  // Build the absolute URL
+        notificationLink.href = absoluteLink;
+        notificationLink.innerHTML = "<b>Новости:&nbsp;</b>" + firstLink.textContent;
+    })
 	.catch(error => console.error(error));
 	;
 

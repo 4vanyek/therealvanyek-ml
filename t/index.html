@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- start favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#9035ff">
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="theme-color" content="#9035ff">
-    <!-- end favicons -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="translatable" data-translationkey="tests">Тесты</title>
-    <link href="/css/min/styles.min.css" rel="stylesheet">
-    <link href="/fonts/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-    <link href="/fonts/fontawesome/css/brands.min.css" rel="stylesheet">
-    <link href="/fonts/fontawesome/css/solid.min.css" rel="stylesheet">
+	<!-- start favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/files/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/files/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/files/img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/files/img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/files/img/favicons/safari-pinned-tab.svg" color="#562098">
+	<link rel="shortcut icon" href="/files/img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#562098">
+	<meta name="msapplication-config" content="/files/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#9035ff">
+	<!-- end favicons -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title class="translatable" data-translationkey="tests">Тесты</title>
+	<link href="/css/min/all.min.css" rel="stylesheet">
+	<link href="/fonts/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+	<link href="/fonts/fontawesome/css/brands.min.css" rel="stylesheet">
+	<link href="/fonts/fontawesome/css/solid.min.css" rel="stylesheet">
 </head>
-<body style="margin-top: 3.25em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
-    <script id="nav" src="/scripts/nav.js"></script>
-     <div class="tcent">
-        <h2 class="translatable" data-translationkey="available-tests">Доступные тесты:</h2>
-        <div class="dropdown lang-dropdown" style="margin-top: -40px; float: right;">
-            <button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="lang-dropdown">
-                <button class="language-button" data-lang="ru">Russian</button>
-                <button class="language-button" data-lang="en">English</button>
-            </div>
-        </div>
-        <button onclick="location.href='./nav'">nav</button>
-        <button onclick="location.href='./nav2'">nav2</button>
+<body style="margin-top: 3.75em; /* нужно для того, чтобы навбар не перекрывал верхние элементы */">
+	<script id="nav" src="/scripts/nav.js"></script>
+	<div class="tcent">
+		<h2 class="translatable" data-translationkey="available-tests">Доступные тесты:</h2>
+		<div class="dropdown lang-dropdown" style="margin-top: -40px; float: right;">
+			<button onclick="showLangDropdown()" class="dropbtn"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language 
+				<i class="fa-solid fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" id="lang-dropdown">
+				<button class="language-button" data-lang="ru">Russian</button>
+				<button class="language-button" data-lang="en">English</button>
+			</div>
+		</div>
+		<button onclick="location.href='./nav'">nav</button>
+		<button onclick="location.href='./nav2'">nav2</button>
 		<button onclick="location.href='./footer'">footer test</button>
-        <button onclick="location.href='./widgets'">widgets</button>
-        <button onclick="location.href='./multitab'">multitab</button>
-        <button onclick="location.href='./accordion'">accordion</button>
-        <button onclick="location.href='./clipboard'">clipboard</button>
-        <button onclick="location.href='./drag'">drag</button>
-     </div>
-	 <script id="footer" src="/scripts/footer.js"></script>
-     <script src="/scripts/dropdown.js"></script>
-     <script src="/scripts/translate.min.js"></script>
-     <script>
+		<button onclick="location.href='./widgets'">widgets</button>
+		<button onclick="location.href='./multitab'">multitab</button>
+		<button onclick="location.href='./accordion'">accordion</button>
+		<button onclick="location.href='./clipboard'">clipboard</button>
+		<button onclick="location.href='./drag'">drag</button>
+	</div>
+	<script id="footer" src="/scripts/footer.js"></script>
+	<script src="/scripts/dropdown.js"></script>
+	<script src="/scripts/translate.min.js"></script>
+	<script src="/scripts/dcStatus.js"></script>
+	<script>
         /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function showLangDropdown() {
-    document.getElementById("lang-dropdown").classList.toggle("show");
-}
-          
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-</script>
+		toggle between hiding and showing the dropdown content */
+		function showLangDropdown() {
+			document.getElementById("lang-dropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
 </body>
 </html>
