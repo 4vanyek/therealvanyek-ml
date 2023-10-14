@@ -43,5 +43,9 @@
   	"go_home": "Go to homepage",
   	"why-need-a-proxy_news": "Why receive data through a third-party proxy?",
   	"proxy-explanation_news": "This is necessary to avoid errors related to <abbr title='Cross-origin resource sharing'>CORS</abbr>. Since <a href='https://bearblog.dev'>Bear Blog</a> does not set the <code>Access-Control-Allow-Origin: '*'</code> header in the request, this results in the following error: <code>Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://mystie.bearblog.dev/blog. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). Status code: 301.</code>",
-  	"view-post_news": "Go to post&nbsp;<i class='fa-solid fa-arrow-right'></i>"
+  	"view-post_news": "Go to post&nbsp;<i class='fa-solid fa-arrow-right'></i>",
+  	"social-faq-1": "It's highly unlikely to happen, 5 social networks is enough for me right now.",
+  	"social-faq-2": "It's highly likely that someone is impersonating me. Please report these accounts.<br><br>I do, however, have a <a href='https://bsky.app/profile/mystiehum.bsky.social'>Bluesky profile</a> & <a href='https://matrix.to/#/@mystie:tchncs.de'>a Matrix account</a>, though I'm not active there.",
+  	"social-faq-1-accord": "Will you ever be on Matrix/XMPP/etc?",
+  	"social-faq-2-accord": "I found you on a social network which is not listed here. Is that you?"
 }

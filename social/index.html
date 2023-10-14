@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- start favicons -->
+	<!-- start favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/files/img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/files/img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/files/img/favicons/favicon-16x16.png">
@@ -10,118 +10,135 @@
 	<link rel="shortcut icon" href="/files/img/favicons/favicon.ico">
 	<meta name="msapplication-TileColor" content="#562098">
 	<meta name="msapplication-config" content="/files/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#9035ff">
-    <!-- end favicons -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link href="/css/min/styles.min.css" rel="stylesheet"-->
-    <link href="/css/min/all.min.css" rel="stylesheet">
-    <link href="/fonts/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-    <link href="/fonts/fontawesome/css/brands.min.css" rel="stylesheet">
-    <link href="/fonts/fontawesome/css/solid.min.css" rel="stylesheet">
-    <title class="translatable" data-translationkey="links">Ссылки</title>
+	<meta name="theme-color" content="#9035ff">
+	<!-- end favicons -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link href="/css/min/styles.min.css" rel="stylesheet"-->
+	<link href="/css/min/all.min.css" rel="stylesheet">
+	<link href="/css/accordion.css" rel="stylesheet">
+	<link href="/fonts/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+	<link href="/fonts/fontawesome/css/brands.min.css" rel="stylesheet">
+	<link href="/fonts/fontawesome/css/solid.min.css" rel="stylesheet">
+	<title class="translatable" data-translationkey="links">Ссылки</title>
 </head>
 <body>
-    <!-- TODO: place language switcher there -->
-    <a class="notif internal_link translatable" data-translationkey="go_home" href="/">Вернуться на главную</a>
-    <div class="dropdown lang-dropdown" style="float: right;">
-        <button onclick="showLangDropdown()" class="dropbtn">
-            <i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language <i class="fa-solid fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" id="lang-dropdown">
-            <button class="language-button" data-lang="ru">Russian</button>
-            <button class="language-button" data-lang="en">English</button>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="links-container">
-        <img style="margin: 20px 0 50px 0" src="/mystiehum_full.svg" width="400">
-        <a class="links-cont link" href="https://github.com/MystieHum" target="_blank">
-            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
-            	<div>
-                	<i class="fa-brands fa-github"></i>&nbsp;GitHub <p>MystieHum</p>
-                </div>
-                <div>
-                	<i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </a>
-        <a class="links-cont link" href="https://t.me/MystieHum" target="_blank">
-            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
-            	<div>
-                	<i class="fa-brands fa-telegram"></i>&nbsp;Telegram <p>MystieHum</p>
-                </div>
-                <div>
-                	<i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </a>
+	<a class="notif internal_link translatable" data-translationkey="go_home" href="/">Вернуться на главную</a>
+	<div class="dropdown lang-dropdown" style="float: right;">
+		<button onclick="showLangDropdown()" class="dropbtn">
+			<i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Язык / Language <i class="fa-solid fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content" id="lang-dropdown">
+			<button class="language-button" data-lang="ru">Russian</button>
+			<button class="language-button" data-lang="en">English</button>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="links-container">
+		<img style="margin: 20px 0 50px 0" src="/files/img/mystiehum_new_full.png" width="400">
+		<a class="links-cont link" href="https://github.com/MystieHum" target="_blank">
+			<div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+				<div>
+					<i class="fa-brands fa-github"></i>&nbsp;GitHub <p>MystieHum</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-arrow-right"></i>
+				</div>
+			</div>
+		</a>
+		<a class="links-cont link" href="https://t.me/MystieHum" target="_blank">
+			<div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+				<div>
+					<i class="fa-brands fa-telegram"></i>&nbsp;Telegram <p>MystieHum</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-arrow-right"></i>
+				</div>
+			</div>
+		</a>
         <!--a class="links-cont link" href="https://4pda.to/forum/index.php?showuser=10840063" target="_blank"><div class="col-default"><i class="fa-brands fa-4"></i>&nbsp;4PDA
-                <p>UnnaMd</p></div></a-->
-        <a class="links-cont link" href="https://wetdry.world/@mystie" target="_blank">
-            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
-            	<div>
-                	<i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon <p>MystieHum</p>
-                </div>
-                <div>
-                	<i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </a>
-        <a class="links-cont link" href="https://www.youtube.com/@MystieHum" target="_blank">
-            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
-            	<div>
-                	<i class="fa-brands fa-youtube"></i>&nbsp;YouTube <p>MystieHum</p>
-                </div>
-                <div>
-                	<i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
-        </a>
-        <a class="links-cont link" href="https://discord.com/users/658287767490527243" target="_blank">
-            <div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
-                <div>
-                    <i class="fa-brands fa-discord"></i>&nbsp;Discord <p>mystiedev</p>
-                </div>
-                <div style="display: flex; align-items: center;">
-                	<div style="display: flex; margin-right: 10px; align-items: center;">
-	                    <svg xmlns="http://www.w3.org/2000/svg" id="discord-status-circle" viewBox="0 0 1792 1792" width="15">
-	                        <path d="M1664 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
-	                    </svg>
-	                    <p id="discord-status" style="text-transform: capitalize; margin-left: 2px; font-size: 14px;"></p>
-	                </div>
-	                <div>
-	                	<i class="fa-solid fa-arrow-right"></i>
-	                </div>
-                </div>
-            </div>
-        </a>
-    </div>
-    <script id="footer" src="/scripts/footer.js"></script>
-    <script src="/scripts/dropdown.js"></script>
-    <script src="/scripts/translate.min.js"></script>
-    <script>
+        	<p>UnnaMd</p></div></a-->
+        	<a class="links-cont link" href="https://wetdry.world/@mystie" target="_blank">
+        		<div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+        			<div>
+        				<i class="fa-brands fa-mastodon"></i>&nbsp;Mastodon <p>MystieHum</p>
+        			</div>
+        			<div>
+        				<i class="fa-solid fa-arrow-right"></i>
+        			</div>
+        		</div>
+        	</a>
+        	<a class="links-cont link" href="https://www.youtube.com/@MystieHum" target="_blank">
+        		<div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+        			<div>
+        				<i class="fa-brands fa-youtube"></i>&nbsp;YouTube <p>MystieHum</p>
+        			</div>
+        			<div>
+        				<i class="fa-solid fa-arrow-right"></i>
+        			</div>
+        		</div>
+        	</a>
+        	<a class="links-cont link" href="https://discord.com/users/658287767490527243" target="_blank">
+        		<div class="col-default" style="display: flex; align-items: center; justify-content: space-between;">
+        			<div>
+        				<i class="fa-brands fa-discord"></i>&nbsp;Discord <p>mystiedev</p>
+        			</div>
+        			<div style="display: flex; align-items: center;">
+        				<div style="display: flex; margin-right: 10px; align-items: center;">
+        					<svg xmlns="http://www.w3.org/2000/svg" id="discord-status-circle" viewBox="0 0 1792 1792" width="15">
+        						<path d="M1664 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+        					</svg>
+        					<p id="discord-status" style="text-transform: capitalize; margin-left: 2px; font-size: 14px;"></p>
+        				</div>
+        				<div>
+        					<i class="fa-solid fa-arrow-right"></i>
+        				</div>
+        			</div>
+        		</div>
+        	</a>
+        </div>
+        <br>
+        <h2 class="tcent">FAQ:</h2>
+        <div class="accordions">
+        	<button class="accordion translatable" data-translationkey="social-faq-1-accord">Will you ever be on Matrix/XMPP/etc?</button>
+        	<div class="panel">
+        		<div class="panel-cont">
+        			<p class="translatable" data-translationkey="social-faq-1">It's highly unlikely to happen, 5 social networks is enough for me right now.</p>
+        		</div>
+        	</div>
+        	<button class="accordion translatable" data-translationkey="social-faq-2-accord">I found you on a social network which is not listed here. Is that you?</button>
+        	<div class="panel">
+        		<div class="panel-cont">
+        			<p class="translatable" data-translationkey="social-faq-2">It's highly likely that someone is impersonating me. Please report these accounts.<br><br>I do, however, have a <a href="https://bsky.app/profile/mystiehum.bsky.social">Bluesky profile</a> & <a href="https://matrix.to/#/@mystie:tchncs.de">a Matrix account</a>, though I'm not active there.</p>
+        		</div>
+        	</div>
+        </div>
+        <script id="footer" src="/scripts/footer.js"></script>
+        <script src="/scripts/dropdown.js"></script>
+        <script src="/scripts/translate.min.js"></script>
+        <script src="/scripts/accord.js"></script>
+        <script>
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
-        function showLangDropdown() {
-        	document.getElementById("lang-dropdown").classList.toggle("show");
-        }
+        	function showLangDropdown() {
+        		document.getElementById("lang-dropdown").classList.toggle("show");
+        	}
         // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-        	if (!event.target.matches('.dropbtn')) {
-        		var dropdowns = document.getElementsByClassName("dropdown-content");
-        		var i;
-        		for (i = 0; i < dropdowns.length; i++) {
-        			var openDropdown = dropdowns[i];
-        			if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
-        				openDropdown.classList.remove('show');
+        	window.onclick = function(event) {
+        		if (!event.target.matches('.dropbtn')) {
+        			var dropdowns = document.getElementsByClassName("dropdown-content");
+        			var i;
+        			for (i = 0; i < dropdowns.length; i++) {
+        				var openDropdown = dropdowns[i];
+        				if (openDropdown.classList.contains('show') && !openDropdown.contains(event.target)) {
+        					openDropdown.classList.remove('show');
+        				}
         			}
         		}
         	}
-        }
-    </script>
-    <script defer src="/scripts/dcStatus.js"></script>
-</body>
-</html>
+        </script>
+        <script defer src="/scripts/dcStatus.js"></script>
+    </body>
+    </html>
