@@ -46,12 +46,7 @@
 }
 .img-cont h1, .img-cont p {
     color: #fff;
-}/* footer fix */
-footer {
-    align-items: normal !important;
-}
-
-* {
+}* {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 *, ::after, ::before {
