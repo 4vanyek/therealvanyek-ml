@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function translateElements() {
 		let selectedLanguage = localStorage.getItem('selectedLanguage');
 		if (!selectedLanguage) {
-			selectedLanguage = 'ru';
+			selectedLanguage = 'en';
   			// Add 'lang-active' class to the button representing the selected language
 			languageButtons.forEach((button) => {
 				if (button.dataset.lang === selectedLanguage) {
