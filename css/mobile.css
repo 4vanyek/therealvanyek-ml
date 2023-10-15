@@ -135,4 +135,7 @@
 		color: #fff;
 		font-size: 36px;
 	}
+	.links-container img {
+		width: 300px !important;
+	}
 }
