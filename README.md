@@ -1,5 +1,5 @@
-# mystie.eu.org
-скоро сайт будет перенесён с `realvanyek.eu.org` на `mystie.eu.org`
+# важно
+этот сайт больше не разрабатывается, новый сайт: [MystieHum/web](https://github.com/MystieHum/web)
 ## Описание
 этот репозиторий используется для сайта [MystieHum](https://realvanyek.eu.org)  
 если есть баги, создавайте issue, 
